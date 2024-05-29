@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom PC Builder</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        <li><a href="pre-builds.html">Pre Builds</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <!--Pre builds section would add the budget friendly and filtering option-->
+        <li><a href="components.html">Components</a></li>
+        <li><a href="phone.html">Handheld Devices</a></li>
+        <!-- handheld devices would include mobile devices and tablets-->
+        <li><a href="#">About Us</a></li>
+        <!--would include the goals, and about the company-->
+        <li><a href="#">Community</a></li>
+        <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
+        <li><a href="Sign In.html">Sign In</a></li>
+        <li><a href="Sign Up.html">Signup</a></li>
+        <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Build Your Custom PC</h1>
+        <form id="pc-builder-form">
+            <div class="component">
+                <label for="cpu">CPU</label>
+                <div class="selector">
+                    <img id="cpu-img" class="component-img" src="images/placeholder.png" alt="CPU Image">
+                    <input type="text" id="cpu" name="cpu" placeholder="Select a CPU" readonly>
+                    <a href="cpu.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <div class="component">
+                <label for="gpu">GPU</label>
+                <div class="selector">
+                    <img id="gpu-img" class="component-img" src="images/placeholder.png" alt="GPU Image">
+                    <input type="text" id="gpu" name="gpu" placeholder="Select a GPU" readonly>
+                    <a href="gpu-products.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <div class="component">
+                <label for="ram">RAM</label>
+                <div class="selector">
+                    <img id="ram-img" class="component-img" src="images/placeholder.png" alt="RAM Image">
+                    <input type="text" id="ram" name="ram" placeholder="Select RAM" readonly>
+                    <a href="ram-products.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <div class="component">
+                <label for="ssd">SSD</label>
+                <div class="selector">
+                    <img id="ssd-img" class="component-img" src="images/placeholder.png" alt="SSD Image">
+                    <input type="text" id="ssd" name="ssd" placeholder="Select SSD" readonly>
+                    <a href="ssd-products.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <div class="component">
+                <label for="case">Case</label>
+                <div class="selector">
+                    <img id="case-img" class="component-img" src="images/placeholder.png" alt="Case Image">
+                    <input type="text" id="case" name="case" placeholder="Select a Case" readonly>
+                    <a href="case-products.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <div class="component">
+                <label for="motherboard">Motherboard</label>
+                <div class="selector">
+                    <img id="motherboard-img" class="component-img" src="images/placeholder.png" alt="Motherboard Image">
+                    <input type="text" id="motherboard" name="motherboard" placeholder="Select a Motherboard" readonly>
+                    <a href="motherboard-products.html" target="_blank" class="plus-link">+</a>
+                </div>
+            </div>
+
+            <button type="submit">Build PC</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select CPU</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select a CPU</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('cpu', 'Intel i9', 'images/intel-i9.png')">
+                <img src="images/intel-i9.png" alt="Intel i9">
+                <span>Intel i9</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('cpu', 'Intel i7', 'images/intel-i7.png')">
+                <img src="images/intel-i7.png" alt="Intel i7">
+                <span>Intel i7</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('cpu', 'AMD Ryzen 9', 'images/amd-ryzen-9.png')">
+                <img src="images/amd-ryzen-9.png" alt="AMD Ryzen 9">
+                <span>AMD Ryzen 9</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('cpu', 'AMD Ryzen 7', 'images/amd-ryzen-7.png')">
+                <img src="images/amd-ryzen-7.png" alt="AMD Ryzen 7">
+                <span>AMD Ryzen 7</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
