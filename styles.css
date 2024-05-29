@@ -21,32 +21,42 @@
     border-bottom: 2px solid white;
   }
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
+  .navbar {
+    background-color: #007bff;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: block;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-  }
-  nav ul li a:hover{
-    background-color: #111;
-  }
+    padding: 8px 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+} 
   
   .hero {
     text-align: center;
-    padding: 100px 20px;
+    top: 1cm;
+    bottom: 2cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    margin-top: 2cm;
+    margin-left: 1cm;
   }
   
   .hero h2 {

@@ -17,22 +17,33 @@ header {
     font-size: 24px;
   }
   
-  nav ul {
-    white-space: nowrap;
-    max-width: 1200px;
-    margin: 0,10px;
-  }
-  
-  nav ul li {
-    width: 15%;
-    display: inline-block;
-    font-size: 20px;
-  }
-  
-  nav ul li a {
-    color: #eee7e7;
+  .navbar {
+    background-color: #007bff;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
     text-decoration: none;
-  }
+    padding: 8px 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
 
 .filter-section {
     display: flex;
