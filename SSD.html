@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select CPU</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select an SSD</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('ssd','Samsung 970 Evo 1TB', 'Pics/ssd/samsung.jpg')">
+                <img src="Pics/ssd/samsung.jpg" alt="Samsung 970 Evo 1TB">
+                <span>Samsung 970 Evo 1TB</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('ssd','WD Black SN750 1TB', 'Pics/ssd/wd blackjpg.jpg')">
+                <img src="Pics/ssd/wd blackjpg.jpg" alt="WD Black SN750 1TB">
+                <span>WD Black SN750 1TB</span>
+            </div>
+            <!-- Add more SSD options as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

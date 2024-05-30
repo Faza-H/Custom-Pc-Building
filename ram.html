@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select RAM</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select RAM</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('ram','Corsair Vengeance 16GB', 'Pics/ram/cosair ram.jpg')">
+                <img src="Pics/ram/cosair ram.jpg" alt="Corsair Vengeance 16GB">
+                <span>Corsair Vengeance 16GB</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('ram','G.Skill Trident Z 32GB', 'Pics/ram/trident.jpg')">
+                <img src="Pics/ram/trident.jpg" alt="G.Skill Trident Z 32GB">
+                <span>G.Skill Trident Z 32GB</span>
+            </div>
+            <!-- Add more RAM options as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
