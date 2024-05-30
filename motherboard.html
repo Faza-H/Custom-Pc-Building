@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Motherboard</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select a Motherboard</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('motherboard','ASUS ROG Strix B550-F', 'Pics/Motherboard/asus motherboard.jpg')">
+                <img src="Pics/Motherboard/asus motherboard.jpg" alt="ASUS ROG Strix B550-F">
+                <span>ASUS ROG Strix B550-F</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('motherboard','MSI MPG Z490 Gaming Edge', 'Pics/Motherboard/msi motherboard.jpg')">
+                <img src="Pics/Motherboard/msi motherboard.jpg" alt="MSI MPG Z490 Gaming Edge">
+                <span>MSI MPG Z490 Gaming Edge</span>
+            </div>
+            <!-- Add more motherboard options as needed -->
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
