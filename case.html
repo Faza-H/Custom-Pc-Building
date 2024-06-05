@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Case</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select a Case</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('case','NZXT H510', 'Pics/Casing/nzxt case.jpg')">
+                <img src="Pics/Casing/nzxt case.jpg" alt="NZXT H510">
+                <span>NZXT H510</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('case','Corsair 4000D', 'Pics/Casing/corsair case.jpg')">
+                <img src="Pics/Casing/corsair case.jpg" alt="Corsair 4000D">
+                <span>Corsair 4000D</span>
+            </div>
+            <!-- Add more case options as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

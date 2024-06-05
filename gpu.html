@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select GPU</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <?php include 'navbar.html'; ?>
+
+    <div class="container">
+        <h1>Select a GPU</h1>
+        <div class="product-list">
+            <div class="product-item" onclick="selectComponent('gpu', 'NVIDIA RTX 3080', 'Pics/gpu/rtx 3080.jpg')">
+                <img src="Pics/gpu/rtx 3080.jpg" alt="NVIDIA RTX 3080">
+                <span>NVIDIA RTX 3080</span>
+            </div>
+            <div class="product-item" onclick="selectComponent('gpu', 'AMD Radeon RX 6800', 'Pics/gpu/rx 6800.jpg')">
+                <img src="Pics/gpu/rx 6800.jpg" alt="AMD Radeon RX 6800">
+                <span>AMD Radeon RX 6800</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
