@@ -1,7 +1,8 @@
 body {
   background-image: url(Pics/background/cover3.jpg);
   position: relative;
-  font-family: Arial, sans-serif;
+  font-family: Arial, display;
+  text-decoration-color: black;
   margin: 0;
   padding: 0;
 }
@@ -87,13 +88,14 @@ nav ul li a {
   text-decoration: none;
   background-color:rgba(128, 128, 128, 0);
   display: flex;
-  color: lightslategray;
+  color: black;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 20px;
   justify-content: right;
 }
 .pre-builds .titel{
+  opacity:0.5;
 padding-top: 5px;
   font-size: 35px;
   font-weight: bold;
@@ -113,6 +115,7 @@ margin: 15px 15px 5px 5px;
 margin: 20px;
 }
 .pre-builds img{
+  opacity: 1;
   width: fit-content;
  height: fit-content;
  margin-left: 0 auto;
@@ -122,6 +125,7 @@ margin: 20px;
 
  .pre-builds .pre-built{
   width: 18%;
+  opacity: 0.8;
   text-align: center;
 float: right;
 background-color: grey;
