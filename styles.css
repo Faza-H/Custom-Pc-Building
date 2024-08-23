@@ -1,8 +1,9 @@
 body {
+  background-image: url(Pics/background/cover3.jpg);
+  position: relative;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
 header {
@@ -84,15 +85,16 @@ nav ul li a {
 }
 .pre-builds{
   text-decoration: none;
-  background-color:gray;
+  background-color:rgba(128, 128, 128, 0);
   display: flex;
+  color: lightslategray;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 20px;
   justify-content: right;
 }
 .pre-builds .titel{
-padding-top: 50px;
+padding-top: 5px;
   font-size: 35px;
   font-weight: bold;
   text-align: center;
@@ -100,7 +102,7 @@ padding-top: 50px;
   width: 100%;
   background-size:100% ;
 float: right;
-background-color: #447ba0;
+background-image: linear-gradient(to bottom right, grey, white);
 margin: 15px 15px 5px 5px;
 
 }
@@ -111,17 +113,19 @@ margin: 15px 15px 5px 5px;
 margin: 20px;
 }
 .pre-builds img{
-  max-width: 100%;
-height: auto;
+  width: fit-content;
+ height: fit-content;
  margin-left: 0 auto;
  text-align: center;
+ padding: 0%;
 }
 
  .pre-builds .pre-built{
   width: 18%;
   text-align: center;
 float: right;
-background-color: #535b57;
+background-color: grey;
+text-decoration-color: #0a0a23;
 margin: 15px 50px 5px 5px;
 border-radius: 10px;
 border-right: 3px solid #ddd;
@@ -131,7 +135,7 @@ border-bottom: 3px solid #ddd;
  }
 
 footer {
-  background-color: #222;
+  background-image: linear-gradient(to top, #1e2c38, gray);
   color: #fff;
   padding: 20px 0;
 }
@@ -229,7 +233,7 @@ footer {
   }
 }
 .brands {
-  background-color: #0a0a23; /* Dark blue background */
+  background-image: linear-gradient(to top left, red,darkblue);
   text-align: center;
   padding: 40px 20px;
 }
@@ -247,13 +251,13 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
 }
 
 .brand-logos img {
   max-width: 120px; /* Adjust to fit logos well */
   height: auto;
-  filter: brightness(0) invert(1); /* Make logos white */
+  filter: brightness(1) invert(10); /* Make logos white */
   transition: transform 0.3s ease;
 }
 
