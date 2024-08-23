@@ -83,128 +83,53 @@ nav ul li a {
   margin-right: 300px;
 }
 .pre-builds{
-  text-align: center;
   text-decoration: none;
-  text-wrap: wrap;
   background-color:gray;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  justify-content: right;
 }
-.pre-builds2{
-  text-align:center;
-  text-decoration: none;
-  text-wrap: wrap;
-  background-color: gray;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.pre-builds .titel{
+padding-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  font-style: ;
+  width: 100%;
+  background-size:100% ;
+float: right;
+background-color: #447ba0;
+margin: 15px 15px 5px 5px;
+
+}
+.pre-builds .titel .titel2{
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+margin: 20px;
 }
 .pre-builds img{
- width: 200px;
- height: 200px;
+  max-width: 100%;
+height: auto;
  margin-left: 0 auto;
  text-align: center;
 }
 
-.pre-builds2 img{
-  width: 200px;
-  height: 200px;
-  margin-left: 0 auto;
-  text-align: ;
+ .pre-builds .pre-built{
+  width: 18%;
+  text-align: center;
+float: right;
+background-color: #535b57;
+margin: 15px 50px 5px 5px;
+border-radius: 10px;
+border-right: 3px solid #ddd;
+border-left: 3px solid #ddd;
+border-top: 3px solid #ddd;
+border-bottom: 3px solid #ddd;
  }
-.pre-build1{
-  width: 20%;
-  float: left;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin: 2px 2px 2px 2px;
-  border-right: 3px solid #ddd;
-  border-left: 3px solid #ddd;
-  border-top: 3px solid #ddd;
-  border-bottom: 3px solid #ddd;
-}
-.pre-build2{
-  width: 20%;
-float: right;
-height: 450px;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}
-.pre-build3{
-  width: 20%;
-float: right;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}
-.pre-build title{
-  height: 450px;
-  width: 20%;
-  float: left;
-  margin: 2px 20px 2px 2px;
-  border-radius: 10px;
-  border-right: 3px solid #ddd;
-  border-left: 3px solid #ddd;
-  border-top: 3px solid #ddd;
-  border-bottom: 3px solid #ddd;
-}
-.pre-build-button{
-  position: relative;
-  float:right;
-  margin-top: 50px;
-  margin-right: 50%;
-  margin-left: 50%;
-  size: 10px;
-  color:white;
-  background-color: #008cba;
-  border
-}
-.pre-build4{
-  width: 20%;
-float: right;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}.pre-build5{
-  width: 20%;
-float: right;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}.pre-build6{
-  width: 20%;
-float: right;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}.pre-build7{
-  width: 20%;
-float: right;
-margin: 2px 2px 2px 2px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
-}
+
 footer {
   background-color: #222;
   color: #fff;
@@ -302,4 +227,36 @@ footer {
   .footer-section {
       text-align: center;
   }
+}
+.brands {
+  background-color: #0a0a23; /* Dark blue background */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.brands h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #e52e30; /* Red text color */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brand-logos img {
+  max-width: 120px; /* Adjust to fit logos well */
+  height: auto;
+  filter: brightness(0) invert(1); /* Make logos white */
+  transition: transform 0.3s ease;
+}
+
+.brand-logos img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
