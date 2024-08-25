@@ -40,16 +40,16 @@
     <aside class="filters">
         <h3>Filters</h3>
         <div class="filter-section">
-            <h4>Price</h4>
+            <h4>Price in Rupees</h4>
             <input type="range" id="priceRange" min="0" max="300000" step="50" oninput="filterByPrice()" value="300000">
             <span id="priceValue">300000</span>
         </div>
         <div class="filter-section">
             <h4>Vendors</h4>
             <ul>
-                <li><input type="checkbox"> Dell</li>
-                <li><input type="checkbox"> HP</li>
-                <li><input type="checkbox"> Lenovo</li>
+                <li><input type="checkbox" value="Dell" onchange="filterByVendor()"> Dell</li>
+                <li><input type="checkbox" value="HP" onchange="filterByVendor()"> HP</li>
+                <li><input type="checkbox" value="Lenovo" onchange="filterByVendor()"> Lenovo</li>
             </ul>
         </div>
         <div class="filter-section">
@@ -121,8 +121,8 @@
     <!-- Products -->
     <section class="product-list">
         <div class="product" id="inteli3g6">
-            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
+            <img src="Pics/laptop Images/HP Newest 14.jpg" alt="Laptop 1">
+                <h3>Hp Swift Go Intel Evo 1</h3>
                 <h4>Price: 50000 Rs</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
@@ -155,8 +155,8 @@
                 
         </div>
         <div class="product" id="inteli3g8">
-            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
+            <img src="Pics/laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
+                <h3>Lenovo IdealPad 1</h3>
                 <h4>Price: 80000 Rs</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
@@ -703,121 +703,104 @@
 
 
 <script type="text/javascript">
-    function toggleDetails(id) {
-        let details = document.getElementById(id);
-            if (details.style.display === "none") {
-                details.style.display = "block";
-            } else {
-                details.style.display = "none";
-            }
-        }
-    function search() {
-        let filter = document.getElementById('find').value.toUpperCase();
-        let filterNumber = parseFloat(filter);
-        let items = document.querySelectorAll('.product');
-        
-        items.forEach(item => {
-            let nameElement = item.querySelector('h3');
-            let priceElement = item.querySelector('h4');
-            let descriptionElement = item.querySelector('h5');
-            
-            let nameValue = nameElement ? nameElement.textContent.replace(/[0-9]/g, '').toUpperCase() : ''; // Remove numeric characters from name
-            let priceValue = priceElement ? priceElement.textContent.toUpperCase() : '';
-            let descriptionValue = descriptionElement ? descriptionElement.textContent.replace(/[0-9]/g, '').toUpperCase() : ''; // Remove numeric characters from description
-            
-            // Extract numeric value from price
-            let priceNumber = parseFloat(priceValue.replace(/[^0-9.]/g, '')); 
-            
-            // Numeric filter handling
-            let isNumericFilter = !isNaN(filterNumber);
-            let matchesPrice = isNumericFilter && !isNaN(priceNumber) && priceNumber <= filterNumber;
-            
-            // Display logic
-            if (
-                nameValue.indexOf(filter) > -1 ||
-                descriptionValue.indexOf(filter) > -1 ||  // Search alphabetic characters only in description
-                matchesPrice ||
-                (!isNumericFilter && priceValue.indexOf(filter) > -1) // Non-numeric filter matches
-            ) {
-                item.style.display = "";
-            } else {
-                item.style.display = "none";
-            }
-        });
-    }
-    function filterByPrice() {
-    let rangeValue = parseInt(document.getElementById('priceRange').value);
-    document.getElementById('priceValue').innerText = rangeValue;
-    let items = document.querySelectorAll('.product');
-    
-    items.forEach(item => {
-        let priceElement = item.querySelector('h4');
-        let priceValue = priceElement ? priceElement.textContent.match(/\d+/g) : null;
-        let priceNumber = priceValue ? parseInt(priceValue[0]) : 0;
+// Function to toggle details
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+}
 
-        if (priceNumber <= rangeValue) {
+// Function to filter products based on search input
+function search() {
+    const filterText = document.getElementById('find').value.toUpperCase();
+    const priceRange = document.getElementById('priceRange').value;
+    const checkedVendors = Array.from(document.querySelectorAll('.filters input[type="checkbox"][value]'))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toUpperCase());
+
+    const i3Checkboxes = Array.from(document.querySelectorAll('#i3Details input[type="checkbox"]'))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toLowerCase().replace(/\s+/g, ''));
+
+    const i5Checkboxes = Array.from(document.querySelectorAll('#i5Details input[type="checkbox"]'))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toLowerCase().replace(/\s+/g, ''));
+
+    const i7Checkboxes = Array.from(document.querySelectorAll('#i7Details input[type="checkbox"]'))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toLowerCase().replace(/\s+/g, ''));
+
+    const i9Checkboxes = Array.from(document.querySelectorAll('#i9Details input[type="checkbox"]'))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toLowerCase().replace(/\s+/g, ''));
+
+    const items = document.querySelectorAll('.product');
+
+    items.forEach(item => {
+        const nameElement = item.querySelector('h3');
+        const priceElement = item.querySelector('h4');
+        const descriptionElement = item.querySelector('h5');
+
+        const nameValue = nameElement ? nameElement.textContent.toUpperCase() : '';
+        const priceValue = priceElement ? priceElement.textContent.toUpperCase() : '';
+        const descriptionValue = descriptionElement ? descriptionElement.textContent.toUpperCase() : '';
+
+        const priceNumber = parseFloat(priceValue.replace(/[^0-9.]/g, ''));
+        const isNumericFilter = !isNaN(priceRange);
+        const matchesPrice = isNumericFilter && !isNaN(priceNumber) && priceNumber <= priceRange;
+
+        // Check if the product matches the selected vendor filters
+        const matchesVendor = checkedVendors.length === 0 || checkedVendors.some(vendor => nameValue.includes(vendor));
+
+        // Check if the product matches the selected generation filters
+        const matchesGeneration = (i3Checkboxes.length === 0 || i3Checkboxes.includes(item.id)) &&
+            (i5Checkboxes.length === 0 || i5Checkboxes.includes(item.id)) &&
+            (i7Checkboxes.length === 0 || i7Checkboxes.includes(item.id)) &&
+            (i9Checkboxes.length === 0 || i9Checkboxes.includes(item.id));
+
+        // Display logic
+        if (
+            (nameValue.indexOf(filterText) > -1 || descriptionValue.indexOf(filterText) > -1) &&
+            matchesPrice &&
+            matchesVendor &&
+            matchesGeneration
+        ) {
             item.style.display = "";
         } else {
             item.style.display = "none";
         }
     });
 }
-document.addEventListener('DOMContentLoaded', filterByPrice);
-function search() {
-            // Get all Intel checkboxes (including generation checkboxes)
-            const i3Checkboxes = document.querySelectorAll('#i3Details input[type="checkbox"]');
-            const i5Checkboxes = document.querySelectorAll('#i5Details input[type="checkbox"]');
-            const i7Checkboxes = document.querySelectorAll('#i7Details input[type="checkbox"]');
-            const i9Checkboxes = document.querySelectorAll('#i9Details input[type="checkbox"]');
 
-            // Get all products
-            const products = document.querySelectorAll('.product');
+// Function to filter products based on price
+function filterByPrice() {
+    document.getElementById('priceValue').textContent = document.getElementById('priceRange').value;
+    search();
+}
 
-            // Check if any checkbox is checked
-            const anyCheckboxChecked = [i3Checkboxes, i5Checkboxes, i7Checkboxes, i9Checkboxes].some(checkboxes =>
-                Array.from(checkboxes).some(checkbox => checkbox.checked)
-            );
+// Function to filter products based on selected vendor checkboxes
+function filterByVendor() {
+    search();
+}
 
-            products.forEach(product => {
-                let shouldDisplay = false;
-
-                // Check Intel i3 generation
-                i3Checkboxes.forEach(checkbox => {
-                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
-                        shouldDisplay = true;
-                    }
-                });
-
-                // Check Intel i5 generation
-                i5Checkboxes.forEach(checkbox => {
-                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
-                        shouldDisplay = true;
-                    }
-                });
-
-                // Check Intel i7 generation
-                i7Checkboxes.forEach(checkbox => {
-                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
-                        shouldDisplay = true;
-                    }
-                });
-
-                // Check Intel i9 generation
-                i9Checkboxes.forEach(checkbox => {
-                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
-                        shouldDisplay = true;
-                    }
-                });
-
-                // If no checkbox is checked, or if a product should be displayed based on the selected checkboxes
-                product.style.display = !anyCheckboxChecked || shouldDisplay ? 'block' : 'none';
-            });
-        }
-
-        function toggleDetails(id) {
-            const details = document.getElementById(id);
-            details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        }
+// Add event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('priceRange').addEventListener('input', filterByPrice);
+    document.querySelectorAll('.filters input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', filterByVendor);
+    });
+    document.querySelectorAll('#i3Details input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', search);
+    });
+    document.querySelectorAll('#i5Details input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', search);
+    });
+    document.querySelectorAll('#i7Details input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', search);
+    });
+    document.querySelectorAll('#i9Details input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', search);
+    });
+});
     </script>
     
     
