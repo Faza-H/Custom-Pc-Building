@@ -29,29 +29,202 @@
         </nav>
       </header>
     <main>
-        <div class="sidebar">
-            <h2>Categories</h2>
-            <ul class="nav-list">
-                <li><a href="#category1">Dell Laptops</a></li>
-                <li><a href="#category2">Toshiba Laptops</a></li>
-                <li><a href="#category3">HP Laptops</a></li>
-                <li><a href="#category4">Lenovo Laptops</a></li>
-                <li><a href="#category5">MSI Laptops</a></li>
+   <!-- Search Bar -->
+   <div class="search">
+    <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+    </div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Filters -->
+    <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-section">
+            <h4>Price</h4>
+            <input type="range" min="0" max="200000" step="1000">
+        </div>
+        <div class="filter-section">
+            <h4>Vendors</h4>
+            <ul>
+                <li><input type="checkbox"> Dell</li>
+                <li><input type="checkbox"> HP</li>
+                <li><input type="checkbox"> Lenovo</li>
             </ul>
         </div>
-        <div class="content">
-        <section class="product">
-            <img src="Pics/photo-1611078489935-0cb964de46d6.avif" alt="Laptop Image" class="product-image">
-            <div class="product-details">
-                <h2>Laptop Model XYZ</h2>
-                <p class="price">$999.99</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dignissim nunc, a interdum mi. Suspendisse potenti.</p>
-                <button>Add to Cart</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Laptop Store. All rights reserved.</p>
-    </footer>
+        <div class="filter-section">
+            <h4>CPU</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" value="INTEL I3" onchange="search()"> Intel i3
+                    <button class="expand-btn" onclick="toggleDetails('i3Details')">Expand</button>
+                    <ul id="i3Details" class="details-list">
+                        <li><input type="checkbox" value="INTEL I3 G1" onchange="search()"> 1st Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G2" onchange="search()"> 2nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G3" onchange="search()"> 3nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G4" onchange="search()"> 4nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G5" onchange="search()"> 5nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G6" onchange="search()"> 6nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G7" onchange="search()"> 7nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G8" onchange="search()"> 8nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G9" onchange="search()"> 9nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G10" onchange="search()"> 10nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G11" onchange="search()"> 11nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G12" onchange="search()"> 12nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G13" onchange="search()"> 13nd Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G14" onchange="search()"> 14nd Gen</li>
+
+                        <!-- Add all other generations here -->
+                        <li><input type="checkbox" value="INTEL I3 G14" onchange="search()"> 14th Gen</li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" value="INTEL I5" onchange="search()"> Intel i5
+                    <button class="expand-btn" onclick="toggleDetails('i5Details')">Expand</button>
+                    <ul id="i5Details" class="details-list">
+                        <li><input type="checkbox" value="INTEL I5 G1" onchange="search()"> 1st Gen</li>
+                        <li><input type="checkbox" value="INTEL I5 G2" onchange="search()"> 2nd Gen</li>
+                        <!-- Add all other generations here -->
+                        <li><input type="checkbox" value="INTEL I5 G14" onchange="search()"> 14th Gen</li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" value="INTEL I7" onchange="search()"> Intel i7
+                    <button class="expand-btn" onclick="toggleDetails('i7Details')">Expand</button>
+                    <ul id="i7Details" class="details-list">
+                        <li><input type="checkbox" value="INTEL I7 G1" onchange="search()"> 1st Gen</li>
+                        <li><input type="checkbox" value="INTEL I7 G2" onchange="search()"> 2nd Gen</li>
+                        <!-- Add all other generations here -->
+                        <li><input type="checkbox" value="INTEL I7 G14" onchange="search()"> 14th Gen</li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" value="INTEL I9" onchange="search()"> Intel i9
+                    <button class="expand-btn" onclick="toggleDetails('i9Details')">Expand</button>
+                    <ul id="i9Details" class="details-list">
+                        <li><input type="checkbox" value="INTEL I9 G1" onchange="search()"> 1st Gen</li>
+                        <li><input type="checkbox" value="INTEL I9 G2" onchange="search()"> 2nd Gen</li>
+                        <!-- Add all other generations here -->
+                        <li><input type="checkbox" value="INTEL I9 G14" onchange="search()"> 14th Gen</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Add more filters as needed -->
+    </aside>
+
+    <!-- Products -->
+    <section class="product-list">
+        <div class="product">
+            <img src="laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
+                <h3>Lenovo Idealpad 1</h3>
+                <h4>Specifications:</h4>
+                <h5>Model Name: Ideapad 1 15" - 82R400EMUS <br>
+                    Screen Size	15.6 Inches<br>
+                    Color:	Gray<br>
+                    Hard Disk Size:	512 GB<br>
+                    CPU Model:	AMD Ryzen 5 5500U<br>
+                    Ram Memory Installed Size:	8 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Anti Glare Coating<br>
+                    Graphics Card Description:	Integrated</h5>
+                <h4>Price: $299</h4>
+        </div>
+        <div class="product">
+            <img src="laptop Images/HP Newest 14.jpg" alt="Laptop 1">
+                <h3>Hp Newest 14</h3>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	HP Laptop<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Snowflake White<br>
+                    Hard Disk Size:	64 GB<br>
+                    CPU Model:	Celeron N<br>
+                    Ram Memory Installed Size:	8 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	HD Audio<br>
+                    Graphics Card Description:	Integrated</h5>
+                    <h4>Price: $222</h4>
+        </div>
+        <div class="product">
+            <img src="laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Inspiron 15 3000 3520</h3>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Dell Inspiron<br>
+                    Screen Size:	15.6 Inches<br>
+                    Color:	Black<br>
+                    Hard Disk Size:	1 TB<br>
+                    CPU Model:	Core i5<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Pro<br>
+                    Special Feature:	Numeric Keypad<br>
+                    Graphics Card Description:	Integrated</h5>
+                <h4>Price: $420</h4>
+        </div>
+        <div class="product">
+            <img src="laptop Images/Acer Swift Go Intel Evo Thin & Light Premium Laptop.jpg" alt="Laptop 1">
+                <h3>Acer Swift Go Intel Evo 1</h3>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                <h4>Price: $529</h4>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+</div>
+
+
+<script type="text/javascript">
+    function toggleDetails(id) {
+        let details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let filterNumber = parseFloat(filter);
+        let items = document.querySelectorAll('.product');
+        
+        items.forEach(item => {
+            let nameElement = item.querySelector('h3');
+            let priceElement = item.querySelector('h4');
+            let descriptionElement = item.querySelector('h5');
+            
+            let nameValue = nameElement ? nameElement.textContent.replace(/[0-9]/g, '').toUpperCase() : ''; // Remove numeric characters from name
+            let priceValue = priceElement ? priceElement.textContent.toUpperCase() : '';
+            let descriptionValue = descriptionElement ? descriptionElement.textContent.replace(/[0-9]/g, '').toUpperCase() : ''; // Remove numeric characters from description
+            
+            // Extract numeric value from price
+            let priceNumber = parseFloat(priceValue.replace(/[^0-9.]/g, '')); 
+            
+            // Numeric filter handling
+            let isNumericFilter = !isNaN(filterNumber);
+            let matchesPrice = isNumericFilter && !isNaN(priceNumber) && priceNumber <= filterNumber;
+            
+            // Display logic
+            if (
+                nameValue.indexOf(filter) > -1 ||
+                descriptionValue.indexOf(filter) > -1 ||  // Search alphabetic characters only in description
+                matchesPrice ||
+                (!isNumericFilter && priceValue.indexOf(filter) > -1) // Non-numeric filter matches
+            ) {
+                item.style.display = "";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    }
+    </script>
+    
+    
+
 </body>
 </html>

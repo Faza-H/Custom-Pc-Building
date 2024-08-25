@@ -1,0 +1,52 @@
+
+Brand	Lenovo
+Model Name	Ideapad 1 15" - 82R400EMUS
+Screen Size	15.6 Inches
+Color	Gray
+Hard Disk Size	512 GB
+CPU Model	AMD Ryzen 5 5500U
+Ram Memory Installed Size	8 GB
+Operating System	Windows 11 Home
+Special Feature	Anti Glare Coating
+Graphics Card Description	Integrated
+Price 299.99
+
+
+Brand	HP
+Model Name	HP Laptop
+Screen Size	14 Inches
+Color	Snowflake White
+Hard Disk Size	64 GB
+CPU Model	Celeron N
+Ram Memory Installed Size	8 GB
+Operating System	Windows 11 Home
+Special Feature	HD Audio
+Graphics Card Description	Integrated
+Price 222.74
+
+
+Brand	Dell
+Model Name	Dell Inspiron
+Screen Size	15.6 Inches
+Color	Black
+Hard Disk Size	1 TB
+CPU Model	Core i5
+Ram Memory Installed Size	16 GB
+Operating System	Windows 11 Pro
+Special Feature	Numeric Keypad
+Graphics Card Description	Integrated
+Price 420.00
+
+
+
+Brand	acer
+Model Name	Swift Go 14
+Screen Size	14 Inches
+Color	Silver
+Hard Disk Size	512
+CPU Model	Intel Core i7-1355U
+Ram Memory Installed Size	16 GB
+Operating System	Windows 11 Home
+Special Feature	Fingerprint Reader, Backlit Keyboard
+Graphics Card Description	Integrated
+Price 529.25
