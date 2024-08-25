@@ -1,1 +1,0 @@
-Import this file using import option in xampp phpmyadmin
