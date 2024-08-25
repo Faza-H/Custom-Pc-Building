@@ -41,7 +41,8 @@
         <h3>Filters</h3>
         <div class="filter-section">
             <h4>Price</h4>
-            <input type="range" min="0" max="200000" step="1000">
+            <input type="range" id="priceRange" min="0" max="300000" step="50" oninput="filterByPrice()" value="300000">
+            <span id="priceValue">300000</span>
         </div>
         <div class="filter-section">
             <h4>Vendors</h4>
@@ -58,22 +59,14 @@
                     <input type="checkbox" value="INTEL I3" onchange="search()"> Intel i3
                     <button class="expand-btn" onclick="toggleDetails('i3Details')">Expand</button>
                     <ul id="i3Details" class="details-list">
-                        <li><input type="checkbox" value="INTEL I3 G1" onchange="search()"> 1st Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G2" onchange="search()"> 2nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G3" onchange="search()"> 3nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G4" onchange="search()"> 4nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G5" onchange="search()"> 5nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G6" onchange="search()"> 6nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G7" onchange="search()"> 7nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G8" onchange="search()"> 8nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G9" onchange="search()"> 9nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G10" onchange="search()"> 10nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G11" onchange="search()"> 11nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G12" onchange="search()"> 12nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G13" onchange="search()"> 13nd Gen</li>
-                        <li><input type="checkbox" value="INTEL I3 G14" onchange="search()"> 14nd Gen</li>
-
-                        <!-- Add all other generations here -->
+                        <li><input type="checkbox" value="INTEL I3 G6" onchange="search()"> 6th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G7" onchange="search()"> 7th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G8" onchange="search()"> 8th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G9" onchange="search()"> 9th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G10" onchange="search()"> 10th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G11" onchange="search()"> 11th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G12" onchange="search()"> 12th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G13" onchange="search()"> 13th Gen</li>
                         <li><input type="checkbox" value="INTEL I3 G14" onchange="search()"> 14th Gen</li>
                     </ul>
                 </li>
@@ -81,30 +74,43 @@
                     <input type="checkbox" value="INTEL I5" onchange="search()"> Intel i5
                     <button class="expand-btn" onclick="toggleDetails('i5Details')">Expand</button>
                     <ul id="i5Details" class="details-list">
-                        <li><input type="checkbox" value="INTEL I5 G1" onchange="search()"> 1st Gen</li>
-                        <li><input type="checkbox" value="INTEL I5 G2" onchange="search()"> 2nd Gen</li>
-                        <!-- Add all other generations here -->
-                        <li><input type="checkbox" value="INTEL I5 G14" onchange="search()"> 14th Gen</li>
+                        <li><input type="checkbox" value="INTEL I5 G6" onchange="search()"> 6th Gen</li>
+                        <li><input type="checkbox" value="INTEL I5 G7" onchange="search()"> 7th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G8" onchange="search()"> 8th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G9" onchange="search()"> 9th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G10" onchange="search()"> 10th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G11" onchange="search()"> 11th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G12" onchange="search()"> 12th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G13" onchange="search()"> 13th Gen</li>
+                        <li><input type="checkbox" value="INTEL i5 G14" onchange="search()"> 14th Gen</li>
                     </ul>
                 </li>
                 <li>
                     <input type="checkbox" value="INTEL I7" onchange="search()"> Intel i7
                     <button class="expand-btn" onclick="toggleDetails('i7Details')">Expand</button>
                     <ul id="i7Details" class="details-list">
-                        <li><input type="checkbox" value="INTEL I7 G1" onchange="search()"> 1st Gen</li>
-                        <li><input type="checkbox" value="INTEL I7 G2" onchange="search()"> 2nd Gen</li>
-                        <!-- Add all other generations here -->
-                        <li><input type="checkbox" value="INTEL I7 G14" onchange="search()"> 14th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G6" onchange="search()"> 6th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G7" onchange="search()"> 7th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G8" onchange="search()"> 8th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G9" onchange="search()"> 9th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G10" onchange="search()"> 10th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G11" onchange="search()"> 11th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G12" onchange="search()"> 12th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G13" onchange="search()"> 13th Gen</li>
+                        <li><input type="checkbox" value="INTEL i7 G14" onchange="search()"> 14th Gen</li>
                     </ul>
                 </li>
                 <li>
                     <input type="checkbox" value="INTEL I9" onchange="search()"> Intel i9
                     <button class="expand-btn" onclick="toggleDetails('i9Details')">Expand</button>
                     <ul id="i9Details" class="details-list">
-                        <li><input type="checkbox" value="INTEL I9 G1" onchange="search()"> 1st Gen</li>
-                        <li><input type="checkbox" value="INTEL I9 G2" onchange="search()"> 2nd Gen</li>
-                        <!-- Add all other generations here -->
-                        <li><input type="checkbox" value="INTEL I9 G14" onchange="search()"> 14th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G8" onchange="search()"> 8th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G9" onchange="search()"> 9th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G10" onchange="search()"> 10th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G11" onchange="search()"> 11th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G12" onchange="search()"> 12th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G13" onchange="search()"> 13th Gen</li>
+                        <li><input type="checkbox" value="INTEL I3 G14" onchange="search()"> 14th Gen</li>
                     </ul>
                 </li>
             </ul>
@@ -114,56 +120,13 @@
 
     <!-- Products -->
     <section class="product-list">
-        <div class="product">
-            <img src="Pics/laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
-                <h3>Lenovo Idealpad 1</h3>
-                <h4>Specifications:</h4>
-                <h5>Model Name: Ideapad 1 15" - 82R400EMUS <br>
-                    Screen Size	15.6 Inches<br>
-                    Color:	Gray<br>
-                    Hard Disk Size:	512 GB<br>
-                    CPU Model:	AMD Ryzen 5 5500U<br>
-                    Ram Memory Installed Size:	8 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Anti Glare Coating<br>
-                    Graphics Card Description:	Integrated</h5>
-                <h4>Price: $299</h4>
-        </div>
-        <div class="product">
-            <img src="Pics/laptop Images/HP Newest 14.jpg" alt="Laptop 1">
-                <h3>Hp Newest 14</h3>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	HP Laptop<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Snowflake White<br>
-                    Hard Disk Size:	64 GB<br>
-                    CPU Model:	Celeron N<br>
-                    Ram Memory Installed Size:	8 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	HD Audio<br>
-                    Graphics Card Description:	Integrated</h5>
-                    <h4>Price: $222</h4>
-        </div>
-        <div class="product">
+        <div class="product" id="inteli3g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Inspiron 15 3000 3520</h3>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Dell Inspiron<br>
-                    Screen Size:	15.6 Inches<br>
-                    Color:	Black<br>
-                    Hard Disk Size:	1 TB<br>
-                    CPU Model:	Core i5<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Pro<br>
-                    Special Feature:	Numeric Keypad<br>
-                    Graphics Card Description:	Integrated</h5>
-                <h4>Price: $420</h4>
-        </div>
-        <div class="product">
-            <img src="Pics/laptop Images/Acer Swift Go Intel Evo Thin & Light Premium Laptop.jpg" alt="Laptop 1">
-                <h3>Acer Swift Go Intel Evo 1</h3>
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 50000 Rs</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 6th Gen<br>
                     Screen Size:	14 Inches<br>
                     Color:	Silver<br>
                     Hard Disk Size:	512<br>
@@ -172,11 +135,571 @@
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                <h4>Price: $529</h4>
+                
         </div>
+        <div class="product" id="inteli3g7">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 65000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 7th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g8">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 80000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 8th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g9">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 90000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 9th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g10">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 110000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 10th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g11">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 130000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 11th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g12">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 146184 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 12th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g13">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 170000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 13th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli3g14">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 190000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I3 14th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g6">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 80000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 6th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g7">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 100000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 7th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g8">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 125000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 8th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g9">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 135000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 9th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g10">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 145000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 10th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g11">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 165000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 11th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g12">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 190000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 12th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g13">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 210000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 13th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli5g14">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 230000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I5 14th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g6">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 130000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 6th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g7">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 150000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 7th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g8">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 170000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 8th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g9">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 190000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 9th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g10">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 200000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 10th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g11">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 220000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 11th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g12">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 240000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 12th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+        </div>
+        <div class="product" id="inteli9g13">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 260000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 13th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli7g14">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 280000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I7 14th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli9g8">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 210000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I9 8th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli9g9">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 225000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I9 9th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli9g10">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 240000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: i9 10th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli9g11">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 255000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I9 11th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+        </div>
+        <div class="product" id="inteli9g12">
+            <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                <h3>Dell Swift Go Intel Evo 1</h3>
+                <h4>Price: 265000 Rs</h4>
+                <h4>Specifications:</h4>
+                <h5>Model Name:	Swift Go 14<br>
+                    Generation: I9 12th Gen<br>
+                    Screen Size:	14 Inches<br>
+                    Color:	Silver<br>
+                    Hard Disk Size:	512<br>
+                    CPU Model:	Intel Core i7-1355U<br>
+                    Ram Memory Installed Size:	16 GB<br>
+                    Operating System:	Windows 11 Home<br>
+                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                    Graphics Card Description:	Integrated</h5>
+                
+                </div>
+                <div class="product" id="inteli9g13">
+                    <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                        <h3>Dell Swift Go Intel Evo 1</h3>
+                        <h4>Price: 270000 Rs</h4>
+                        <h4>Specifications:</h4>
+                        <h5>Model Name:	Swift Go 14<br>
+                            Generation: I9 13th Gen<br>
+                            Screen Size:	14 Inches<br>
+                            Color:	Silver<br>
+                            Hard Disk Size:	512<br>
+                            CPU Model:	Intel Core i7-1355U<br>
+                            Ram Memory Installed Size:	16 GB<br>
+                            Operating System:	Windows 11 Home<br>
+                            Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                            Graphics Card Description:	Integrated</h5>
+                        
+                        </div>
+                <div class="product" id="inteli9g14">
+                         <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
+                            <h3>Dell Swift Go Intel Evo 1</h3>
+                            <h4>Price: 285000 Rs</h4>
+                            <h4>Specifications:</h4>
+                            <h5>Model Name:	Swift Go 14<br>
+                                Generation: I9 14th Gen<br>
+                                Screen Size:	14 Inches<br>
+                                Color:	Silver<br>
+                                Hard Disk Size:	512<br>
+                                CPU Model:	Intel Core i7-1355U<br>
+                                Ram Memory Installed Size:	16 GB<br>
+                                Operating System:	Windows 11 Home<br>
+                                Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
+                                Graphics Card Description:	Integrated</h5>   
+                        </div>
         <!-- Add more products as needed -->
     </section>
 </div>
+
 
 
 <script type="text/javascript">
@@ -222,6 +745,79 @@
             }
         });
     }
+    function filterByPrice() {
+    let rangeValue = parseInt(document.getElementById('priceRange').value);
+    document.getElementById('priceValue').innerText = rangeValue;
+    let items = document.querySelectorAll('.product');
+    
+    items.forEach(item => {
+        let priceElement = item.querySelector('h4');
+        let priceValue = priceElement ? priceElement.textContent.match(/\d+/g) : null;
+        let priceNumber = priceValue ? parseInt(priceValue[0]) : 0;
+
+        if (priceNumber <= rangeValue) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', filterByPrice);
+function search() {
+            // Get all Intel checkboxes (including generation checkboxes)
+            const i3Checkboxes = document.querySelectorAll('#i3Details input[type="checkbox"]');
+            const i5Checkboxes = document.querySelectorAll('#i5Details input[type="checkbox"]');
+            const i7Checkboxes = document.querySelectorAll('#i7Details input[type="checkbox"]');
+            const i9Checkboxes = document.querySelectorAll('#i9Details input[type="checkbox"]');
+
+            // Get all products
+            const products = document.querySelectorAll('.product');
+
+            // Check if any checkbox is checked
+            const anyCheckboxChecked = [i3Checkboxes, i5Checkboxes, i7Checkboxes, i9Checkboxes].some(checkboxes =>
+                Array.from(checkboxes).some(checkbox => checkbox.checked)
+            );
+
+            products.forEach(product => {
+                let shouldDisplay = false;
+
+                // Check Intel i3 generation
+                i3Checkboxes.forEach(checkbox => {
+                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
+                        shouldDisplay = true;
+                    }
+                });
+
+                // Check Intel i5 generation
+                i5Checkboxes.forEach(checkbox => {
+                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
+                        shouldDisplay = true;
+                    }
+                });
+
+                // Check Intel i7 generation
+                i7Checkboxes.forEach(checkbox => {
+                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
+                        shouldDisplay = true;
+                    }
+                });
+
+                // Check Intel i9 generation
+                i9Checkboxes.forEach(checkbox => {
+                    if (checkbox.checked && product.id === checkbox.value.toLowerCase().replace(/\s+/g, '')) {
+                        shouldDisplay = true;
+                    }
+                });
+
+                // If no checkbox is checked, or if a product should be displayed based on the selected checkboxes
+                product.style.display = !anyCheckboxChecked || shouldDisplay ? 'block' : 'none';
+            });
+        }
+
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
     
     
