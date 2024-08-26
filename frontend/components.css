@@ -56,6 +56,7 @@ header {
 /* Sidebar on the left */
 .sidebar { /* Sidebar takes 20% of the screen width */
   background-color:white;
+  margin-left: 5px;
   color:black;
   flex-wrap: wrap;
   border: 2px solid #ccc;
@@ -124,7 +125,7 @@ header {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   top: 207px;
-  left: 712px;
+  left: 720px;
   position: absolute;
   font-size: 25px;
 }
