@@ -27,71 +27,391 @@
             <li><a href="#">Support</a></li>
             </ul>
         </nav>
-    </header>
-        <nav class="sidebar">
-            <ul>
-                <li><a href="#processors">Processors</a></li>
-                <li><a href="#motherboards">Motherboards</a></li>
-                <li><a href="#memory">Memory</a></li>
-                <li><a href="#storage">Storage</a></li>
-                <li><a href="#graphics-cards">Graphics Cards</a></li>
-                <li><a href="#power-supplies">Power Supplies</a></li>
-                <li><a href="#cases">Cases</a></li>
-            </ul>
-        </nav>
-        <div class="main-content">
-            <section id="components">
-                <div class="filters">
-                    <h2>Filters</h2>
-                    <div class="filter-group">
-                        <h3>Rating</h3>
-                        <select>
-                            <option value="all">All</option>
-                            <option value="4">4 Stars & Up</option>
-                            <option value="3">3 Stars & Up</option>
-                            <option value="2">2 Stars & Up</option>
-                            <option value="1">1 Star & Up</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Vendors</h3>
-                        <select>
-                            <option value="all">All</option>
-                            <option value="vendor1">Vendor 1</option>
-                            <option value="vendor2">Vendor 2</option>
-                            <option value="vendor3">Vendor 3</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Price</h3>
-                        <select>
-                            <option value="all">All</option>
-                            <option value="0-50">$0 - $50</option>
-                            <option value="51-100">$51 - $100</option>
-                            <option value="101-200">$101 - $200</option>
-                            <option value="201-500">$201 - $500</option>
-                            <option value="500+">$500+</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="component-list">
-                    <h2>Processors</h2>
-                    <!-- Example of component items -->
-                    <div class="component-item">
-                        <h3>Processor 1</h3>
-                        <p>Rating: 4.5 Stars</p>
-                        <p>Vendor: Vendor 1</p>
-                        <p>Price: $250</p>
-                    </div>
-                    <div class="component-item">
-                        <h3>Processor 2</h3>
-                        <p>Rating: 4 Stars</p>
-                        <p>Vendor: Vendor 2</p>
-                        <p>Price: $300</p>
-                    </div>
-                    <!-- More components -->
-                </div>
-            </section>
+    </header><div class="container">
+        <div class="sidebar">
+          <h2>Categories</h2>
+          <ul>
+            <li>CPU</li>
+            <li>GPU</li>
+            <li>Motherboard</li>
+            <li>SSD</li>
+            <li>Cooling Fans</li>
+            <li>Casing</li>
+            <li>RAM</li>
+          </ul>
         </div>
-</body>
+        <div class="main-content">
+          <div class="top-bar">
+            <div class="search-bar">
+              <input type="text" placeholder="Search for components...">
+              <button type="submit">Search</button>
+            </div>
+            <!-- Filters -->
+            <div class="filters">
+              <div class="filter">
+                <label>Company:</label>
+                <select>
+                  <option value="intel">Intel</option>
+                  <option value="amd">AMD</option>
+                  <option value="gigabyte">Gigabyte</option>
+                  <option value="kingston">Kingston</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label>Rating:</label>
+                <select>
+                  <option value="high">High to Low</option>
+                  <option value="low">Low to High</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label>Price:</label>
+                <select>
+                  <option value="asc">Ascending</option>
+                  <option value="desc">Descending</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="product-grid">
+            <div class="product-card" id="amd">
+              <img src="Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg" alt="Product 1">
+              <h3>Name: AMD Ryzen 3 3200G 4-Core</h3>
+              <h4>Price: PKR 28,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 3.6 GHz<br>Max boost clock: 4.0 GHz<br>Integrated Radeon Vega 8 Graphics<br>Unlocked for overclocking<br>Thermal Design Power (TDP): 65W</h5>
+              
+            </div>
+      
+            <div class="product-card" id="amd">
+              <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
+              <h3>Name: AMD Ryzen 5 7600X</h3>
+              <h4>Price: PKR 57,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h5>
+              
+            </div>
+            <div class="product-card" id="amd">
+              <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
+              <h3>Name: AMD Ryzen 7 7800X</h3>
+              <h4>Price: PKR 75,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 4.5 GHz<br>Max boost clock: 5.2 GHz<br>8 Cores / 16 Threads<br>Support for DDR5<br>Thermal Design Power (TDP): 120W</h5>
+              
+            </div>
+            <div class="product-card" id="amd">
+              <img src="Pics/cpu/AMD Ryzen 9 9900X Twelve Core 5.60GHz.jpg" alt="Product 4">
+              <h3>Name: AMD Ryzen 9 9900X Twelve Core 5.60GHz</h3>
+              <h4>Price: PKR 115,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 3.8 GHz<br>Max boost clock: 5.6 GHz<br>12 Cores / 24 Threads<br>Precision Boost 2 technology<br>Thermal Design Power (TDP): 140W</h5>
+            </div>
+            <div class="product-card" id="intel">
+              <img src="Pics/cpu/core i3.jpg" alt="Product 5">
+              <h3>Name: Intel Core i3 10th Gen</h3>
+              <h4>Price: PKR 22,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 3.6 GHz<br>Max turbo frequency: 4.2 GHz<br>4 Cores / 8 Threads<br>Integrated Intel UHD Graphics 630<br>Thermal Design Power (TDP): 65W</h5>
+              
+            </div>
+            <div class="product-card" id="intel">
+              <img src="Pics/cpu/core i5.webp" alt="Product 6">
+              <h3>Name: Intel Core i5 10th Gen</h3>
+              <h4>Price: PKR 35,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 2.9 GHz<br>Max turbo frequency: 4.3 GHz<br>6 Cores / 12 Threads<br>Integrated Intel UHD Graphics 630<br>Thermal Design Power (TDP): 65W</h5>
+              
+            </div>
+            <div class="product-card" id="intel">
+              <img src="Pics/cpu/core i7 10th gen.jpg" alt="Product 7">
+              <h3>Name: Intel Core i7 10th Gen</h3>
+              <h4>Price: PKR 52,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 2.9 GHz<br>Max turbo frequency: 4.8 GHz<br>8 Cores / 16 Threads<br>Intel Turbo Boost Max Technology 3.0<br>Thermal Design Power (TDP): 65W</h5>
+              
+            </div>
+            <div class="product-card" id="intel">
+              <img src="Pics/cpu/core i7.jpg" alt="Product 8">
+              <h3>Name: Intel Core i7 12th Gen</h3>
+              <h4>Price: PKR 65,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 3.6 GHz<br>Max turbo frequency: 4.9 GHz<br>8 Cores / 16 Threads<br>Support for PCIe 5.0 and DDR5<br>Thermal Design Power (TDP): 125W</h5>
+              
+            </div>
+            <div class="product-card" id="intel">
+              <img src="Pics/cpu/core i9.jpeg" alt="Product 9">
+              <h3>Name: Intel Core i9 14th Gen</h3>
+              <h4>Price: PKR 95,000</h4>
+              <h4>Description:</h4>
+              <h5>Base clock: 3.7 GHz<br>Max turbo frequency: 5.8 GHz<br>16 Cores / 24 Threads<br>Advanced Intel Thermal Velocity Boost<br>Thermal Design Power (TDP): 125W</h5>
+            </div>
+            <div class="product-card" id="amd_gpu">
+              <img src="Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp" alt="Product 2">
+              <h3>Name: AORUS Radeon RX 5700 XT 8G (rev. 2.0)</h3>
+              <h4>Price: PKR 75,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 8GB GDDR6<br>Base clock: 1,605 MHz<br>Boost clock: 1,905 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Windforce 3X cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="amd_gpu">
+              <img src="Pics/gpu/AMD/AORUS Radeon™ RX 7900 XTX ELITE 24G.webp" alt="Product 2">
+              <h3>Name: AORUS Radeon RX 7900 XTX ELITE 24G</h3>
+              <h4>Price: PKR 250,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 24GB GDDR6<br>Base clock: 1,900 MHz<br>Boost clock: 2,500 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced triple-fan cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="amd_gpu">
+              <img src="Pics/gpu/AMD/Radeon™ PRO W7800 AI TOP 32G.webp" alt="Product 2">
+              <h3>Name: Radeon PRO W7800 AI TOP 32G</h3>
+              <h4>Price: PKR 400,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 32GB GDDR6<br>Base clock: 1,700 MHz<br>Boost clock: 2,100 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Optimized for professional workloads and AI</h5>
+              
+            </div>
+            <div class="product-card" id="amd_gpu">
+              <img src="Pics/gpu/AMD/Radeon™ VII HBM2 16G.webp" alt="Product 2">
+              <h3>Name: Radeon VII HBM2 16G</h3>
+              <h4>Price: PKR 150,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 16GB HBM2<br>Base clock: 1,400 MHz<br>Boost clock: 1,750 MHz<br>Interface: PCIe 3.0 x16<br>Max resolution: 7680x4320<br>Built on 7nm architecture</h5>
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp" alt="Product 2">
+              <h3>Name: AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G</h3>
+              <h4>Price: PKR 450,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 24GB GDDR6X<br>Base clock: 1,560 MHz<br>Boost clock: 1,860 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: AORUS WATERFORCE all-in-one cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp" alt="Product 2">
+              <h3>Name: AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G</h3>
+              <h4>Price: PKR 150,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 11GB GDDR5X<br>Base clock: 1,607 MHz<br>Boost clock: 1,721 MHz<br>Interface: PCIe 3.0 x16<br>Max resolution: 7680x4320<br>Cooling: Waterforce water block cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti AERO OC 16G.webp" alt="Product 2">
+              <h3>Name: GeForce RTX™ 4060 Ti AERO OC 16G</h3>
+              <h4>Price: PKR 115,000</h4>
+              <h4>Description:</h5>
+              <h5>Memory: 16GB GDDR6<br>Base clock: 2,310 MHz<br>Boost clock: 2,580 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced Windforce cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti GAMING OC 16G.webp" alt="Product 2">
+              <h3>Name: GeForce RTX™ 4060 Ti GAMING OC 16G</h3>
+              <h4>Price: PKR 120,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 16GB GDDR6<br>Base clock: 2,310 MHz<br>Boost clock: 2,580 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Triple-fan Windforce cooling system</h5>
+
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/GeForce RTX™ 4070 Ti SUPER AI TOP 16G.webp" alt="Product 2">
+              <h3>Name: GeForce RTX™ 4070 Ti SUPER AI TOP 16G</h3>
+              <h4>Price: PKR 200,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 16GB GDDR6X<br>Base clock: 2,310 MHz<br>Boost clock: 2,610 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced triple-fan cooling system</h5>
+
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/GeForce® GTX 1660 Ti GAMING OC 6G.webp" alt="Product 2">
+              <h3>Name: GeForce® GTX 1660 Ti GAMING OC 6G</h3>
+              <h4>Price: PKR 65,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 6GB GDDR6<br>Base clock: 1,500 MHz<br>Boost clock: 1,770 MHz<br>Interface: PCIe 3.0 x16<br>Max resolution: 7680x4320<br>Cooling: Windforce dual-fan cooling system</h5>
+
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/rtx 3080.jpg" alt="Product 2">
+              <h3>Name: GeForce RTX™ 3080</h3>
+              <h4>Price: PKR 250,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 10GB GDDR6X<br>Base clock: 1,440 MHz<br>Boost clock: 1,710 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Triple-fan cooling system</h5>
+              
+            </div>
+            <div class="product-card" id="nvidia_gpu">
+              <img src="Pics/gpu/nvidia/rx 6800.jpg" alt="Product 2">
+              h3>Name: Radeon RX 6800</h3>
+              <h4>Price: PKR 175,000</h4>
+              <h4>Description:</h4>
+              <h5>Memory: 16GB GDDR6<br>Base clock: 1,815 MHz<br>Boost clock: 2,105 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Triple-fan cooling system</h5>
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/asus motherboard.jpg" alt="Product 2">
+              <h3>Name: ASUS B650M S2H (rev. 1.2)</h3>
+              <h4>Price: PKR 35,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: AM5<br>Chipset: B650M<br>Form Factor: Micro-ATX<br>Memory: DDR5 support, up to 128GB<br>PCIe 5.0 support<br>Networking: Gigabit LAN</h5>
+
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/intel B760M D3HP.webp" alt="Product 2">
+              <h3>Name: Intel B760M D3HP</h3>
+              <h4>Price: PKR 28,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: LGA 1700<br>Chipset: B760<br>Form Factor: Micro-ATX<br>Memory: DDR4 support, up to 128GB<br>PCIe 4.0 support<br>Networking: Gigabit LAN</h5>
+              
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/intel X299 AORUS Gaming 7 (rev. 1.0).webp" alt="Product 2">
+              <h3>Name: Intel X299 AORUS Gaming 7 (rev. 1.0)</h3>
+              <h4>Price: PKR 65,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: LGA 2066<br>Chipset: X299<br>Form Factor: ATX<br>Memory: DDR4 support, up to 128GB<br>PCIe 3.0 support<br>Networking: Dual Gigabit LAN, Wi-Fi</h5>
+              
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp" alt="Product 2">
+              <h3>Name: Intel X299X AORUS MASTER (rev. 1.x)</h3>
+              <h4>Price: PKR 90,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: LGA 2066<br>Chipset: X299X<br>Form Factor: ATX<br>Memory: DDR4 support, up to 256GB<br>PCIe 3.0 support<br>Networking: 10GbE LAN, Wi-Fi 6</h5>
+              
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/msi motherboard.jpg" alt="Product 2">
+              <h3>Name: MSI X870E AORUS MASTER</h3>
+              <h4>Price: PKR 70,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: AM5<br>Chipset: X870E<br>Form Factor: ATX<br>Memory: DDR5 support, up to 128GB<br>PCIe 5.0 support<br>Networking: 10GbE LAN, Wi-Fi 6E</h5>
+              
+            </div>
+            <div class="product-card" id="Motherboard">
+              <img src="Pics/Motherboard/X870E AORUS MASTER.webp" alt="Product 2">
+              <h3>Name: MSI X870E AORUS PRO</h3>
+              <h4>Price: PKR 55,000</h4>
+              <h4>Description:</h4>
+              <h5>Socket: AM5<br>Chipset: X870E<br>Form Factor: ATX<br>Memory: DDR5 support, up to 128GB<br>PCIe 5.0 support<br>Networking: 2.5GbE LAN, Wi-Fi 6E</h5>
+            </div>
+            <div class="product-card" id="RAM">
+              <img src="Pics/ram/DESIGNARE Memory 64GB (2x32GB).webp" alt="Product 2">
+              <h3>Name: DESIGNARE Memory 64GB (2x32GB)</h3>
+              <h4>Price: PKR 85,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: DDR4<br>Speed: 3200MHz<br>Capacity: 64GB (2x32GB)<br>Latency: CL16<br>Voltage: 1.35V<br>Features: High-performance design, optimized for professional workloads, RGB lighting</h5>
+              
+            </div>
+            <div class="product-card" id="RAM">
+              <img src="Pics/ram/GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp" alt="Product 2">
+              <h3>Name: GIGABYTE Memory 16GB (2x8GB) 2666MHz</h3>
+              <h4>Price: PKR 18,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: DDR4<br>Speed: 2666MHz<br>Capacity: 16GB (2x8GB)<br>Latency: CL16<br>Voltage: 1.2V<br>Features: Reliable performance, ideal for gaming and multitasking</h5>
+              
+            </div>
+            <div class="product-card" id="RAM">
+              <img src="Pics/ram/RGB Memory DDR5 32GB (2x16GB).webp" alt="Product 2">
+              <h3>Name: GIGABYTE Memory 16GB (2x8GB) 2666MHz</h3>
+              <h4>Price: PKR 18,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: DDR4<br>Speed: 2666MHz<br>Capacity: 16GB (2x8GB)<br>Latency: CL16<br>Voltage: 1.2V<br>Features: Reliable performance, ideal for gaming and multitasking</h5>
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/AORUS Gen5 14000 SSD 1TB.webp" alt="Product 2">
+              <h3>Name: AORUS Gen5 14000 SSD 1TB</h3>
+<h4>Price: PKR 65,000</h4>
+<h4>Description:</h4>
+<h5>Type: NVMe SSD<br>Interface: PCIe 5.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 14,000 MB/s<br>Write Speed: Up to 13,000 MB/s<br>Form Factor: M.2 2280<br>Features: Advanced thermal solution, high endurance</h5>
+
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE Gen4 4000E SSD 250GB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE Gen4 4000E SSD 250GB</h3>
+              <h4>Price: PKR 15,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 250GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance, suitable for gaming and everyday use</h5>
+              
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE Gen4 4000E SSD 500GB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE Gen4 4000E SSD 500GB</h3>
+              <h4>Price: PKR 25,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance, suitable for gaming and everyday use</h5>
+              
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE M.2 SSD 500GB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE M.2 SSD 500GB</h3>
+              <h4>Price: PKR 20,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 2,100 MB/s<br>Form Factor: M.2 2280<br>Features: Reliable performance, ideal for system boot drive</h5>
+              
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE NVMe SSD 1TB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE NVMe SSD 1TB</h4>
+                <h4>Price: PKR 35,000</h4>
+                <h4>Description:</h4>
+                <h5>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 3,000 MB/s<br>Form Factor: M.2 2280<br>Features: High capacity and speed, ideal for gaming and data storage</h5>
+                
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE SSD 512GB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE SATA SSD 512GB</h3>
+              <h4>Price: PKR 12,000</h4>
+              <h4>Description:</h4>
+              <h5>Type: SATA SSD<br>Interface: SATA III<br>Capacity: 512GB<br>Read Speed: Up to 550 MB/s<br>Write Speed: Up to 500 MB/s<br>Form Factor: 2.5-inch<br>Features: Affordable and reliable, ideal for upgrading laptops or desktops</h5>
+              
+            </div>
+            <div class="product-card" id="SSD">
+              <img src="Pics/ssd/GIGABYTE UD PRO SSD 1TB.webp" alt="Product 2">
+              <h3>Name: GIGABYTE UD PRO SSD 1TB</h3>
+              <h4>Price: PKR 30,000</h4>
+              <h4>Description:</h4>
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/AC300W (rev. 2.0).webp" alt="Product 2">
+              <h3>Name: AC300W (rev. 2.0)</h3>
+              <h4>Price: PKR 12,000</h4>
+              <h4>Description:</h4>
+              <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0, Audio ports<br>Features: Transparent side panel, cable management options</h5>
+              
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/AORUS C300 GLASS.webp" alt="Product 2">
+              <h3>Name: AORUS C300 GLASS</h3>
+              <h4>Price: PKR 18,000</h4>
+              <h4>Description:</h4>
+              <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, RGB lighting, cable management options</h5>
+              
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/AORUS C400 GLASS.webp" alt="Product 2">
+              <h3>Name: AORUS C400 GLASS</h3>
+              <h4>Price: PKR 22,000</h4>
+              <h4>Description:</h4>
+              <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, support for liquid cooling<br>Front I/O: USB 3.1 Gen 2, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, RGB Fusion 2.0, cable management options</h5>
+              
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/AORUS C500 GLASS.webp" alt="Product 2">
+              <h3>Name: AORUS C500 GLASS</h4>
+                <h4>Price: PKR 28,000</h4>
+                <h4>Description:</h4>
+                <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, extensive support for liquid cooling<br>Front I/O: USB 3.1 Gen 2 Type-C, USB 3.0, Audio ports<br>Features: Tempered glass side panel, RGB Fusion 2.0, advanced cable management options</h5>
+                
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/Sumo 5112.webp" alt="Product 2">
+              <h3>Name: Sumo 5112</h3>
+              <h4>Price: PKR 10,000</h4>
+              <h4>Description:</h4>
+              <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0, Audio ports<br>Features: Solid build quality, easy cable management</h5>
+              
+            </div>
+            <div class="product-card" id="Casing">
+              <img src="Pics/Casing/XC700W.webp" alt="Product 2">
+              <h3>Name: XC700W</h3>
+              <h4>Price: PKR 20,000</h4>
+              <h4>Description:</h4>
+              <h5>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm RGB fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, customizable RGB lighting, superior airflow design</h5>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </body>
 </html>
