@@ -193,12 +193,10 @@ nav ul li a {
     }
     .toggle-rating-container {
       display: flex;
-      align-items: center;
       justify-content: space-between;
   }
   
   .star-rating {
-    float: right;
       display: inline-block;
       margin-right: 50px;
       cursor: pointer;
