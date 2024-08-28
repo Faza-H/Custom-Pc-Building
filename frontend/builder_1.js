@@ -1,6 +1,6 @@
 function chooseComponent(component) {
     // Redirect to your store page
-    window.location.href = `/store.html?component=${component}`;
+    window.location.href = `/components.html?component=${component}`;
 }
 
 // On your store page, handle selection and redirect back to builder
@@ -9,12 +9,12 @@ function selectComponent(component, wattage) {
     localStorage.setItem(component, wattage);
 
     // Redirect back to the builder page
-    window.location.href = `/builder.html`;
+    window.location.href = `/builder_1.html`;
 }
 
 // On the builder page, calculate the total wattage
 window.onload = function() {
-    const components = ['cpu', 'cpu-cooler', 'motherboard', 'memory', 'storage', 'gpu', 'case', 'power-supply'];
+    const components = ['cpu', 'motherboard', 'ram', 'storage', 'gpu', 'case', 'power-supply'];
     let totalWattage = 0;
 
     components.forEach(component => {
