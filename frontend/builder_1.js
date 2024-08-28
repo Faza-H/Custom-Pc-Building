@@ -11,7 +11,6 @@ function selectComponent(component, wattage) {
     // Redirect back to the builder page
     window.location.href = `/builder_1.html`;
 }
-
 // On the builder page, calculate the total wattage
 window.onload = function() {
     const components = ['cpu', 'motherboard', 'ram', 'storage', 'gpu', 'case', 'power-supply'];
@@ -25,6 +24,6 @@ window.onload = function() {
             document.querySelector(`button[onclick="chooseComponent('${component}')"]`).innerText = `✔ Component Selected (${wattage}W)`;
         }
     });
-
+    
     document.getElementById('wattage').innerText = `${totalWattage}W`;
 };

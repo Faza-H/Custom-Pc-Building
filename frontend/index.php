@@ -12,21 +12,21 @@
       <h1>Custom PC Builder</h1>
       <nav class="navbar">
           <ul>
-              <li><a href="index.html">Home</a></li>
-          <li><a href="pre-builds.html">Pre Builds</a></li>
-          <li><a href="laptops.html">Laptops</a></li>
-          <!--Pre builds section would add the budget friendly and filtering option-->
-          <li><a href="components.html">Components</a></li>
-          <li><a href="phone.html">Handheld Devices</a></li>
-          <!-- handheld devices would include mobile devices and tablets-->
-          <li><a href="#">About Us</a></li>
-          <!--would include the goals, and about the company-->
-          <li><a href="#">Community</a></li>
-          <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
-          <li><a href="../login.php">Sign In</a></li>
-          <li><a href="../register.php">Signup</a></li>
-          <li><a href="#">Support</a></li>
-          </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pre-builds.html">Pre Builds</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <!--Pre builds section would add the budget friendly and filtering option-->
+            <li><a href="components.html">Components</a></li>
+            <li><a href="phone.html">Handheld Devices</a></li>
+            <!-- handheld devices would include mobile devices and tablets-->
+            <li><a href="#">About Us</a></li>
+            <!--would include the goals, and about the company-->
+            <li><a href="#">Community</a></li>
+            <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
+            <li><a href="../login.php">Sign In</a></li>
+            <li><a href="../register.php">Signup</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
       </nav>
     </header>
     
