@@ -170,7 +170,7 @@ nav ul li a {
       gap: 30px;
       top: 0;
       display: flex;
-      margin-left: 750px;
+      margin-left: 230px;
     }
     
     .filters .filter {
@@ -222,3 +222,23 @@ nav ul li a {
       color: #ffd700;
   }
   
+  .search {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    }
+    
+    .search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    }
+    
+    .search button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    }
+    

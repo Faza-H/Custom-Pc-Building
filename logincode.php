@@ -29,7 +29,7 @@ if(isset($_POST['login_btn']))
         if($_SESSION['auth_role'] == '1')//1=admin
         {
             $_SESSION['message'] = "Welcome to Dashboard";
-            header("Location: admin/index.php");
+            header("Location: index.php");
             exit(0);
         }
         elseif($_SESSION['auth_role'] == '0') //0=user

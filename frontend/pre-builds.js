@@ -1,7 +1,3 @@
-function changeImage(src) {
-    document.getElementById('main-image').src = src;
-}
-
 function toggleComments() {
     const commentsSection = document.querySelector('.comments-section');
     if (commentsSection.style.display === 'block') {
