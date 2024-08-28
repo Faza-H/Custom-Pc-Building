@@ -5,33 +5,28 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
-    position:relative;
     background-color: #333;
     color: white;
     padding: 10px 0;
-    width: 100%;
-  }
-  header h1{
-    color: white;
+    text-align: left;
   }
   
-  header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+  header h1{
+    color: white;
+    margin-left: 50px;
   }
   
   nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    margin-left: 25px;
+    text-align: left;
   }
   
   nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline;
+    margin: 0 20px;
   }
   
   nav ul li a {
@@ -43,8 +38,8 @@ header {
   .navbar ul li a:hover {
     background-color: gray;
     border-radius: 5px;
-  }
-    
+  }/* Container holding the sidebar, main content, and other elements */
+      
 .container {
     background-color: #fff;
     border-radius: 10px;

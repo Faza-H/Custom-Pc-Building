@@ -8,38 +8,38 @@ body {
 
 /* Header styling */
 header {
-background-color: #333;
-color: white;
-padding: 10px 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: left;
 }
 
-header .logo {
-font-size: 24px;
-font-weight: bold;
-text-align: center;
+header h1{
+  margin-left: 50px;
 }
 
 nav ul {
-list-style-type: none;
-padding: 0;
-text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 25px;
+  text-align: left;
 }
 
 nav ul li {
-display: inline;
-margin: 0 20px;
+  display: inline;
+  margin: 0 20px;
 }
 
 nav ul li a {
-color: white;
-text-decoration: none;
-font-size: 18px;
-padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
 }
 .navbar ul li a:hover {
-background-color: gray;
-border-radius: 5px;
-}
+  background-color: gray;
+  border-radius: 5px;
+}/* Container holding the sidebar, main content, and other elements */
 
 footer {
 background-color: #333;
