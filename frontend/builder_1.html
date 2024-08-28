@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom PC Builder</title>
+    <link rel="stylesheet" href="builder_1.css">
+</head>
+<body>
+    <header>
+        <h1>Custom PC Builder</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            <li><a href="builder_1.html">PC Builder </a></li>
+            <li><a href="pre-builds.html">Pre Builds</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <!--Pre builds section would add the budget friendly and filtering option-->
+            <li><a href="components.html">Components</a></li>
+            <!-- handheld devices would include mobile devices and tablets-->
+            <li><a href="#">About Us</a></li>
+            <!--would include the goals, and about the company-->
+        <!--    <li><a href="#">Community</a></li>-->
+            <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
+            <li><a href="Sign In.html">Sign In</a></li>
+            <li><a href="Sign Up.html">Signup</a></li>
+        <!--    <li><a href="#">Support</a></li>-->
+            </ul>
+        </nav>
+      </header>
+    <div class="builder">
+        <div class="compatibility">
+            <p>✅ Compatibility: No issues or incompatibilities found.</p>
+            <p>⚡ Estimated Wattage: <span id="wattage">0W</span></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Selection</th>
+                    <th>Base</th>
+                    <th>Promo</th>
+                    <th>Shipping</th>
+                    <th>Tax</th>
+                    <th>Price</th>
+                    <th>Where</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td><button onclick="chooseComponent('cpu')">+ Choose A CPU</button></td>
+                    <!-- Additional columns if necessary -->
+                </tr>
+                <tr>
+                    <td>CPU Cooler</td>
+                    <td><button onclick="chooseComponent('cpu-cooler')">+ Choose A CPU Cooler</button></td>
+                </tr>
+                <tr>
+                    <td>Motherboard</td>
+                    <td><button onclick="chooseComponent('motherboard')">+ Choose A Motherboard</button></td>
+                </tr>
+                <tr>
+                    <td>Memory</td>
+                    <td><button onclick="chooseComponent('memory')">+ Choose Memory</button></td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td><button onclick="chooseComponent('storage')">+ Choose Storage</button></td>
+                </tr>
+                <tr>
+                    <td>Video Card</td>
+                    <td><button onclick="chooseComponent('gpu')">+ Choose A Video Card</button></td>
+                </tr>
+                <tr>
+                    <td>Case</td>
+                    <td><button onclick="chooseComponent('case')">+ Choose A Case</button></td>
+                </tr>
+                <tr>
+                    <td>Power Supply</td>
+                    <td><button onclick="chooseComponent('power-supply')">+ Choose A Power Supply</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="builder_1.js"></script>
+</body>
+</html>
