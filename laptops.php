@@ -1,3 +1,11 @@
+<?php 
+
+include('includes/header.php');
+include('includes/navbar.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -701,5 +709,8 @@
         <!-- Add more products as needed -->
     </section>
 </div>
+<?php 
+include('includes/footer.php');
+?>
 </body>
 </html>

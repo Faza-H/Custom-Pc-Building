@@ -4,19 +4,115 @@
 include('includes/header.php');
 include('includes/navbar.php');
 ?>
-
-<div class="py-5">
+<body>
     <div class="container">
         <div class="row">
-            
-            <div class="col-md-2">
+            <div class="col-md-3">
+                <form action="" method="GET">
+                <div class="card shadow mt-3">
+                    <div class="card-header">
+                        <h5>filter
+                            <button type="submit" class="btn btn-primary btn-sm float-end">Search</button>
+                        </h5>
+                        <div class="card-body">
+                            <h6>Brand list</h6>
+                            <hr>
+                            <?php
 
-                <?php
+                                 $brandd = "SELECT * FROM posts";
+                                 $brandd_run = mysqli_query($con, $brandd);
+
+                                 if(mysqli_num_rows($brandd_run) > 0)
+                                 {
+                                    foreach($brandd_run as $brandlist)
+                                    {
+                                        $checked = [];
+                                        if(isset($_GET['brands']))
+                                        {
+                                            $checked = $_GET['brands'];
+                                        }
+
+
+                                        ?>
+                                            <div>
+                                                <input type="checkbox" name="brands[]" value="<?= $brandlist['id'] ?>"
+                                                    <?php if(in_array($brandlist['id'], $checked)){ echo "checked" ;} ?>
+                                                    
+                                                />
+                                                <?= $brandlist['brand']; ?>
+                                            </div>
+                                        <?php
+                                    }
+                                 }
+                                 else
+                                 {
+                                    echo "no result";
+                                 }
+
+                            ?>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body row">
+            <?php
+            if(isset($_GET['brands']))
+            {
+                $bchecked = [];
+                $bchecked = $_GET['brands'];
+                foreach($bchecked as $rowbd)
+                {
+                    $posts = "SELECT * FROM posts WHERE brand_id IN ($rowbd)";
+                    $posts_run = mysqli_query($con, $posts);
+
+                    if(mysqli_num_rows($posts_run) > 0)
+                    {
+                        foreach($posts_run as $postItems)
+                        {
+                        ?>
+                        <div class="col-md-4">
+                            <div class="border p-2">
+                            <form method="post" action="category.php?id=<?= $postItems['id'] ?>">
+                            <a href="post.php?title=<?=$postItems['slug'];?>" class="text-decoration-none">
+                                <img src="uploads/posts/<?=$postItems['image'] ?>" style='height: 150px; '>
+                                <h5><?= $postItems['name']; ?></h5>
+                            </a>
+                                <h5>$<?= number_format($postItems['price'],2); ?></h5>
+                                <input type="hidden" name="name" value="<?= $postItems['name'] ?>">
+                                <input type="hidden" class="text-center" name="price" value="<?= $postItems['price'] ?>">
+                                <input type="number" name="quantity" value="1" class="form-control">
+                                <input type="submit" name="add_to_cart" class="btn btn-warning" 
+                                value="Add To Cart">
+                            
+        
+                            </form>
+                            </div>
+                        </div>
+                        <?php
+                        }    
+                    }
+                    else
+                    {
+                        ?>
+                            <h4>No post available</h4>
+                        <?php
+                    }
+                }
+            }
+                
+         
                 if(isset($_GET['title']))
                 {
                     $slug = mysqli_real_escape_string($con, $_GET['title']);
 
-                    $category = "SELECT id,slug FROM categories WHERE slug='$slug' LIMIT 1";
+                    $category = "SELECT * FROM categories WHERE slug='$slug' LIMIT 1";
                     $category_run = mysqli_query($con, $category);
 
 
@@ -33,18 +129,27 @@ include('includes/navbar.php');
                         {
                             foreach($posts_run as $postItems)
                             {
-                                ?>
-                                    <a href="post.php?title=<?=$postItems['slug'];?>" class="text-decoration-none">
-                                         <div class="card card-body shadow-sm mb-4">
-                                            <img src="uploads/posts/<?=$postItems['image'] ?>" class="card-img-top" alt="" />
-                                            <h5><?=$postItems['name'];?></h5>
-                                            <div>
-                                                <label class="text-dark me-2"> Posted On: <?= date('d-M-Y', strtotime($postItems['created_at'])); ?></label>
-                                            </div>
-                                        </div>
-                                    </a>
-                                <?php
-                            }
+                            ?>
+                            <div class="col-md-4">
+                                <div class="border p-2">
+                                <form method="post" action="category.php?id=<?= $postItems['id'] ?>">
+                                <a href="post.php?title=<?=$postItems['slug'];?>" class="text-decoration-none">
+                                    <img src="uploads/posts/<?=$postItems['image'] ?>" style='height: 150px; '>
+                                    <h5><?= $postItems['name']; ?></h5>
+                                </a>
+                                    <h5>$<?= number_format($postItems['price'],2); ?></h5>
+                                    <input type="hidden" name="name" value="<?= $postItems['name'] ?>">
+                                    <input type="hidden" class="text-center" name="price" value="<?= $postItems['price'] ?>">
+                                    <input type="number" name="quantity" value="1" class="form-control">
+                                    <input type="submit" name="add_to_cart" class="btn btn-warning" 
+                                    value="Add To Cart">
+                                
+            
+                                </form>
+                                </div>
+                            </div>
+                            <?php
+                            }    
                         }
                         else
                         {
@@ -60,31 +165,16 @@ include('includes/navbar.php');
                         <?php
                     }
                 }
-                else
-                {
-                    ?>
-                        <h4>No such url found</h4>
-                    <?php
-                }
-                ?>
+            
+        ?>  
 
-                
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Advertise Area</h4>
                     </div>
-                    <div class="card-body">
-                        your advertise
-                    </div>
-
-                
+                </div>
             </div>
-        </div>
     </div>
-</div>
 
 <?php 
 include('includes/footer.php');
 ?>
+</body>
+</html>
