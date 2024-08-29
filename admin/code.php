@@ -40,8 +40,10 @@ if(isset($_POST['post_update']))
     $post_id = $_POST['post_id'];
     $category_id = $_POST['category_id'];
     $name = $_POST['name'];
+    $brand = $_POST['brand'];
     $slug = $_POST['slug'];
     $description = $_POST['description'];
+    $price = $_POST['price'];
 
     $meta_title = $_POST['meta_title'];
     $meta_description = $_POST['meta_description'];
@@ -65,7 +67,7 @@ if(isset($_POST['post_update']))
 
     $status = $_POST['status'] == true ? '1' : '0';
 
-    $query = "UPDATE posts SET category_id='$category_id', name='$name', slug='$slug',description='$description',image='$update_filename',
+    $query = "UPDATE posts SET category_id='$category_id', name='$name',brand='$brand', slug='$slug',description='$description',price='$price',image='$update_filename',
                     meta_title='$meta_title',meta_description='$meta_description',meta_keyword='$meta_keyword',
                     status='$status' WHERE id='$post_id' ";
     $query_run = mysqli_query($con, $query);
@@ -98,8 +100,10 @@ if(isset($_POST['post_add']))
 {
     $category_id = $_POST['category_id'];
     $name = $_POST['name'];
+    $brand = $_POST['brand'];
     $slug = $_POST['slug'];
     $description = $_POST['description'];
+    $price = $_POST['price'];
 
     $meta_title = $_POST['meta_title'];
     $meta_description = $_POST['meta_description'];
@@ -112,8 +116,8 @@ if(isset($_POST['post_add']))
 
     $status = $_POST['status'] == true ? '1' : '0';
 
-    $query = "INSERT INTO posts (category_id,name,slug,description,image,meta_title,meta_description,meta_keyword,status) VALUES 
-                ('$category_id','$name','$slug','$description','$filename','$meta_title','$meta_description','$meta_keyword','$status')";
+    $query = "INSERT INTO posts (category_id,name,brand,slug,description,price,image,meta_title,meta_description,meta_keyword,status) VALUES 
+                ('$category_id','$name','$brand','$slug','$description','$price','$filename','$meta_title','$meta_description','$meta_keyword','$status')";
     $query_run = mysqli_query($con, $query);
 
     if($query_run)

@@ -78,11 +78,18 @@ include('includes/navbar-top.php');
                                             <label for="">Product ID</label>
                                             <input type="text" name="slug" value="<?= $post_row['slug'] ?>" required class="form-control">
                                         </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="">Brand</label>
+                                            <input type="text" name="brand" value="<?= $post_row['brand'] ?>" required class="form-control">
+                                        </div>
                                         <div class="col-md-12 mb-3">
                                             <label for="">Description</label>
                                             <textarea name="description" id="summernote"  required class="form-control" rows="4"><?= htmlentities($post_row['description']); ?></textarea>
                                         </div>
-                                    
+                                        <div class="col-md-12 mb-3">
+                                            <label for="">Price</label>
+                                            <input type="text" name="price" value="<?= $post_row['price'] ?>" required class="form-control">
+                                        </div>
                                         <div class="col-md-12 mb-3">
                                             <label for="">Meta Title</label>
                                             <input type="text" name="meta_title" value="<?= $post_row['meta_title'] ?>" max="191" required class="form-control">

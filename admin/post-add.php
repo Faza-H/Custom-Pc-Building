@@ -63,9 +63,17 @@ include('includes/navbar-top.php');
                                 <label for="">Product ID</label>
                                 <input type="text" name="slug" required class="form-control">
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Brand</label>
+                                <input type="text" name="brand" required class="form-control">
+                            </div>
                             <div class="col-md-12 mb-3">
                                 <label for="">Description</label>
                                 <textarea name="description" id="summernote" required class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Price</label>
+                                <input type="text" name="price" required class="form-control">
                             </div>
                            
                             <div class="col-md-12 mb-3">

@@ -30,8 +30,13 @@ include('includes/navbar.php');
                                     <div class="card-body">
                                         <label class="text-dark me-2"> Posted On: <?= date('d-M-Y', strtotime($postItems['created_at'])); ?></label>
                                         <hr/>
+                                        
+
                                         <?php if($postItems['image'] != null) : ?>
                                         <img src="uploads/posts/<?=$postItems['image'] ?>" class="w-30" alt="<?=$postItems['name'];?>" />
+                                        <div>
+                                            <h5>Rs <?= number_format($postItems['price'],); ?></h5>
+                                        </div>
                                         <?php endif; ?>
                                         <div>
                                             <?=$postItems['description'];?>
