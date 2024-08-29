@@ -148,6 +148,9 @@ nav ul li a {
   text-align: center;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: space-between;
 }
 
 .product img {
@@ -182,7 +185,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
+  width: 100%;
 }
 
 .button-container button {
