@@ -1,3 +1,9 @@
+<?php 
+
+include('includes/header.php');
+include('includes/navbar.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +13,6 @@
     <link rel="stylesheet" href="builder_1.css">
 </head>
 <body>
-    <header>
-        <h1>Custom PC Builder</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            <li><a href="builder_1.html">PC Builder </a></li>
-            <li><a href="pre-builds.html">Pre Builds</a></li>
-            <li><a href="laptops.html">Laptops</a></li>
-            <!--Pre builds section would add the budget friendly and filtering option-->
-            <li><a href="components.html">Components</a></li>
-            <!-- handheld devices would include mobile devices and tablets-->
-            <li><a href="#">About Us</a></li>
-            <!--would include the goals, and about the company-->
-        <!--    <li><a href="#">Community</a></li>-->
-            <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
-            <li><a href="Sign In.html">Sign In</a></li>
-            <li><a href="Sign Up.html">Signup</a></li>
-        <!--    <li><a href="#">Support</a></li>-->
-            </ul>
-        </nav>
-      </header>
          <div class="heading">
             <h1>Choose Your Parts</h1></div>
         <div class="builder">
@@ -80,5 +65,9 @@
     </div>
 
     <script src="builder_1.js"></script>
+
+<?php 
+include('includes/footer.php');
+?>
 </body>
 </html>
