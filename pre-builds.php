@@ -15,36 +15,12 @@ include('includes/navbar.php');
     <script src="pre-builds.js"></script>
 </head>
 <body style="background-color: brown,;">
-<<<<<<< HEAD:pre-builds.php
-=======
-    <header>
-        <h1>Custom PC Builder</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-            <li><a href="builder_1.html">PC Builder </a></li>
-            <li><a href="pre-builds.html">Pre Builds</a></li>
-            <li><a href="laptops.html">Laptops</a></li>
-            <!--Pre builds section would add the budget friendly and filtering option-->
-            <li><a href="components.html">Components</a></li>
-            <!-- handheld devices would include mobile devices and tablets-->
-            <li><a href="#">About Us</a></li>
-            <!--would include the goals, and about the company-->
-        <!--    <li><a href="#">Community</a></li>-->
-            <!-- community section would hold trends, future updates, user reviews and Expert Guidance recommandations-->
-            <li><a href="Sign In.html">Sign In</a></li>
-            <li><a href="Sign Up.html">Signup</a></li>
-        <!--    <li><a href="#">Support</a></li>-->      
-    </ul>
-    <div class="search">
-        <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
-     </div>
-        </nav>
-      </header>
->>>>>>> 81d77022ec849997e650ce53ff0bcce519159d45:frontend/pre-builds.html
       <body>
         <div class="pre-builds">
             <P>Pre-Builds</p>
+                <div class="search">
+                    <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+                    </div>
                 
         <div class="filters">
         <div class="filter">
