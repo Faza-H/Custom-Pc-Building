@@ -6,42 +6,6 @@ body {
   padding: 0;
 }
 
-header {
-  position:relative;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  width: 100%;
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 16px;
-}
-.navbar ul li a:hover {
-  background-color: gray;
-  border-radius: 5px;
-}
-
 .hero {
   background-color:lightslategray;
   height: 300px;
@@ -49,14 +13,14 @@ nav ul li a {
   
   padding: 50px 0;
 }
-.hero .hh {
+.hero h1 {
+  font-size: 30px bold;
   float: inline-start;
   padding-top: 0px;
   padding-left: 200px;
-  font-size: 20px;
 }
 
-.hero .pp {
+.hero p {
   font-size: 24px;
   padding-left: 200px;
   padding-top: 70px;
@@ -64,9 +28,10 @@ nav ul li a {
 }
 .hero img{
   float: right;
+  padding-right: 200px;
   margin-bottom: 100px;
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 40%;
 }
 .hero button{
   height: 30px;
@@ -77,11 +42,6 @@ nav ul li a {
 .hero button:hover{
   color: #011f17;
   transform: translatey(-3px);
-}
-.build_cover{
-  max-width: 100%;
-  max-height: 100%;
-  margin-right: 300px;
 }
 .pre-builds{
   text-decoration: none;
@@ -136,7 +96,9 @@ border-left: 3px solid #ddd;
 border-top: 3px solid #ddd;
 border-bottom: 3px solid #ddd;
  }
-
+.pre-builds button{
+  font-size: 20px;
+}
 footer {
   background-image: linear-gradient(to top, #1e2c38, gray);
   color: #fff;
