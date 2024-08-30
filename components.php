@@ -11,7 +11,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Components Store</title>
-    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="component.css">
     <script src="components.js"></script>
 </head>
 <body>
