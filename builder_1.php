@@ -10,7 +10,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Builder</title>
-    <link rel="stylesheet" href="builder_1.css">
+    <link rel="stylesheet" href="builder.css">
 </head>
 <body>
     <div class="heading">

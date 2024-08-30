@@ -7,40 +7,6 @@ body {
 }
 
 /* Header styling */
-header {
-  background-color: #333;
-  color: white;
-  height: 100px;
-  padding: 10px 0;
-  text-align: left;
-}
-
-header h1{
-  margin-left: 50px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 25px;
-  text-align: left;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 16px;
-}
-.navbar ul li a:hover {
-  background-color: gray;
-  border-radius: 5px;
-}
 footer {
 background-color: #333;
 color: white;
@@ -53,7 +19,7 @@ bottom: 0;
 .search {
   position: absolute;
   left: 1150px;
-  top: 80px;
+  top: 60px;
   text-align: right;
   margin-right: 20px;
   margin-top: 0px;
@@ -131,8 +97,35 @@ text-align: center;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.product h4{
+  font-size: 20px;
+}
+
+.product h5, h6 {
+  font-size: 15px;
+}
+
 .product img {
 max-width: 100%;
-height: auto;
+height: 30%;
 margin-bottom: 10px;
+}
+
+.button-container button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: red;
 }

@@ -12,7 +12,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Store</title>
-    <link rel="stylesheet" href="lap.css">
+    <link rel="stylesheet" href="laptop.css">
     <script src="laptop.js"></script>
 </head>
 <body>
@@ -127,7 +127,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -144,7 +147,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g8">
             <img src="Pics/laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
@@ -161,7 +167,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -178,7 +187,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -195,7 +207,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -212,7 +227,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -229,7 +247,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -246,7 +267,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli3g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -263,7 +287,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -280,7 +307,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -297,7 +327,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -314,7 +347,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -331,7 +367,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -348,7 +387,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -365,7 +407,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -382,7 +427,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -399,7 +447,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli5g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -416,7 +467,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -433,7 +487,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -450,7 +507,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -467,7 +527,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -484,7 +547,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -501,7 +567,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -518,7 +587,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli7g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -535,6 +607,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -551,7 +627,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>        
         </div>
         <div class="product" id="inteli7g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -568,7 +647,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -585,7 +667,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -602,7 +687,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -619,7 +707,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -636,7 +727,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
         <div class="product" id="inteli9g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -653,7 +747,10 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                
+                    <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
                 </div>
                 <div class="product" id="inteli9g13">
                     <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -670,7 +767,10 @@ include('includes/navbar.php');
                             Operating System:	Windows 11 Home<br>
                             Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                             Graphics Card Description:	Integrated</h5>
-                        
+                            <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>      
                         </div>
                 <div class="product" id="inteli9g14">
                          <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
@@ -687,7 +787,11 @@ include('includes/navbar.php');
                                 Operating System:	Windows 11 Home<br>
                                 Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                                 Graphics Card Description:	Integrated</h5>   
-                        </div>
+                                <div class="button-container">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+    </div>
         <!-- Add more products as needed -->
     </section>
 </div>

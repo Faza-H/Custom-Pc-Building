@@ -1,3 +1,8 @@
+<header class="d-flex justify-content-center text-light bg-danger py-1">
+        <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-2">Ultimate Builds</span>
+      </a>
+    </header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand d-block d-sm-none d-md-none" href="#"></a>
@@ -14,13 +19,16 @@
           <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="builder_1.php">PC Builder</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="laptops.php">Laptops</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="components.php">Pc Componenets</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="builder_1.php">PC Builder</a>
+          <a class="nav-link active" aria-current="page" href="">About</a>
         </li>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">
