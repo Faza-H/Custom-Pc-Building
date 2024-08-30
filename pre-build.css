@@ -5,6 +5,42 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  height: 100px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+header h1{
+  margin-left: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 25px;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+.navbar ul li a:hover {
+  background-color: gray;
+  border-radius: 5px;
+}/* Container holding the sidebar, main content, and other elements */
+
       footer {
         background-color: #333;
         color: white;
@@ -147,7 +183,6 @@ body {
       height: 25px;
     }
     .pre-builds{
-      position: relative;
       display: flex;
       padding-left: 160px;
       padding-top: 10px;
@@ -189,10 +224,10 @@ body {
   }
   
   .search {
-    position: fixed;
-    top: 0;
-    right: 500px;
-    display: block;
+    position: absolute;
+    left: 1150px;
+    top: 80px;
+    text-align: right;
     margin-right: 20px;
     margin-top: 0px;
     }

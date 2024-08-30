@@ -12,7 +12,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Store</title>
-    <link rel="stylesheet" href="lap.css">
+    <link rel="stylesheet" href="laptop.css">
     <script src="laptop.js"></script>
 </head>
 <body>

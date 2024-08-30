@@ -10,7 +10,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Store</title>
-    <link rel="stylesheet" href="pre-builds.css">
+    <link rel="stylesheet" href="pre-build.css">
     <script src="pre-builds.js"></script>
 </head>
 <body style=>
