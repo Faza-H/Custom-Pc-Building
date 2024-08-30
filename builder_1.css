@@ -39,7 +39,11 @@ nav ul li a {
 .navbar ul li a:hover {
   background-color: gray;
   border-radius: 5px;
+
 }/*/* Container holding the sidebar, main content, and other elements */
+.reset{
+  justify-content: flex-end;
+}
   .heading{
     font-family: Arial, sans-serif;
     text-align: center;
