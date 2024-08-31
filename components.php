@@ -20,7 +20,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Components Store</title>
-    <link rel="stylesheet" href="component.css">
+    <link rel="stylesheet" href="components.css">
     <script src="components.js"></script>
 </head>
 <body>
@@ -137,7 +137,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 75000</h4>
               <h5>Power Usage: 120W</h5>
               <h6>Description:</h6>
-              <h6>Base clock: 4.5 GHz<br>Max boost clock: 5.2 GHz<br>8 Cores / 16 Threads<br>Support for DDR5<br>Thermal Design Power (TDP): 120W</h6>
+              <h6>Base clock: 4.5 GHz<br>Max boost clock: 5.2 GHz<br>8 Cores / 16 Threads<br>Support for DDR5<br>Thermal Design Power (TDP): 65W</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -147,7 +147,7 @@ include('includes/navbar.php');
 
             <div class="product" data-id="amd_4" data-category="cpu" data-company="Ryzen" data-wattage="140">
               <img src="Pics/cpu/AMD Ryzen 9 9900X Twelve Core 5.60GHz.jpg" alt="Product 4">
-              <h3>AMD Ryzen 9 9900X Twelve Core 5.60GHz</h3>
+              <h3>AMD Ryzen 9 9900X</h3>
               <h4>Price: PKR 115000</h5>
               <h5>Power Usage: 140W</h5>
               <h6>Description:</h6>
@@ -231,7 +231,7 @@ include('includes/navbar.php');
 
             <div class="product" data-id="amd_gpu_1" data-category="gpu" data-company="AMD" data-wattage="300">
               <img src="Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp" alt="Product 2">
-              <h3>AORUS AMD Radeon RX 5700 XT 8G (rev. 2.0)</h3>
+              <h3>AMD RX 5700 XT 8G</h3>
               <h4>Price: PKR 75000</h5>
               <h5>Power Usage: 300W</h5>
               <h6>Description:</h6>
@@ -245,7 +245,7 @@ include('includes/navbar.php');
 
             <div class="product" data-id="amd_gpu_2" data-category="gpu" data-company="AMD" data-wattage="350">
               <img src="Pics/gpu/AMD/AORUS Radeon™ RX 7900 XTX ELITE 24G.webp" alt="Product 2">
-              <h3>AORUS AMD Radeon RX 7900 XTX ELITE 24G</h3>
+              <h3>AMD RX 7900 24G</h3>
               <h4>Price: PKR 250000</h5>
               <h5>Power Usage: 350W</h5>
               <h6>Description:</h6>
@@ -259,7 +259,7 @@ include('includes/navbar.php');
 
             <div class="product" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
               <img src="Pics/gpu/AMD/Radeon™ PRO W7800 AI TOP 32G.webp" alt="Product 2">
-              <h3>AMD Radeon PRO W7800 AI TOP 32G</h3>
+              <h3>AMD PRO W7800 32G</h3>
               <h4>Price: PKR 400000</h5>
               <h5>Power Usage: 300W</h5>
               <h6>Description:</h6>
@@ -273,7 +273,7 @@ include('includes/navbar.php');
 
             <div class="product" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
               <img src="Pics/gpu/AMD/Radeon™ VII HBM2 16G.webp" alt="Product 2">
-              <h3>AMD Radeon VII HBM2 16G</h3>
+              <h3>AMD VII HBM2 16G</h3>
               <h4>Price: PKR 700000</h5>
               <h5>Power Usage: 290W</h5>
               <h6>Description:</h6>
@@ -300,11 +300,11 @@ include('includes/navbar.php');
             </div>
             <div class="product" data-id="nvidia_gpu_1" data-category="gpu" data-company="Nvidia" data-wattage="350">
               <img src="Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp" alt="Product 2">
-              <h3>AORUS Nvidia GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G</h3>
+              <h3>Nvidia RTX™ 3090 Ti 24G</h3>
               <h4>Price: PKR 450000</h4>
               <h5>Power Usage: 350W</h5>
               <h6>Description:</h6>
-              <h6>Memory: 24GB GDDR6X<br>Base clock: 1,560 MHz<br>Boost clock: 1,860 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: AORUS WATERFORCE all-in-one cooling system</h6>
+              <h6>Memory: 24GB GDDR6X<br>Base clock: 1,560 MHz<br>Boost clock: 1,860 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling:all-in-one cooling system</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -314,7 +314,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_2" data-category="gpu" data-company="Nvidia" data-wattage="180">
               <img src="Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp" alt="Product 2">
-              <h3>AORUS Nvidia GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G</h3>
+              <h3>Nvidia GTX 1080 Ti 11G</h3>
               <h4>Price: PKR 150000</h4>
               <h5>Power Usage: 180W</h5>
               <h6>Description:</h6>
@@ -328,7 +328,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_3" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti AERO OC 16G.webp" alt="Product 2">
-              <h3>Nvidia RTX™ 4060 Ti AERO OC 16G</h3>
+              <h3>Nvidia RTX™ 4060 Ti 16G</h3>
               <h4>Price: PKR 115000</h4>
               <h5>Power Usage: 450W</h5>
               <h6>Description:</h6>
@@ -342,7 +342,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_4" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti GAMING OC 16G.webp" alt="Product 2">
-              <h3>Nvidia RTX™ 4060 Ti GAMING OC 16G</h3>
+              <h3>Nvidia RTX™ 4060 Ti 16G</h3>
               <h4>Price: PKR 120000</h4>
               <h5>Power Usage: 450W</h5>
               <h6>Description:</h6>
@@ -356,7 +356,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_5" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4070 Ti SUPER AI TOP 16G.webp" alt="Product 2">
-              <h3>Nvidia GeForce RTX™ 4070 Ti SUPER AI TOP 16G</h3>
+              <h3>Nvidia RTX™ 4070 Ti 16G</h3>
               <h4>Price: PKR 200000</h4>
               <h5>Power Usage: 450W</h5>
               <h6>Description:</h6>
@@ -370,7 +370,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_6" data-category="gpu" data-company="Nvidia" data-wattage="120">
               <img src="Pics/gpu/nvidia/GeForce® GTX 1660 Ti GAMING OC 6G.webp" alt="Product 2">
-              <h3>Nvidia GeForce® GTX 1660 Ti GAMING OC 6G</h3>
+              <h3>Nvidia GTX 1660 Ti 6G</h3>
               <h4>Price: PKR 65000</h4>
               <h5>Power Usage: 120W</h5>
               <h6>Description:</h6>
@@ -384,7 +384,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="nvidia_gpu_7" data-category="gpu" data-company="Nvidia" data-wattage="350">
               <img src="Pics/gpu/nvidia/rtx 3080.jpg" alt="Product 2">
-              <h3>Nvidia GeForce RTX™ 3080</h3>
+              <h3>Nvidia RTX™ 3080</h3>
               <h4>Price: PKR 250000</h4>
               <h5>Power Usage: 350W</h5>
               <h6>Description:</h6>
@@ -397,7 +397,7 @@ include('includes/navbar.php');
             </div>
           <div class="product" data-id="Motherboard_1" data-category="Motherboard" data-wattage="80">
               <img src="Pics/Motherboard/asus motherboard.jpg" alt="Product 2">
-              <h3>ASUS B650M S2H Motherboard(rev. 1.2)</h3>
+              <h3>ASUS B650M S2H Motherboard</h3>
               <h4>Price: PKR 35000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
@@ -424,7 +424,7 @@ include('includes/navbar.php');
             </div>
           <div class="product" data-id="Motherboard_3" data-category="Motherboard" data-wattage="80">
               <img src="Pics/Motherboard/intel X299 AORUS Gaming 7 (rev. 1.0).webp" alt="Product 2">
-              <h3>Intel X299 AORUS Gaming 7  Motherboard(rev. 1.0)</h3>
+              <h3>Intel X299 AORUS Gaming 7 Motherboard</h3>
               <h4>Price: PKR 65000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
@@ -438,7 +438,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
               <img src="Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp" alt="Product 2">
-              <h3>Intel X299X AORUS MASTER  Motherboard(rev. 1.x)</h3>
+              <h3>Intel X299X AORUS MASTER  Motherboard</h3>
               <h4>Price: PKR 90000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
@@ -484,7 +484,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 85000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: DDR4<br>Speed: 3200MHz<br>Capacity: 64GB (2x32GB)<br>Latency: CL16<br>Voltage: 1.35V<br>Features: High-performance design, optimized for professional workloads, RGB lighting</h6>
+              <h6>Type: DDR4<br>Speed: 3200MHz<br>Capacity: 64GB (2x32GB)<br>Voltage: 1.35V<br>Features: High-performance design, optimized for professional workloads, RGB lighting</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -498,7 +498,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 18000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: DDR4<br>Speed: 2666MHz<br>Capacity: 16GB (2x8GB)<br>Latency: CL16<br>Voltage: 1.2V<br>Features: Reliable performance, ideal for gaming and multitasking</h6>
+              <h6>Type: DDR4<br>Speed: 2666MHz<br>Capacity: 16GB (2x8GB)<br>Voltage: 1.2V<br>Features: Reliable performance, ideal for gaming and multitasking</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -522,11 +522,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_1" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/AORUS Gen5 14000 SSD 1TB.webp" alt="Product 2">
-              <h3>AORUS Gen5 14000 SSD 1TB</h3>
+              <h3>Gen5 14000 SSD 1TB</h3>
               <h4>Price: PKR 65000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: NVMe SSD<br>Interface: PCIe 5.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 14,000 MB/s<br>Write Speed: Up to 13,000 MB/s<br>Form Factor: M.2 2280<br>Features: Advanced thermal solution, high endurance</h6>
+              <h6>Type: NVMe SSD<br>Interface: PCIe 5.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 14,000 MB/s<br>Write Speed: Up to 13,000 MB/s<br>Form Factor: M.2 2280<br>Features:high endurance</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -536,11 +536,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_2" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE Gen4 4000E SSD 250GB.webp" alt="Product 2">
-              <h3>GIGABYTE Gen4 4000E SSD 250GB</h3>
+              <h3>Gen4 4000E SSD 250GB</h3>
               <h4>Price: PKR 15000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 250GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance, suitable for gaming and everyday use</h6>
+              <h6>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 250GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -550,11 +550,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_3" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE Gen4 4000E SSD 500GB.webp" alt="Product 2">
-              <h3>GIGABYTE Gen4 4000E SSD 500GB</h3>
+              <h3>Gen4 4000E SSD 500GB</h3>
               <h4>Price: PKR 25000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance, suitable for gaming and everyday use</h6>
+              <h6>Type: NVMe SSD<br>Interface: PCIe 4.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 5,000 MB/s<br>Write Speed: Up to 2,500 MB/s<br>Form Factor: M.2 2280<br>Features: Efficient performance</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -564,11 +564,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_4" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE M.2 SSD 500GB.webp" alt="Product 2">
-              <h3>GIGABYTE M.2 SSD 500GB</h3>
+              <h3>M.2 SSD 500GB</h3>
               <h4>Price: PKR 20000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 2,100 MB/s<br>Form Factor: M.2 2280<br>Features: Reliable performance, ideal for system boot drive</h6>
+              <h6>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 500GB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 2,100 MB/s<br>Form Factor: M.2 2280<br>Features: Reliable performance</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -578,11 +578,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_5" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE NVMe SSD 1TB.webp" alt="Product 2">
-              <h3>GIGABYTE NVMe SSD 1TB</h3>
+              <h3>NVMe SSD 1TB</h3>
               <h4>Price: PKR 35000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 3,000 MB/s<br>Form Factor: M.2 2280<br>Features: High capacity and speed, ideal for gaming and data storage</h6>
+              <h6>Type: NVMe SSD<br>Interface: PCIe 3.0 x4<br>Capacity: 1TB<br>Read Speed: Up to 3,500 MB/s<br>Write Speed: Up to 3,000 MB/s<br>Form Factor: M.2 2280<br>Features: High capacity and speed</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -592,11 +592,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_6" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE SSD 512GB.webp" alt="Product 2">
-              <h3>GIGABYTE SATA SSD 512GB</h3>
+              <h3>SATA SSD 512GB</h3>
               <h4>Price: PKR 12000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: SATA SSD<br>Interface: SATA III<br>Capacity: 512GB<br>Read Speed: Up to 550 MB/s<br>Write Speed: Up to 500 MB/s<br>Form Factor: 2.5-inch<br>Features: Affordable and reliable, ideal for upgrading laptops or desktops</h6>
+              <h6>Type: SATA SSD<br>Interface: SATA III<br>Capacity: 512GB<br>Read Speed: Up to 550 MB/s<br>Write Speed: Up to 500 MB/s<br>Form Factor: 2.5-inch<br>Features: Affordable and reliable</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -606,11 +606,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="SSD_7" data-category="SSD" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE UD PRO SSD 1TB.webp" alt="Product 2">
-              <h3>GIGABYTE UD PRO SSD 1TB</h3>
+              <h3>UD PRO SSD 1TB</h3>
               <h4>Price: PKR 30000</h4>
               <h5>Power Usage: 5W</h5>
               <h6>Description:</h6>
-              <h6>Type: SATA SSD<br>Interface: SATA III<br>Capacity: 512GB<br>Read Speed: Up to 550 MB/s<br>Write Speed: Up to 500 MB/s<br>Form Factor: 2.5-inch<br>Features: Affordable and reliable, ideal for upgrading laptops or desktops</h6>
+              <h6>Type: SATA SSD<br>Interface: SATA III<br>Capacity: 512GB<br>Read Speed: Up to 550 MB/s<br>Write Speed: Up to 500 MB/s<br>Form Factor: 2.5-inch<br>Features: Affordable and reliable</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -623,7 +623,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 12000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0, Audio ports<br>Features: Transparent side panel, cable management options</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0<br>Features: Transparent side panel, cable management options</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -633,11 +633,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Casing_2" data-category="Casing" data-wattage="0">
               <img src="Pics/Casing/AORUS C300 GLASS.webp" alt="Product 2">
-              <h3>AORUS C300 GLASS Casing</h3>
+              <h3>C300 GLASS Casing</h3>
               <h4>Price: PKR 18000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, RGB lighting, cable management options</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0<br>Features: Tempered glass side panel, RGB lighting, cable management options</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -647,11 +647,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Casing_3" data-category="Casing" data-wattage="0">
               <img src="Pics/Casing/AORUS C400 GLASS.webp" alt="Product 2">
-              <h3>AORUS C400 GLASS Casing</h3>
+              <h3>C400 GLASS Casing</h3>
               <h4>Price: PKR 22000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, support for liquid cooling<br>Front I/O: USB 3.1 Gen 2, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, RGB Fusion 2.0, cable management options</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, support for liquid cooling<br>Front I/O: USB 3.1 Gen 2, USB 3.0, USB 2.0<br>Features: Tempered glass side panel, RGB Fusion 2.0, cable management options</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -661,11 +661,11 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Casing_4" data-category="Casing" data-wattage="0">
               <img src="Pics/Casing/AORUS C500 GLASS.webp" alt="Product 2">
-              <h3>AORUS C500 GLASS Casing</h3>
+              <h3>C500 GLASS Casing</h3>
               <h4>Price: PKR 28000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, extensive support for liquid cooling<br>Front I/O: USB 3.1 Gen 2 Type-C, USB 3.0, Audio ports<br>Features: Tempered glass side panel, RGB Fusion 2.0, advanced cable management options</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm fans, extensive support for liquid cooling<br>Front I/O: USB 3.1 Gen 2 Type-C, USB 3.0<br>Features: Tempered glass side panel, RGB Fusion 2.0, advanced cable management options</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -679,7 +679,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 10000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0, Audio ports<br>Features: Solid build quality, easy cable management</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX<br>Cooling: Pre-installed 120mm fan<br>Front I/O: USB 3.0, USB 2.0<br>Features: Solid build quality, easy cable management</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -693,7 +693,7 @@ include('includes/navbar.php');
               <h4>Price: PKR 20000</h4>
               <h5>Power Supply: Not required</h5>
               <h6>Description:</h6>
-              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm RGB fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0, Audio ports<br>Features: Tempered glass side panel, customizable RGB lighting, superior airflow design</h6>
+              <h6>Form Factor: Mid Tower<br>Motherboard Support: ATX, Micro-ATX, Mini-ITX<br>Cooling: Pre-installed 120mm RGB fan, support for liquid cooling<br>Front I/O: USB 3.1 Gen 1, USB 3.0, USB 2.0<br>Features: Tempered glass side panel, customizable RGB lighting, superior airflow design</h6>
               <div class="button-container">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
@@ -746,7 +746,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Power_supply_4" data-category="Power_supply" data-wattage="1250">
               <img src="Pics/psu/MSI MAG A1250GL PCIE 5, 80 GOLD Fully.webp" alt="Product 2">
-              <h3>MSI MAG A1250GL PCIE 5 80 GOLD Fully Power Supply</h3>
+              <h3>MSI MAG A1250GL PCIE 5 Power Supply</h3>
               <h4>Price: PKR 50000</h4>
               <h5>Power Supply: 1250W</h5>
               <h6>Description:</h6>
@@ -760,7 +760,7 @@ include('includes/navbar.php');
           
           <div class="product" data-id="Power_supply-5" data-category="Power_supply" data-wattage="650">
               <img src="Pics/psu/SilverStone SST-AT650R-BF-WBW ATTIS White 650R 80.webp" alt="Product 2">
-              <h3>SilverStone SST-AT650R-BF-WBW ATTIS White 650R 80 Power Supply</h3>
+              <h3>SilverStone SST-AT650R Power Supply</h3>
               <h4>Price: PKR 20000</h4>
               <h5>Power Supply: 650W</h5>
               <h6>Description:</h6>
