@@ -13,9 +13,11 @@ include('includes/navbar.php');
     <link rel="stylesheet" href="builder.css">
 </head>
 <body>
-         <div class="heading">
-            <h1>Choose Your Parts</h1></div>
-        <div class="builder">
+    <div class="heading">
+        <h1>Choose Your Parts</h1>
+    </div>
+
+    <div class="builder">
         <div class="compatibility">
             <p>✅ Compatibility: No issues or incompatibilities found.</p>
             <p>⚡ Estimated Wattage: <span id="wattage">0W</span></p>
@@ -26,7 +28,6 @@ include('includes/navbar.php');
                 <tr>
                     <th>Component</th>
                     <th>Selection</th>
-                    <th>Shipping</th>
                     <th>Price</th>
                 </tr>
             </thead>
@@ -34,34 +35,49 @@ include('includes/navbar.php');
                 <tr>
                     <td>CPU</td>
                     <td><button onclick="chooseComponent('cpu')">+ Choose A CPU</button></td>
-                    <!-- Additional columns if necessary -->
+                    <td id="cpu-price"></td>
                 </tr>
                 <tr>
                     <td>Motherboard</td>
-                    <td><button onclick="chooseComponent('motherboard')">+ Choose A Motherboard</button></td>
+                    <td><button onclick="chooseComponent('Motherboard')">+ Choose A Motherboard</button></td>
+                    <td id="motherboard-price"></td>
                 </tr>
                 <tr>
                     <td>RAM</td>
-                    <td><button onclick="chooseComponent('ram')">+ Choose A RAM</button></td>
+                    <td><button onclick="chooseComponent('RAM')">+ Choose A RAM</button></td>
+                    <td id="ram-price"></td>
                 </tr>
                 <tr>
                     <td>Storage</td>
-                    <td><button onclick="chooseComponent('storage')">+ Choose Storage</button></td>
+                    <td><button onclick="chooseComponent('SSD')">+ Choose Storage</button></td>
+                    <td id="ssd-price"></td>
                 </tr>
                 <tr>
                     <td>Graphics Card</td>
                     <td><button onclick="chooseComponent('gpu')">+ Choose A Graphics Card</button></td>
+                    <td id="gpu-price"></td>
                 </tr>
                 <tr>
                     <td>Case</td>
-                    <td><button onclick="chooseComponent('case')">+ Choose A Case</button></td>
+                    <td><button onclick="chooseComponent('Casing')">+ Choose A Case</button></td>
+                    <td id="case-price"></td>
                 </tr>
                 <tr>
                     <td>Power Supply</td>
-                    <td><button onclick="chooseComponent('power-supply')">+ Choose A Power Supply</button></td>
+                    <td><button onclick="chooseComponent('Power_supply')">+ Choose A Power Supply</button></td>
+                    <td id="power-supply-price"></td>
+                </tr>
+                <tr id="total-row">
+                    <td>Total</td>
+                    <td></td>
+                    <td id="total-price"></td>
                 </tr>
             </tbody>
         </table>
+
+        <div class="reset">
+            <button id="reset-button" onclick="location.reload()">Reset Build</button>
+        </div>
     </div>
 
     <script src="builder_1.js"></script>
