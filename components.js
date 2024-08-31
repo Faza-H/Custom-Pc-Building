@@ -63,3 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial sort and filter
   filterProducts();
 });
+
+

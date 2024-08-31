@@ -28,7 +28,7 @@ include('includes/navbar.php');
                    performance, reliability, and compatibility.<br> Perfect
                     for those who need a powerful PC without the hassle of custom configuration."
             </p>
-            <button onclick="location.href='pre-builds.html'"> See More </button>
+            <button onclick="location.href='pre-builds.php'"> See More </button>
         </div></p>
         <div class="pre-built">
         
@@ -146,15 +146,12 @@ include('includes/navbar.php');
         </div>
         
         <div class="hero">
-        <div class="hh">   <h1>Build Your Custom PC</h1></div>
-            <div class="build_cover">
+            <h1>Build Your Custom PC</h1>
                 <img src="Pics/background/build-cover2.jpg" alt="">
-            </div>
-            <div class="pp"><p>Choose your components and assemble your dream PC with ease.</p>
+            <p>Choose your components and assemble your dream PC with ease.</p>
+       
+                <button onclick="location.href='builder_1.php'"> Build PC</button>
         </div>
-                <button onclick="location.href='builder.html'"> Build PC</button>
-        </div>
-      
           </main>
           <footer>
             <div class="footer-container">

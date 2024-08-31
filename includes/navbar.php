@@ -19,13 +19,16 @@
           <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="builder_1.php">PC Builder</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="laptops.php">Laptops</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="components.php">Pc Componenets</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="builder_1.php">PC Builder</a>
+          <a class="nav-link active" aria-current="page" href="">About</a>
         </li>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">

@@ -4,7 +4,6 @@ include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +13,13 @@ include('includes/navbar.php');
     <link rel="stylesheet" href="pre-build.css">
     <script src="pre-builds.js"></script>
 </head>
-<body style="background-color: brown,;">
+<body style=>
       <body>
         <div class="pre-builds">
             <P>Pre-Builds</p>
                 <div class="search">
                     <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
                     </div>
-                
         <div class="filters">
         <div class="filter">
             <label>Rating:</label>
@@ -49,8 +47,13 @@ include('includes/navbar.php');
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
                 
                 <div class="features-container">
+<<<<<<< HEAD
                     <div class="feature-blck">
                         <img src="pictures/amd.jpg" >
+=======
+                    <div class="feature-block">
+                        <img src="Pics/cpu/core i7.jpg" alt="product1" >
+>>>>>>> 49d9af77e8a0054afcd1c20ea5aaaf7471d6e8aa
                         <p> intel i7 14600k </p>
                     </div>
                     <div class="feature-blck">
@@ -114,7 +117,7 @@ include('includes/navbar.php');
         </div>
         <div class="product-container">
             <div class="product-left">
-                <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
+                <img id="main-image" src="Pics/1 (4).jpeg" alt="Product Image">
                 
                 <div class="features-container">
                     <div class="feature-block">
