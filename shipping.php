@@ -1,50 +1,56 @@
-<?php 
-
-include('includes/header.php');
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "blog";
 include('includes/navbar.php');
 
-// Fetch cart items from the session if they exist
-$cartItems = isset($_SESSION['cartItems']) ? $_SESSION['cartItems'] : [];
-$cartTotal = isset($_SESSION['cartTotal']) ? $_SESSION['cartTotal'] : 0;
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Handle form submission
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $address = $_POST['address'];
-    $paymentMethod = $_POST['payment'];
+    $payment_method = $_POST['payment'];
+    $total = $_POST['cartTotal'];
 
-    // Validate the form fields
-    if (empty($name) || empty($address) || empty($paymentMethod)) {
-        $error = "Please fill in all required fields.";
+    // Prepare statement to avoid SQL injection
+    $stmt = $conn->prepare("INSERT INTO orders (name, address, payment_method, card_number, expiry_date, cvv, paypal_email, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssssd", $name, $address, $payment_method, $card_number, $expiry_date, $cvv, $paypal_email, $total);
+
+    // Handle payment details based on payment method
+    if ($payment_method == "credit_card") {
+        $card_number = $_POST['cardNumber'];
+        $expiry_date = $_POST['expiryDate'];
+        $cvv = $_POST['cvv'];
+        $paypal_email = NULL;
+    } elseif ($payment_method == "paypal") {
+        $card_number = NULL;
+        $expiry_date = NULL;
+        $cvv = NULL;
+        $paypal_email = $_POST['paypalEmail'];
+    }
+
+    // Execute statement and get the order ID
+    if ($stmt->execute()) {
+        $order_id = $stmt->insert_id;
+
+        // Insert order items
+        $cartItems = json_decode($_POST['cartItems'], true);
+        foreach ($cartItems as $item) {
+            $itemStmt = $conn->prepare("INSERT INTO order_items (order_id, product_name, product_price) VALUES (?, ?, ?)");
+            $itemStmt->bind_param("isd", $order_id, $item['name'], $item['price']);
+            $itemStmt->execute();
+        }
+
+        // Clear the cart in localStorage and redirect
+        echo "<script>alert('Order has been placed!'); localStorage.clear(); window.location.href = 'index.html';</script>";
     } else {
-        if ($paymentMethod == 'credit_card') {
-            $cardNumber = $_POST['cardNumber'];
-            $expiryDate = $_POST['expiryDate'];
-            $cvv = $_POST['cvv'];
-
-            if (empty($cardNumber) || empty($expiryDate) || empty($cvv)) {
-                $error = "Please fill in all credit card details.";
-            }
-        } elseif ($paymentMethod == 'paypal') {
-            $paypalEmail = $_POST['paypalEmail'];
-
-            if (empty($paypalEmail)) {
-                $error = "Please enter your PayPal email.";
-            }
-        }
-
-        // If no errors, proceed with order processing
-        if (!isset($error)) {
-            // Here you would typically save the order to a database
-
-            // Clear the cart session data
-            unset($_SESSION['cartItems']);
-            unset($_SESSION['cartTotal']);
-
-            // Redirect to a thank you page or show a confirmation message
-            echo "<script>alert('Order has been placed!'); window.location.href = 'index.php';</script>";
-            exit();
-        }
+        echo "Error: " . $stmt->error;
     }
 }
 ?>
@@ -65,21 +71,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- Cart Summary -->
         <div id="cartSummary">
             <h2>Your Cart</h2>
-            <div id="cartItems">
-                <?php foreach ($cartItems as $item): ?>
-                    <div class="product-item"><?= htmlspecialchars($item['name']) ?> - $<?= htmlspecialchars(number_format($item['price'], 2)) ?></div>
-                <?php endforeach; ?>
-            </div>
-            <h4>Total: $<span id="cartTotal"><?= htmlspecialchars(number_format($cartTotal, 2)) ?></span></h4>
+            <div id="cartItems"></div>
+            <h4>Total: $<span id="cartTotal">0</span></h4>
         </div>
 
-        <!-- Error message display -->
-        <?php if (isset($error)): ?>
-            <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
-        <?php endif; ?>
-
         <!-- Shipping Form -->
-        <form id="shippingForm" method="POST" action="">
+        <form id="shippingForm" method="POST" action="shipping.php">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -113,15 +110,48 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="Enter your PayPal email">
             </div>
 
+            <input type="hidden" id="cartItemsInput" name="cartItems">
+            <input type="hidden" id="cartTotalInput" name="cartTotal">
+
             <button type="submit" class="btn btn-primary">Place Order</button>
         </form>
     </div>
 
-    <script src="shipping.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+            const cartTotal = localStorage.getItem("cartTotal");
 
-<?php 
-include('includes/footer.php');
-?>
+            const cartItemsContainer = document.getElementById("cartItems");
+            cartItems.forEach(item => {
+                const itemElement = document.createElement("div");
+                itemElement.className = "product-item";
+                itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            document.getElementById("cartTotal").innerText = cartTotal;
+            document.getElementById("cartItemsInput").value = JSON.stringify(cartItems);
+            document.getElementById("cartTotalInput").value = cartTotal;
+        });
+
+        function showPaymentFields() {
+            const paymentMethod = document.getElementById("payment").value;
+            const creditCardFields = document.getElementById("creditCardFields");
+            const paypalFields = document.getElementById("paypalFields");
+
+            // Hide all payment fields initially
+            creditCardFields.style.display = "none";
+            paypalFields.style.display = "none";
+
+            // Show relevant fields based on selected payment method
+            if (paymentMethod === "credit_card") {
+                creditCardFields.style.display = "block";
+            } else if (paymentMethod === "paypal") {
+                paypalFields.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

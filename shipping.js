@@ -1,14 +1,29 @@
-function showPaymentFields() {
-    const paymentMethod = document.getElementById("payment").value;
-    const creditCardFields = document.getElementById("creditCardFields");
-    const paypalFields = document.getElementById("paypalFields");
+document.addEventListener("DOMContentLoaded", function() {
+    const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    const cartTotal = localStorage.getItem("cartTotal");
 
-    creditCardFields.style.display = "none";
-    paypalFields.style.display = "none";
+    const cartItemsContainer = document.getElementById("cartItems");
+    cartItems.forEach(item => {
+        const itemElement = document.createElement("div");
+        itemElement.className = "product-item";
+        itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItemsContainer.appendChild(itemElement);
+    });
 
-    if (paymentMethod === "credit_card") {
-        creditCardFields.style.display = "block";
-    } else if (paymentMethod === "paypal") {
-        paypalFields.style.display = "block";
+    document.getElementById("cartTotal").innerText = cartTotal;
+});
+
+function placeOrder() {
+    const name = document.getElementById("name").value;
+    const address = document.getElementById("address").value;
+    const payment = document.getElementById("payment").value;
+
+    if (name && address && payment) {
+        alert("Order has been placed!");
+        // Clear the cart and redirect to homepage
+        localStorage.clear();
+        window.location.href = "index.html";
+    } else {
+        alert("Please fill in all the required details.");
     }
 }

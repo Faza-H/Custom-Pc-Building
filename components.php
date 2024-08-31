@@ -20,13 +20,9 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Components Store</title>
-<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="component.css">
-=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="components.css">
->>>>>>> 49d9af77e8a0054afcd1c20ea5aaaf7471d6e8aa
     <script src="components.js"></script>
 </head>
 <body>
@@ -150,7 +146,6 @@ include('includes/navbar.php');
             </div>
             </div>
 
-<<<<<<< HEAD
             <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>Ryzen 5</h3>
@@ -164,9 +159,7 @@ include('includes/navbar.php');
             </div>
 
             <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
-=======
             <div class="product" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
->>>>>>> 49d9af77e8a0054afcd1c20ea5aaaf7471d6e8aa
               <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
               <h3>AMD Ryzen 7 7800X</h3>
               <h4>Price: PKR 75000</h4>
@@ -808,12 +801,9 @@ include('includes/navbar.php');
           </div>
         </div>
       </div>
-<<<<<<< HEAD
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-=======
 </div>
->>>>>>> 49d9af77e8a0054afcd1c20ea5aaaf7471d6e8aa
 <?php 
 include('includes/footer.php');
 ?>
