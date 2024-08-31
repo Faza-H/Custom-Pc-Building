@@ -1,4 +1,3 @@
-
 <?php 
 
 include('includes/header.php');
@@ -22,7 +21,7 @@ include('includes/navbar.php');
    </div>
           </nav>
       </header>
-      <div class="container">
+      <div class="containe">
       <div class="sidebar">
         <h2>Categories</h2>
         <ul>
@@ -752,6 +751,7 @@ include('includes/navbar.php');
           </div>
         </div>
       </div>
+</div>
 <?php 
 include('includes/footer.php');
 ?>
