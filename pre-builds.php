@@ -49,27 +49,27 @@ include('includes/navbar.php');
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
                 
                 <div class="features-container">
-                    <div class="feature-block">
-                        <img src="Pics/cpu/core i7.jpg" >
+                    <div class="feature-blck">
+                        <img src="pictures/amd.jpg" >
                         <p> intel i7 14600k </p>
                     </div>
-                    <div class="feature-block">
+                    <div class="feature-blck">
                         <img src="Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp" >
                         <p> </p>
                     </div>
-                    <div class="feature-block">
+                    <div class="feature-blck">
                         <img src="Pics/Motherboard/intel X299 AORUS Gaming 7 (rev. 1.0).webp" >
                         <p> intel i7 14600k </p>
                     </div>
-                    <div class="feature-block">
+                    <div class="feature-blck">
                         <img src="Pics/ram/GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp" >
                         <p> intel i7 14600k </p>
                     </div>
-                    <div class="feature-block">
+                    <div class="feature-blck">
                         <img src="Pics/ssd/GIGABYTE Gen4 4000E SSD 500GB.webp" >
                         <p> intel i7 14600k </p>
                     </div>
-                    <div class="feature-block">
+                    <div class="feature-blck">
                         <img src="Pics/Casing/AORUS C300 GLASS.webp" >
                         <p> intel i7 14600k </p>
                     </div>

@@ -11,6 +11,8 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Components Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="component.css">
     <script src="components.js"></script>
 </head>
@@ -20,7 +22,20 @@ include('includes/navbar.php');
     <div class="search">
       <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
    </div>
-          </nav>
+   <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
+      <i class="bi bi-cart-fill"></i> Cart
+      <span class="badge bg-danger">0</span>
+  </a>
+<!-- Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h4>Total: $<span id="cartTotal">0</span></h4>
+    <div class="buy-now-container">
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+    </div>
+</div>
       </header>
       <div class="container">
       <div class="sidebar">
@@ -90,7 +105,7 @@ include('includes/navbar.php');
               <h6>Description:</h6>
               <h6>Base clock: 3.6 GHz<br>Max boost clock: 4.0 GHz<br>Integrated Radeon Vega 8 Graphics<br>Unlocked for overclocking<br>Thermal Design Power (TDP): 65W</h6>
               <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
                 <button class="buy-now">Buy Now</button>
             </div>
@@ -104,10 +119,22 @@ include('includes/navbar.php');
               <h6>Description:</h6>
               <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
               <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <button class="add-to-builder">Add to Builder</button>
                 <button class="buy-now">Buy Now</button>
             </div>
+            </div>
+
+            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
+            <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
+            <h3>Ryzen 5</h3>
+            <h4>$100</h4>
+            <h5>Power Usage: 105W</h5>
+            <h6>Description:</h6>
+            <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <button class="btn btn-primary">Add to Builder</button>
+            <button class="btn btn-primary">Buy Now</button>
             </div>
 
             <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
@@ -752,6 +779,8 @@ include('includes/navbar.php');
           </div>
         </div>
       </div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php 
 include('includes/footer.php');
 ?>
