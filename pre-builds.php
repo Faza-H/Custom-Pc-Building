@@ -10,9 +10,28 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Store</title>
-    <link rel="stylesheet" href="pre-build.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="pre-builds.css">
     <script src="pre-builds.js"></script>
 </head>
+<header>
+<a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
+      <i class="bi bi-cart-fill"></i> Cart
+      <span class="badge bg-danger">0</span>
+  </a>
+<!-- Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h4>Total:<span id="cartTotal">0</span></h4>
+    <div class="buy-now-container">
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+    </div>
+</div>
+
+</header>
 <body style=>
       <body>
         <div class="pre-builds">
@@ -45,7 +64,8 @@ include('includes/navbar.php');
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
-                
+                <h3>Build 1</h3>
+                <h4>₨ 200000</h4>
                 <div class="features-container">
                     <div class="feature-blck">
                         <img src="pictures/amd.jpg" >
@@ -72,8 +92,8 @@ include('includes/navbar.php');
                         <p> intel i7 14600k </p>
                     </div>
                 </div>
+                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <div class="product-buttons">
-                    <a href="#">Add to Cart</a>
                     <a href="#">Buy Now</a>
                 </div>
             </div>
@@ -113,7 +133,8 @@ include('includes/navbar.php');
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
-                
+                <h3>Build 2</h3>
+                <h4>₨ 250000</h4>
                 <div class="features-container">
                     <div class="feature-blck">
                         <img src="pictures/amd.jpg" >
@@ -140,8 +161,8 @@ include('includes/navbar.php');
                         <p> intel i7 14600k </p>
                     </div>
                 </div>
+                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <div class="product-buttons">
-                    <a href="#">Add to Cart</a>
                     <a href="#">Buy Now</a>
                 </div>
             </div>
@@ -178,6 +199,8 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php 
 include('includes/footer.php');
 ?>
