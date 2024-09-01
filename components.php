@@ -132,7 +132,7 @@ include('includes/navbar.php');
             <button class="buy-now">Buy Now</button>
             </div>
             </div>
-            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen" data-wattage="105">
+            <div class="product" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>Ryzen 5</h3>
             <h4>₨ 1000</h4>
