@@ -12,12 +12,17 @@ function closeCart() {
 function addToCart(button) {
     const productElement = button.parentElement;
     const productName = productElement.querySelector("h3").innerText;
-    const productPrice = parseFloat(productElement.querySelector("h4").innerText.replace("$", ""));
+    
+    // Remove "₨" and any spaces before parsing the price
+    const productPrice = parseFloat(productElement.querySelector("h4").innerText.replace("₨", "").trim());
 
-    cartItems.push({ name: productName, price: productPrice });
-    total += productPrice;
-
-    updateCart();
+    if (!isNaN(productPrice)) {
+        cartItems.push({ name: productName, price: productPrice });
+        total += productPrice;
+        updateCart();
+    } else {
+        console.error("Failed to parse product price:", productElement.querySelector("h4").innerText);
+    }
 }
 
 function updateCart() {
@@ -27,11 +32,11 @@ function updateCart() {
     cartItems.forEach(item => {
         const itemElement = document.createElement("div");
         itemElement.className = "product-item";
-        itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+        itemElement.innerHTML = `${item.name} - ₨${item.price.toFixed(2)}`;
         cartItemsContainer.appendChild(itemElement);
     });
 
-    document.getElementById("cartTotal").innerText = total.toFixed(2);
+    document.getElementById("cartTotal").innerText = `₨${total.toFixed(2)}`;
     document.querySelector(".cart-btn .badge").innerText = cartItems.length;
 }
 

@@ -1,29 +1,49 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const cartItems = JSON.parse(localStorage.getItem("cartItems"));
-    const cartTotal = localStorage.getItem("cartTotal");
+let cartItems = [];
+let total = 0;
 
+function openCart() {
+    document.getElementById("cartSidebar").style.width = "300px";
+}
+
+function closeCart() {
+    document.getElementById("cartSidebar").style.width = "0";
+}
+
+function addToCart(button) {
+    const productElement = button.parentElement;
+    const productName = productElement.querySelector("h3").innerText;
+    
+    // Remove "₨" and any spaces before parsing the price
+    const productPrice = parseFloat(productElement.querySelector("h4").innerText.replace("₨", "").trim());
+
+    if (!isNaN(productPrice)) {
+        cartItems.push({ name: productName, price: productPrice });
+        total += productPrice;
+        updateCart();
+    } else {
+        console.error("Failed to parse product price:", productElement.querySelector("h4").innerText);
+    }
+}
+
+function updateCart() {
     const cartItemsContainer = document.getElementById("cartItems");
+    cartItemsContainer.innerHTML = "";
+
     cartItems.forEach(item => {
         const itemElement = document.createElement("div");
         itemElement.className = "product-item";
-        itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+        itemElement.innerHTML = `${item.name} - ₨${item.price.toFixed(2)}`;
         cartItemsContainer.appendChild(itemElement);
     });
 
-    document.getElementById("cartTotal").innerText = cartTotal;
-});
+    document.getElementById("cartTotal").innerText = `₨${total.toFixed(2)}`;
+    document.querySelector(".cart-btn .badge").innerText = cartItems.length;
+}
 
-function placeOrder() {
-    const name = document.getElementById("name").value;
-    const address = document.getElementById("address").value;
-    const payment = document.getElementById("payment").value;
-
-    if (name && address && payment) {
-        alert("Order has been placed!");
-        // Clear the cart and redirect to homepage
-        localStorage.clear();
-        window.location.href = "index.html";
-    } else {
-        alert("Please fill in all the required details.");
-    }
+function buyNow() {
+    // Store cart items and total in localStorage
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    localStorage.setItem("cartTotal", total.toFixed(2));
+    // Redirect to the shipping page
+    window.location.href = "shipping.php";
 }

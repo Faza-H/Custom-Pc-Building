@@ -52,7 +52,7 @@ include('includes/navbar.php');
     <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
     <h2>Your Cart</h2>
     <div id="cartItems"></div>
-    <h4>Total: $<span id="cartTotal">0</span></h4>
+    <h4>Total:<span id="cartTotal">0</span></h4>
     <div class="buy-now-container">
         <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
     </div>
@@ -118,88 +118,73 @@ include('includes/navbar.php');
             </div>
           </div>
           <div class="products">
-            <div class="product" data-id="amd_1" data-category="cpu" data-company="Ryzen" data-wattage="65">
+          <div class="product" data-id="amd_1" data-category="cpu" data-company="Ryzen" data-wattage="65">
               <img src="Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg" alt="Product 1">
               <h3>AMD Ryzen 3 3200G 4-Core</h3>
-              <h4>Price: PKR 28000</h4>
+              <h4>₨ 28000</h4>
               <h5>Power Usage: 65W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 3.6 GHz<br>Max boost clock: 4.0 GHz<br>Integrated Radeon Vega 8 Graphics<br>Unlocked for overclocking<br>Thermal Design Power (TDP): 65W</h6>
-              <div class="button-container">
-              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <div class="button-container">
+            <button class="add-to-builder">Add to Builder</button>
+            <button class="buy-now">Buy Now</button>
             </div>
-            </div>
-
-            <div class="product" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="95">
-              <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
-              <h3>AMD Ryzen 5 7600X</h3>
-              <h4>Price: PKR 57000</h4>
-              <h5>Power Usage: 95W</h5>
-              <h6>Description:</h6>
-              <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
-              <div class="button-container">
-              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
-            </div>
-            </div>
-
-            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
+          </div>
+          <div class="product" data-id="amd_2" data-category="cpu" data-company="Ryzen"  data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>Ryzen 5</h3>
-            <h4>$100</h4>
+            <h4>₨ 1000</h4>
             <h5>Power Usage: 105W</h5>
             <h6>Description:</h6>
             <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-            <button class="btn btn-primary">Add to Builder</button>
-            <button class="btn btn-primary">Buy Now</button>
+            <div class="button-container">
+            <button class="add-to-builder">Add to Builder</button>
+            <button class="buy-now">Buy Now</button>
             </div>
+          </div>
 
-            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
-            <div class="product" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
+          <div class="product" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
               <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
               <h3>AMD Ryzen 7 7800X</h3>
-              <h4>Price: PKR 75000</h4>
+              <h4>₨ 75000</h4>
               <h5>Power Usage: 120W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 4.5 GHz<br>Max boost clock: 5.2 GHz<br>8 Cores / 16 Threads<br>Support for DDR5<br>Thermal Design Power (TDP): 65W</h6>
-              <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <div class="button-container">
+            <button class="add-to-builder">Add to Builder</button>
+            <button class="buy-now">Buy Now</button>
             </div>
-            </div>
+          </div>
 
-            <div class="product" data-id="amd_4" data-category="cpu" data-company="Ryzen" data-wattage="140">
+          <div class="product" data-id="amd_4" data-category="cpu" data-company="Ryzen" data-wattage="140">
               <img src="Pics/cpu/AMD Ryzen 9 9900X Twelve Core 5.60GHz.jpg" alt="Product 4">
               <h3>AMD Ryzen 9 9900X</h3>
-              <h4>Price: PKR 115000</h5>
+              <h4>₨ 115000</h5>
               <h5>Power Usage: 140W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 3.8 GHz<br>Max boost clock: 5.6 GHz<br>12 Cores / 24 Threads<br>Precision Boost 2 technology<br>Thermal Design Power (TDP): 140W</h6>
-              <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <div class="button-container">
+            <button class="add-to-builder">Add to Builder</button>
+            <button class="buy-now">Buy Now</button>
             </div>
-            </div>
+          </div>
 
-            <div class="product" data-id="intel_1" data-category="cpu" data-company="Intel" data-wattage="80">
+          <div class="product" data-id="intel_1" data-category="cpu" data-company="Intel" data-wattage="80">
               <img src="Pics/cpu/core i3.jpg" alt="Product 5">
               <h3>Intel Core i3 10th Gen</h3>
-              <h4>Price: PKR 22000</h5>
+              <h4>₨ 22000</h5>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 3.6 GHz<br>Max turbo frequency: 4.2 GHz<br>4 Cores / 8 Threads<br>Integrated Intel UHD Graphics 630<br>Thermal Design Power (TDP): 65W</h6>
-              <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+            <div class="button-container">
+            <button class="add-to-builder">Add to Builder</button>
+            <button class="buy-now">Buy Now</button>
             </div>
-            </div>
+          </div>
 
             <div class="product" data-id="intel_2" data-category="cpu" data-company="Intel" data-wattage="90">
               <img src="Pics/cpu/core i5.webp" alt="Product 6">
