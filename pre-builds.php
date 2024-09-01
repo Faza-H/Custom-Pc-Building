@@ -11,7 +11,6 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Store</title>
-<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="pre-builds.css">
@@ -35,12 +34,10 @@ include('includes/navbar.php');
 
 </header>
 <body style=>
-=======
     <link rel="stylesheet" href="pre-buildss.css">
     <script src="pre-builds.js"></script>
 </head>
 <body style="background-color: brown,;">
->>>>>>> 23d8117e5e96667fad64f0f0e60e72cb5c407124
       <body>
         <div class="pre-builds">
             <P>Pre-Builds</p>
@@ -72,14 +69,10 @@ include('includes/navbar.php');
     </div>
         <div class="product-container">
             <div class="product-left">
-<<<<<<< HEAD
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
                 <h3>Build 1</h3>
                 <h4>₨ 200000</h4>
-=======
-                <img id="main-image" src="Pics/Casing/AORUS C300 GLASS.webp" alt="Product Image">
                 
->>>>>>> 23d8117e5e96667fad64f0f0e60e72cb5c407124
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i7.jpg" >
@@ -146,14 +139,10 @@ include('includes/navbar.php');
         </div>
         <div class="product-container">
             <div class="product-left">
-<<<<<<< HEAD
                 <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
                 <h3>Build 2</h3>
-                <h4>₨ 250000</h4>
-=======
-                <img id="main-image" src="Pics/Casing/AORUS C400 GLASS.webp" alt="Product Image">
+                <h4>₨ 240000</h4>
                 
->>>>>>> 23d8117e5e96667fad64f0f0e60e72cb5c407124
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i5.webp" >
@@ -180,8 +169,8 @@ include('includes/navbar.php');
                         <p> C400 Caing</p>
                     </div>
                 </div>
+                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <div class="product-buttons">
-                    <a href="#">Add to Cart</a>
                     <a href="#">Buy Now</a>
                 </div>
             </div>
@@ -221,7 +210,8 @@ include('includes/navbar.php');
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/AORUS C500 GLASS.webp" alt="Product Image">
-                
+                <h3>Build 3</h3>
+                <h4>₨ 250000</h4>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/AMD Ryzen 9 9900X Twelve Core 5.60GHz.jpg" >
@@ -248,8 +238,8 @@ include('includes/navbar.php');
                         <p> C500 Casing </p>
                     </div>
                 </div>
+                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
                 <div class="product-buttons">
-                    <a href="#">Add to Cart</a>
                     <a href="#">Buy Now</a>
                 </div>
             </div>
@@ -289,7 +279,8 @@ include('includes/navbar.php');
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/XC700W.webp" alt="Product Image">
-                
+                <h3>Build 4</h3>
+                <h4>₨ 250000</h4>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i9.jpeg" >
