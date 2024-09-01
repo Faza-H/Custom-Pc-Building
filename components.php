@@ -41,8 +41,9 @@ include('includes/navbar.php');
     <header>
         
     <div class="search">
-      <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+      <input type="text" name="" id="searchBox" placeholder="search here...." onkeyup="search()">
    </div>
+
    <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
       <i class="bi bi-cart-fill"></i> Cart
       <span class="badge bg-danger">0</span>
@@ -145,8 +146,7 @@ include('includes/navbar.php');
                 <button class="buy-now">Buy Now</button>
             </div>
             </div>
-
-            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
+            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen" data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>Ryzen 5</h3>
             <h4>$100</h4>
@@ -154,11 +154,9 @@ include('includes/navbar.php');
             <h6>Description:</h6>
             <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-            <button class="btn btn-primary">Add to Builder</button>
+            <button class="add-to-builder">Add to Builder</button>
             <button class="btn btn-primary">Buy Now</button>
             </div>
-
-            <div class="product" data-id="amd" data-category="cpu" data-company="Ryzen">
             <div class="product" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
               <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
               <h3>AMD Ryzen 7 7800X</h3>
@@ -815,15 +813,17 @@ const productDivs = document.querySelectorAll('.product');
 productDivs.forEach((productDiv) => {
   const addButton = productDiv.querySelector('.add-to-builder');
   addButton.addEventListener('click', () => {
-    // Get the product name, wattage, and price
+    // Get the product name, wattage, price, and category
     const productNameTag = productDiv.querySelector('h3');
     const productName = productNameTag.textContent;
     const wattage = parseInt(productDiv.dataset.wattage);
+    const category = productDiv.dataset.category;
     const priceTag = productDiv.querySelector('h4');
     const price = parseInt(priceTag.textContent.replace('Price: PKR ', ''));
 
-    // Redirect to the builder page with the product name, wattage, and price as query parameters
-    window.location.href = `builder_1.php?component=${productName}&wattage=${wattage}&price=${price}`;
+    // Redirect to the builder page with the product name, wattage, price, and category as query parameters
+    window.location.href = `builder_1.php?component=${productName}&wattage=${wattage}&price=${price}&category=${category}`;
+    
   });
 });
 </script>

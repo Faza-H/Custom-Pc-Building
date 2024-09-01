@@ -72,7 +72,17 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// Get the wattage elements
+const cpuWattageElement = document.getElementById('cpu');
+const motherboardWattageElement = document.getElementById('Motherboard');
+const ramWattageElement = document.getElementById('RAM');
+const storageWattageElement = document.getElementById('SSD');
+const gpuWattageElement = document.getElementById('gpu');
+const caseWattageElement = document.getElementById('Casing');
+const powerSupplyWattageElement = document.getElementById('Power_supply');
+const totalWattageElement = document.getElementById('data-wattage');
 
+// Function to update the wattage
 
 
 document.addEventListener("DOMContentLoaded", function() {
