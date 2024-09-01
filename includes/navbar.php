@@ -19,7 +19,7 @@
           <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="builder_1.php">PC Builder</a>
+          <a class="nav-link active" aria-current="page" href="builder.html">PC Builder</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="laptops.php">Laptops</a>

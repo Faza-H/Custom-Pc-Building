@@ -23,7 +23,7 @@ include('includes/navbar.php');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="componentss.css">
-    <script src="components.js"></script>
+    <script src="builder.js"></script>
 </head>
 <body>
 <script>
@@ -119,7 +119,7 @@ include('includes/navbar.php');
             </div>
           </div>
           <div class="products">
-          <div class="product" data-id="amd_1" data-category="cpu" data-company="Ryzen" data-wattage="65">
+          <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 3 3200G','Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg', '65', '28000')" data-id="amd_1" data-category="cpu" data-company="Ryzen" data-wattage="65">
               <img src="Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg" alt="Product 1">
               <h3>AMD Ryzen 3 3200G 4-Core</h3>
               <h4>₨ 28000</h4>
@@ -132,7 +132,7 @@ include('includes/navbar.php');
             <button class="buy-now">Buy Now</button>
             </div>
             </div>
-            <div class="product" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
+            <div class="product" onclick="selectComponent('cpu', 'Ryzen 5', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '10000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>Ryzen 5</h3>
             <h4>₨ 1000</h4>
@@ -241,7 +241,7 @@ include('includes/navbar.php');
               </div>
             </div>
 
-            <div class="product" data-id="amd_gpu_1" data-category="gpu" data-company="AMD" data-wattage="300">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 5700 XT 8G', 'Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp')" data-id="amd_gpu_1" data-category="gpu" data-company="AMD" data-wattage="300">
               <img src="Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp" alt="Product 2">
               <h3>AMD RX 5700 XT 8G</h3>
               <h4>₨ 75000</h5>
@@ -793,7 +793,7 @@ include('includes/navbar.php');
 <?php 
 include('includes/footer.php');
 ?>
-<script>
+<!---script>
 // Get all product divs
 const productDivs = document.querySelectorAll('.product');
 
@@ -814,6 +814,6 @@ productDivs.forEach((productDiv) => {
     
   });
 });
-</script>
+</script--->
     </body>
 </html>
