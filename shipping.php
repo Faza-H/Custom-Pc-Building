@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="cartSummary">
             <h2>Your Cart</h2>
             <div id="cartItems"></div>
-            <h4>Total: $<span id="cartTotal">0</span></h4>
+            <h4>Total: Rs<span id="cartTotal">0</span></h4>
         </div>
 
         <!-- Shipping Form -->
@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             cartItems.forEach(item => {
                 const itemElement = document.createElement("div");
                 itemElement.className = "product-item";
-                itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
+                itemElement.innerHTML = `${item.name} - RS${item.price.toFixed(2)}`;
                 cartItemsContainer.appendChild(itemElement);
             });
 
