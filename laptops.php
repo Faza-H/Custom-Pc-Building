@@ -12,7 +12,9 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Store</title>
-    <link rel="stylesheet" href="laptop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="lap.css">
     <script src="laptop.js"></script>
 </head>
 <body>
@@ -22,6 +24,21 @@ include('includes/navbar.php');
         <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
      </div>
         </nav>
+
+  <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
+      <i class="bi bi-cart-fill"></i> Cart
+      <span class="badge bg-danger">0</span>
+  </a>
+<!-- Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h4>Total:<span id="cartTotal">0</span></h4>
+    <div class="buy-now-container">
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+    </div>
+</div>
       </header>
     <main>
    <!-- Search Bar -->
@@ -115,7 +132,7 @@ include('includes/navbar.php');
         <div class="product" id="inteli3g6">
             <img src="Pics/laptop Images/HP Newest 14.jpg" alt="Laptop 1">
                 <h3>Hp Swift Go Intel Evo 1</h3>
-                <h4>Price: 50000 Rs</h4>
+                <h4>₨ 50000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 6th Gen<br>
@@ -127,15 +144,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 65000 Rs</h4>
+                <h4>₨ 65000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 7th Gen<br>
@@ -147,15 +164,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g8">
             <img src="Pics/laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
                 <h3>Lenovo IdealPad 1</h3>
-                <h4>Price: 80000 Rs</h4>
+                <h4>₨ 80000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 8th Gen<br>
@@ -167,15 +184,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 90000 Rs</h4>
+                <h4>₨ 90000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 9th Gen<br>
@@ -187,15 +204,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 110000 Rs</h4>
+                <h4>₨ 110000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 10th Gen<br>
@@ -207,15 +224,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 130000 Rs</h4>
+                <h4>₨ 130000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 11th Gen<br>
@@ -227,15 +244,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 146184 Rs</h4>
+                <h4>₨ 146184</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 12th Gen<br>
@@ -247,15 +264,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 170000 Rs</h4>
+                <h4>₨ 170000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 13th Gen<br>
@@ -267,15 +284,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli3g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 190000 Rs</h4>
+                <h4>₨ 190000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I3 14th Gen<br>
@@ -287,15 +304,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 80000 Rs</h4>
+                <h4>₨ 80000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 6th Gen<br>
@@ -307,15 +324,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 100000 Rs</h4>
+                <h4>₨ 100000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 7th Gen<br>
@@ -327,15 +344,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 125000 Rs</h4>
+                <h4>₨ 125000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 8th Gen<br>
@@ -347,15 +364,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 135000 Rs</h4>
+                <h4>₨ 135000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 9th Gen<br>
@@ -367,15 +384,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 145000 Rs</h4>
+                <h4>₨ 145000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 10th Gen<br>
@@ -387,15 +404,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 165000 Rs</h4>
+                <h4>₨ 165000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 11th Gen<br>
@@ -407,15 +424,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 190000 Rs</h4>
+                <h4>₨ 190000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 12th Gen<br>
@@ -427,15 +444,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 210000 Rs</h4>
+                <h4>₨ 210000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 13th Gen<br>
@@ -447,15 +464,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli5g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 230000 Rs</h4>
+                <h4>₨ 230000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I5 14th Gen<br>
@@ -467,15 +484,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 130000 Rs</h4>
+                <h4>₨ 130000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 6th Gen<br>
@@ -487,15 +504,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 150000 Rs</h4>
+                <h4>₨ 150000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 7th Gen<br>
@@ -507,15 +524,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 170000 Rs</h4>
+                <h4>₨ 170000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 8th Gen<br>
@@ -527,15 +544,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 190000 Rs</h4>
+                <h4>₨ 190000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 9th Gen<br>
@@ -547,15 +564,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 200000 Rs</h4>
+                <h4>₨ 200000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 10th Gen<br>
@@ -567,15 +584,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 220000 Rs</h4>
+                <h4>₨ 220000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 11th Gen<br>
@@ -587,15 +604,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli7g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 240000 Rs</h4>
+                <h4>₨ 240000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 12th Gen<br>
@@ -607,15 +624,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 260000 Rs</h4>
+                <h4>₨ 260000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 13th Gen<br>
@@ -627,15 +644,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
-            </div>        
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
+            </div>    
         </div>
         <div class="product" id="inteli7g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 280000 Rs</h4>
+                <h4>₨ 280000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I7 14th Gen<br>
@@ -647,15 +664,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 210000 Rs</h4>
+                <h4>₨ 210000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I9 8th Gen<br>
@@ -667,15 +684,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 225000 Rs</h4>
+                <h4>₨ 225000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I9 9th Gen<br>
@@ -687,15 +704,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 240000 Rs</h4>
+                <h4>₨ 240000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: i9 10th Gen<br>
@@ -707,15 +724,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 255000 Rs</h4>
+                <h4>₨ 255000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I9 11th Gen<br>
@@ -727,15 +744,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
         </div>
         <div class="product" id="inteli9g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                 <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>Price: 265000 Rs</h4>
+                <h4>₨ 265000</h4>
                 <h4>Specifications:</h4>
                 <h5>Model Name:	Swift Go 14<br>
                     Generation: I9 12th Gen<br>
@@ -747,15 +764,15 @@ include('includes/navbar.php');
                     Operating System:	Windows 11 Home<br>
                     Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                     Graphics Card Description:	Integrated</h5>
-                    <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                    <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
                 </div>
                 <div class="product" id="inteli9g13">
                     <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                         <h3>Dell Swift Go Intel Evo 1</h3>
-                        <h4>Price: 270000 Rs</h4>
+                        <h4>₨ 270000</h4>
                         <h4>Specifications:</h4>
                         <h5>Model Name:	Swift Go 14<br>
                             Generation: I9 13th Gen<br>
@@ -767,15 +784,15 @@ include('includes/navbar.php');
                             Operating System:	Windows 11 Home<br>
                             Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                             Graphics Card Description:	Integrated</h5>
-                            <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
-            </div>      
+                            <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
+            </div>
                         </div>
                 <div class="product" id="inteli9g14">
                          <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
                             <h3>Dell Swift Go Intel Evo 1</h3>
-                            <h4>Price: 285000 Rs</h4>
+                            <h4>₨ 285000</h4>
                             <h4>Specifications:</h4>
                             <h5>Model Name:	Swift Go 14<br>
                                 Generation: I9 14th Gen<br>
@@ -787,14 +804,16 @@ include('includes/navbar.php');
                                 Operating System:	Windows 11 Home<br>
                                 Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
                                 Graphics Card Description:	Integrated</h5>   
-                                <div class="button-container">
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="buy-now">Buy Now</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              <button class="buy-now">Buy Now</button>
             </div>
     </div>
         <!-- Add more products as needed -->
     </section>
 </div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php 
 include('includes/footer.php');
 ?>
