@@ -204,7 +204,7 @@ body {
 /* Hover effect */
 .product:hover {
   cursor: pointer;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.03, 1.03);
   border-color: #999;
 }
 .button-container {

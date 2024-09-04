@@ -158,7 +158,10 @@ border-radius: 5px;
 text-align: center;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.product:hover{
+  
+  box-shadow: 0 0 20px rgba(0.1, 0.1, 0.1, 0.3);
+}
 .product h4{
   font-size: 20px;
 }
