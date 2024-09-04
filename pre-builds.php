@@ -13,7 +13,7 @@ include('includes/navbar.php');
     <title>PC Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="pre-builds.css">
+    <link rel="stylesheet" href="pre-buildsss.css">
     <script src="pre-builds.js"></script>
 </head>
 <header>
@@ -69,7 +69,7 @@ include('includes/navbar.php');
     </div>
         <div class="product-container">
             <div class="product-left">
-                <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
+                <img id="main-image" src="Pics/Casing/AORUS C300 GLASS.webp" alt="Product Image">
                 <h3>Build 1</h3>
                 <h4>₨ 200000</h4>
                 
@@ -100,9 +100,7 @@ include('includes/navbar.php');
                     </div>
                 </div>
                 <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <div class="product-buttons">
-                    <a href="#">Buy Now</a>
-                </div>
+                
             </div>
             <div class="product-right">
                 <div class="product-description">
@@ -141,7 +139,7 @@ include('includes/navbar.php');
         </div>
         <div class="product-container">
             <div class="product-left">
-                <img id="main-image" src="Pics/1 (6).jpeg" alt="Product Image">
+                <img id="main-image" src="Pics/Casing/AORUS C400 GLASS.webp" alt="Product Image">
                 <h3>Build 2</h3>
                 <h4>₨ 240000</h4>
                 
@@ -171,10 +169,8 @@ include('includes/navbar.php');
                         <p> C400 Caing</p>
                     </div>
                 </div>
-                <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <div class="product-buttons">
-                    <a href="#">Buy Now</a>
-                </div>
+                 <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                
             </div>
             <div class="product-right">
                 <div class="product-description">
@@ -241,9 +237,7 @@ include('includes/navbar.php');
                     </div>
                 </div>
                 <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <div class="product-buttons">
-                    <a href="#">Buy Now</a>
-                </div>
+               
             </div>
             <div class="product-right">
                 <div class="product-description">
@@ -310,9 +304,7 @@ include('includes/navbar.php');
                     </div>
                 </div>
                 <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
-                <div class="product-buttons">
-                    <a href="#">Buy Now</a>
-                </div>
+                
             </div>
             <div class="product-right">
                 <div class="product-description">
