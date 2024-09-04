@@ -28,16 +28,33 @@ include('includes/navbar.php');
 </head>
 <body>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if componentType is set by PHP
     if (<?php echo isset($componentType) ? 'true' : 'false'; ?>) {
-      var componentType = '<?php echo $componentType; ?>';
-      // Select the checkbox for the specified component type
-      var checkbox = document.querySelector(`[data-category="${componentType}"]`);
-      checkbox.checked = true;
-      // Try to trigger the change event instead of click
-      checkbox.dispatchEvent(new Event('change'));
+        var componentType = '<?php echo $componentType; ?>';
+        
+        // Debugging: Log the componentType
+        console.log("Component Type:", componentType);
+        
+        // Select the checkbox for the specified component type
+        var checkbox = document.querySelector(`[data-category="${componentType}"]`);
+        
+        if (checkbox) {
+            // Debugging: Log if the checkbox is found
+            console.log("Checkbox found for componentType:", componentType);
+            
+            checkbox.checked = true;
+            // Trigger the change event to simulate user interaction
+            checkbox.dispatchEvent(new Event('change'));
+        } else {
+            console.warn('Checkbox for componentType not found:', componentType);
+        }
+    } else {
+        console.warn('componentType is not set');
     }
-  });
+});
+
+
 </script>
     <header>
         
