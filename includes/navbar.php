@@ -25,7 +25,7 @@
           <a class="nav-link active" aria-current="page" href="laptops.php">Laptops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="components.php">Pc Componenets</a>
+          <a class="nav-link active" aria-current="page" href="components.php">PC Componenets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="">About</a>

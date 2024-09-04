@@ -59,8 +59,7 @@ include('includes/navbar-top.php');
                                         </select>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="">Status</label>
-                                        <input type="checkbox" name="status" <?= $user['status'] == '1' ? 'checked':''?> width="70px" height="70px">
+
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <button type="submit" name="update_user" class="btn btn-primary">Update User</button>

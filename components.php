@@ -140,8 +140,10 @@ include('includes/navbar.php');
             <h6>Description:</h6>
             <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+            <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="btn btn-primary">Buy Now</button>
+            <button class="buy-now">Buy Now</button>
+            </div>
             </div>
             <div class="product" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
               <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
