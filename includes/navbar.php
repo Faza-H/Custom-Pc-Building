@@ -1,4 +1,4 @@
-<header class="d-flex justify-content-center text-light bg-danger py-1">
+<header class="d-flex justify-content-right text-light bg-black py-1">
         <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-2">Ultimate Builds</span>
       </a>
