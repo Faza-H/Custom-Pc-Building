@@ -45,7 +45,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 500px;
+    max-width: 1470px;
     width: 100%;
     text-align: center;
     margin: 20px auto;
@@ -78,7 +78,7 @@ label {
 }
 
 input[type="text"] {
-    width: calc(100% - 50px);
+    width: calc(80% - 50px);
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -86,7 +86,10 @@ input[type="text"] {
     margin-left: 10px;
     pointer-events: none;
 }
-
+.selector .component-info{
+    margin-right: 8px;
+    margin-left: 8px;
+}
 .plus-link {
     text-decoration: none;
     color: #007bff;
