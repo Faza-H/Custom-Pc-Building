@@ -1,6 +1,6 @@
 body {
   position: relative;
-  font-family: Arial, display;
+  font-family: Arial, sans-serif;
   text-decoration-color: black;
   margin: 0;
   padding: 0;
@@ -54,16 +54,15 @@ body {
   justify-content: right;
 }
 .pre-builds .titel{
-  opacity:0.5;
+border: 2px solid black;
 padding-top: 5px;
+border-radius: 5px;
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  font-style: ;
   width: 100%;
   background-size:100% ;
 float: right;
-background-image: linear-gradient(to bottom right, grey, white);
 margin: 15px 15px 5px 5px;
 
 }
@@ -75,8 +74,8 @@ margin: 20px;
 }
 .pre-builds img{
   opacity: 1;
-  width: fit-content;
- height: fit-content;
+  width:80%;
+ height: auto;
  margin-left: 0 auto;
  text-align: center;
  padding: 0%;
@@ -84,10 +83,9 @@ margin: 20px;
 
  .pre-builds .pre-built{
   width: 18%;
-  opacity: 0.8;
   text-align: center;
 float: right;
-background-color: grey;
+background-color: white;
 text-decoration-color: #0a0a23;
 margin: 15px 50px 5px 5px;
 border-radius: 10px;

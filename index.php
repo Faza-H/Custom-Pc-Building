@@ -12,15 +12,15 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Building</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body style="background-image: url(Pics/background/cover3.jpg);">
+<body >
     
     <main>
       
         <div class="pre-builds">
-        <p> <div class="titel">Pre-build PCs
+          <div class="titel">Pre-build PCs
             <p class="titel2">
                 "Pre-build PCs" on our website offer expertly designed
                  and fully assembled systems ready for immediate use.<br>
@@ -29,95 +29,51 @@ include('includes/navbar.php');
                     for those who need a powerful PC without the hassle of custom configuration."
             </p>
             <button onclick="location.href='pre-builds.php'"> See More </button>
-        </div></p>
+        </div>
         <div class="pre-built">
         
-            <img src="Pics/1 (5).jpeg" alt="">
-<p>id:item 1<br>
-    <h5>Description</h5>
-    &star;processor: intel core i7 7th Gen<br>
-    &star;gpu: ryzen 5 5600x<br>
-    &star;motherbaord: 7th Gen<br>
-    &star;cooler: Radiant DC-360 
-</p>
-          <button>buy now</button>
+            <img src="Pics/Casing/AORUS C300 GLASS.webp" alt="">
+             <p><h3>Build 1</h3>
+            <h5>Description</h5>
+             &star;processor: intel core i7 10th Gen<br>
+              &star;gpu:RX 5700XT<br>
+              &star;motherbaord:intel X299<br>
+              &star;RAM:16 GB RAM  
+              </p>
+          <button onclick="location.href='pre-builds.php'">See More</button>
         </div>
         <div class="pre-built">
-            <img src="Pics/1 (3).jpeg" alt="">
-            <p>id:item 1<br>
+            <img src="Pics/Casing/AORUS C400 GLASS.webp" alt="">
+            <p><h3>Build 2</h3>
                 <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
+                &star;processor: intel i5 10th GEN<br>
+                &star;gpu:AMD VII 16G<br>
+                &star;motherbaord:intel Motherboard<br>
+                &star;RAM:32 GB DDR5 RAM
             </p>
-            <button>buy now</button>
+            <button onclick="location.href='pre-builds.php'">See More</button>
         </div>
         <div class="pre-built">
-            <img src="Pics/1 (4).jpeg" alt="">
-            <p>id:item 1<br>
+            <img src="Pics/Casing/AORUS C500 GLASS.webp" alt="">
+            <p><h3>Build 3</h3>
                 <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
+                &star;processor:Ryzen 9 9900X<br>
+                &star;gpu:RTX 3090 TI<br>
+                &star;motherbaord:B650M Motherboard<br>
+                &star;RAM:16 GB RAM
             </p>
-            <button>buy now</button>
+            <button onclick="location.href='pre-builds.php'">See More</button>
         </div>
         <div class="pre-built">
-            <img src="Pics/1 (4).jpeg" alt="">
-            <p>id:item 1<br>
+            <img src="Pics/Casing/XC700W.webp" alt="">
+            <p><h3>Build 4</h3>
                 <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
+                &star;processor:intel core i9 14th GEN<br>
+                &star;gpu:NVIDIA RTX 4060 TI<br>
+                &star;motherbaord:MSI Motherboard<br>
+                &star;cooler:RAM:32GB DDR5 RAM
             </p>   
-            <button>buy now</button>
-        </div>
-        <div class="pre-built">
-            <img src="Pics/1 (6).jpeg" alt="">
-            <p>id:item 1<br>
-                <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
-            </p>          
-            <button>buy now</button>
-        </div>
-        <div class="pre-built">
-            <img src="Pics/1 (1).jpeg" alt="">
-            <p>id:item 1<br>
-                <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
-            </p>
-            <button>buy now</button>
-        </div>
-        <div class="pre-built">
-            <img src="Pics/1 (5).jpeg" alt="">
-            <p>id:item 1<br>
-                <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
-            </p>
-            <button>buy now</button>
-        </div>
-        <div class="pre-built">
-            <img src="Pics/1 (7).jpeg" alt="">
-            <p>id:item 1<br>
-                <h5>Description</h5>
-                &star;processor: intel core i7 7th Gen<br>
-                &star;gpu: ryzen 5 5600x<br>
-                &star;motherbaord: 7th Gen<br>
-                &star;cooler: Radiant DC-360 
-            </p>
-            <button>buy now</button>
+            <button onclick="location.href='pre-builds.php'">See More</button>
         </div>
         </div>
         <div class="brands">
