@@ -37,7 +37,7 @@ function selectComponent(component, name, imgUrl, wattage, price) {
     console.log(`Wattage: ${wattage}`);
     console.log(`Price: ${price}`);
     updateImage(component); // Call updateImage after setting local storage items
-    window.close(); // Close the selection page
+    window.location.assign('builder.html'); // Redirect to builder page
 }
 
 window.onload = function() {
