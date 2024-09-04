@@ -134,6 +134,8 @@ include('includes/navbar.php');
                         </div>
                         <!-- Additional comments can be added here -->
                     </div>
+                    <input type="text" id="write" placeholder="write comment...">
+
                 </div>
             </div>
         </div>

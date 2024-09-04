@@ -107,6 +107,9 @@ body {
   }
   
   .comments-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
       border-top: 1px solid #e0e0e0;
       padding-top: 20px;
   }
@@ -122,12 +125,15 @@ body {
   }
   
   .comments-section {
-      display: none;
+   display:none;
   }
   
   .comment {
       padding: 10px;
       border-bottom: 1px solid #e0e0e0;
+  }
+  .comments-container input{
+  top: 780px;
   }
   .filters {
     gap: 30px;
