@@ -12,6 +12,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$message = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $address = $_POST['address'];
@@ -47,10 +49,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $itemStmt->execute();
         }
 
-        // Clear the cart in localStorage and redirect
-        echo "<script>alert('Order has been placed!'); localStorage.clear(); window.location.href = 'index.html';</script>";
+        // Display success message
+        $message = "Your order has been placed successfully! Your order ID is " . $order_id . ".";
     } else {
-        echo "Error: " . $stmt->error;
+        $message = "Error: " . $stmt->error;
     }
 }
 ?>
@@ -63,16 +65,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Shipping Details</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .cart-summary {
+            margin-bottom: 20px;
+        }
+        .success-message {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .form-label {
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #cartSummary {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Shipping Details</h1>
 
+        <?php if ($message): ?>
+            <div class="success-message">
+                <?php echo $message; ?>
+            </div>
+        <?php endif; ?>
+
         <!-- Cart Summary -->
-        <div id="cartSummary">
+        <div id="cartSummary" class="cart-summary">
             <h2>Your Cart</h2>
             <div id="cartItems"></div>
-            <h4>Total: Rs<span id="cartTotal">0</span></h4>
+            <h4>Total: Rs <span id="cartTotal">0</span></h4>
         </div>
 
         <!-- Shipping Form -->
@@ -126,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             cartItems.forEach(item => {
                 const itemElement = document.createElement("div");
                 itemElement.className = "product-item";
-                itemElement.innerHTML = `${item.name} - RS${item.price.toFixed(2)}`;
+                itemElement.innerHTML = `${item.name} - RS ${item.price.toFixed(0)}`;
                 cartItemsContainer.appendChild(itemElement);
             });
 
