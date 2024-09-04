@@ -27,9 +27,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="components.php">PC Componenets</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">About</a>
-        </li>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
