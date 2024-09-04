@@ -9,7 +9,7 @@ body {
 }
 .cart-btn {
   position: absolute;
-  top: 120px; /* Adjust this value based on your navbar height */
+  top: 70px; /* Adjust this value based on your navbar height */
   right: 20px;
   display: flex;
   align-items: center;
