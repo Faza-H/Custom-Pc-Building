@@ -106,7 +106,7 @@ include('includes/navbar.php');
                 <img src="Pics/background/build-cover2.jpg" alt="">
             <p>Choose your components and assemble your dream PC with ease.</p>
        
-                <button onclick="location.href='builder_1.php'"> Build PC</button>
+                <button onclick="location.href='builder.php'"> Build PC</button>
         </div>
           </main>
           <footer>
