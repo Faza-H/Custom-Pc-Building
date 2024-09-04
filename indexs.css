@@ -84,18 +84,21 @@ margin: 20px;
  .pre-builds .pre-built{
   width: 18%;
   text-align: center;
-float: right;
-background-color: white;
-text-decoration-color: #0a0a23;
-margin: 15px 50px 5px 5px;
-border-radius: 10px;
-border-right: 3px solid #ddd;
-border-left: 3px solid #ddd;
-border-top: 3px solid #ddd;
-border-bottom: 3px solid #ddd;
+  float: right;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration-color: #0a0a23;
+  margin: 15px 50px 5px 5px;
+  border-radius: 10px;
+ }
+ .pre-builds .pre-built:hover{
+  box-shadow: 0 0 20px rgba(0.1, 0.1, 0.1, 0.3);
  }
 .pre-builds button{
   font-size: 20px;
+}
+button:hover{
+  border-color: blue;
 }
 footer {
   background-image: linear-gradient(to top, #1e2c38, gray);
