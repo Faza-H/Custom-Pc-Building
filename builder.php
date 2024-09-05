@@ -11,7 +11,7 @@ include('includes/navbar.php');
     <title>Custom PC Builder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="builderss.css">
+    <link rel="stylesheet" href="builderxx.css">
     <script>
         function chooseComponent(componentType) {
             // Redirect to components.php with the component type as a query parameter
@@ -100,15 +100,13 @@ include('includes/navbar.php');
                 </div>
             </div>
             <div class="component">
+                <div class="total">
                 <label for="total-wattage">Total Wattage: </label>
                 <span id="total-wattage" class="component-info">0W</span>
-            </div>
-
-            <div class="component">
-                
                 <label for="total-price">Total Price: </label>
                 <span id="total-price" class="component-info">PKR 0</span>
-            </div>
+    </div>
+    </div>
             <div id="alert-message" style="display: none; color: red;"></div>
             <button type="submit">Build PC</button>
         </form>

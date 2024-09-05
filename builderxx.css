@@ -154,3 +154,9 @@ button:hover {
     color: #333;
 }
 
+.component .total{
+    gap: 10px;
+    display: inline-flex;
+    float: inline-end;
+    margin-right: 20px;
+}
