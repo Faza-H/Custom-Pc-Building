@@ -3,9 +3,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 /* Header styling */
+<<<<<<< HEAD
+=======
+header {
+background-color: #333;
+color:white;
+height: 100px;
+padding: 10px 0;
+text-align: left;
+}
+>>>>>>> 6ed9e2298d091181b11ef655fa855b023ac48a9b
 
 .builder {
 display: flex;
@@ -51,4 +60,8 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.container .price,.wattage{
+  display: inline-block;
+  float: inline-end;
 }

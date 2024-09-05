@@ -825,30 +825,51 @@ document.addEventListener("DOMContentLoaded", function() {
 <?php 
 include('includes/footer.php');
 ?>
-<!---script>
-// Get all product divs
-const productDivs = document.querySelectorAll('.product');
+<script>
 
-// Add event listener to each product's "Add to Builder" button
-productDivs.forEach((productDiv) => {
-  const addButton = productDiv.querySelector('.add-to-builder');
-  addButton.addEventListener('click', () => {
-    // Get the product name, wattage, price, and category
-    const productNameTag = productDiv.querySelector('h3');
-    const productName = productNameTag.textContent;
-    const wattage = parseInt(productDiv.dataset.wattage);
-    const category = productDiv.dataset.category;
-    const priceTag = productDiv.querySelector('h4');
-    const price = parseInt(priceTag.textContent.replace('Price: PKR ', ''));
 
-    // Redirect to the builder page with the product name, wattage, price, and category as query parameters
-    window.location.href = `builder_1.php?component=${productName}&wattage=${wattage}&price=${price}&category=${category}`;
-    
-  });
+document.querySelectorAll('.product').forEach((productDiv) => {
+    const addButton = productDiv.querySelector('.add-to-builder');
+    addButton.addEventListener('click', () => {
+        console.log('Button clicked!');
+        // Get the product name, wattage, price, and category from the DOM
+        const productNameTag = productDiv.querySelector('h3');
+        const productName = productNameTag.textContent;
+        const wattage = productDiv.dataset.wattage;  // Using dataset to store wattage
+        const category = productDiv.dataset.category;  // Using dataset to store category
+        const priceTag = productDiv.querySelector('h4');
+        const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
+
+        // Assuming image URL is stored in a data attribute or img tag in product div
+        const imgTag = productDiv.querySelector('img');
+        const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`;  // Default URL if not present
+
+        // Store data in sessionStorage
+        sessionStorage.setItem('selectedComponent', JSON.stringify({
+            category: category.toLowerCase(),
+            name: productName,
+            image: imgUrl,
+            wattage: wattage,
+            price: price
+        }));
+
+        // Redirect to builder.php
+        window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}`;
+
+        // Optionally, close the current tab
+        //window.close();
+    });
 });
+<<<<<<< HEAD
 </script--->
 <?php 
 include('includes/footer.php');
 ?>
+=======
+
+
+
+</script>
+>>>>>>> 6ed9e2298d091181b11ef655fa855b023ac48a9b
     </body>
 </html>
