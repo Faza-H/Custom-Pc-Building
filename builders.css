@@ -5,42 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: left;
-  }
-  
-  header h1{
-    color: white;
-    margin-left: 50px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 25px;
-    text-align: left;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 16px;
-  }
-  .navbar ul li a:hover {
-    background-color: gray;
-    border-radius: 5px;
-  }/* Container holding the sidebar, main content, and other elements */
+
       
-.container {
+.containe {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -51,10 +18,7 @@ header {
     margin: 20px auto;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #333;
-}
+
 
 form {
     display: flex;

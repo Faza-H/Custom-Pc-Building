@@ -61,19 +61,30 @@ document.addEventListener("DOMContentLoaded", function() {
    </div>
 
    <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
-      <i class="bi bi-cart-fill"></i> Cart
-      <span class="badge bg-danger">0</span>
-  </a>
+    <i class="bi bi-cart-fill"></i> Cart
+    <span class="badge bg-danger">0</span>
+</a>
+
 <!-- Sidebar -->
 <div id="cartSidebar" class="cart-sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
     <h2>Your Cart</h2>
+    
+    <!-- Table for product names and prices -->
+    <div class="cart-header">
+        <div class="cart-header-item">Product</div>
+        <div class="cart-header-item">Price</div>
+    </div>
+
     <div id="cartItems"></div>
-    <h4>Total:<span id="cartTotal">0</span></h4>
+
+    <h4>Total: <span id="cartTotal">0</span></h4>
+
     <div class="buy-now-container">
         <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
     </div>
 </div>
+
       </header>
       <div class="containe">
       <div class="sidebar">
@@ -836,5 +847,8 @@ productDivs.forEach((productDiv) => {
   });
 });
 </script--->
+<?php 
+include('includes/footer.php');
+?>
     </body>
 </html>
