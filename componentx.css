@@ -5,7 +5,7 @@ body {
 }
 .cart-btn {
   position: absolute;
-  top: 70px; /* Adjust this value based on your navbar height */
+  top: 70px;
   right: 20px;
   display: flex;
   align-items: center;
@@ -40,11 +40,33 @@ body {
   top: 20px;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
 }
 
-.cart-sidebar .product-item {
+.cart-header {
+  display: flex;
+  justify-content: space-between;
   margin: 10px 20px;
+  font-weight: bold;
+}
+
+.cart-header-item {
+  width: 50%;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-item button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
 }
 
 .buy-now-container {
@@ -57,7 +79,6 @@ body {
   width: 50%;
 }
 
-
 #cartSummary {
   margin-top: 20px;
 }
@@ -65,6 +86,9 @@ body {
 #shippingForm {
   margin-top: 20px;
 }
+
+
+
 .containe {
   display: flex;
   flex-wrap: wrap;

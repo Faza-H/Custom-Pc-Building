@@ -2,6 +2,7 @@
 
 include('includes/header.php');
 include('includes/navbar.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,7 @@ include('includes/navbar.php');
     <title>Custom PC Builder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="builders.css">
     <link rel="stylesheet" href="builderxx.css">
     <script>
 function chooseComponent(componentType) {
@@ -20,7 +22,7 @@ function chooseComponent(componentType) {
         </script>
 </head>
 <body>
-    <div class="container">
+    <div class="containe">
         <h1>Build Your Custom PC</h1>
         <form id="pc-builder-form">
             <div class="component">
@@ -112,11 +114,14 @@ function chooseComponent(componentType) {
             <button type="submit">Build PC</button>
         </form>
     </div>
+<?php 
+    include('includes/footer.php');
+?>
     <script src="builder.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <?php 
-        include('includes/footer.php');
+<?php 
+    include('includes/footer.php');
 ?>
 </body>
 </html>

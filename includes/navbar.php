@@ -1,4 +1,4 @@
-<header class="d-flex justify-content-right text-light bg-black py-1">
+<header class="d-flex justify-content-center text-light bg-black py-1">
         <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-2">Ultimate Builds</span>
       </a>
@@ -27,6 +27,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="components.php">PC Componenets</a>
         </li>
+        ?>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
