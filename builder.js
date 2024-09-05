@@ -1,3 +1,4 @@
+// Function to update image and component details on the builder page
 function updateImage(component) {
     const img = document.getElementById(`${component}-img`);
     const input = document.getElementById(component);
@@ -25,6 +26,7 @@ function updateImage(component) {
     updateTotals(); // Update totals after updating the image
 }
 
+// Function to handle selecting a component and storing its details in localStorage
 function selectComponent(component, name, imgUrl, wattage, price) {
     const numericPrice = price.replace(/[^0-9.-]+/g, ""); // Remove any non-numeric characters including "$"
     localStorage.setItem(component, name);
@@ -37,14 +39,15 @@ function selectComponent(component, name, imgUrl, wattage, price) {
     console.log(`Wattage: ${wattage}`);
     console.log(`Price: ${numericPrice}`);
     updateImage(component); // Call updateImage after setting local storage items
-    window.location.replace('builder.php'); // Redirect to builder page
+    window.location.href = 'builder.php'; // Redirect to builder page
 }
 
+// Function to update total wattage and price
 function updateTotals() {
     let totalWattage = 0;
     let totalPrice = 0;
     let powerWattage = 0;
-    
+
     // List of all components
     const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
 
@@ -79,9 +82,31 @@ function updateTotals() {
     }
 }
 
+// On page load, update all component images and values from localStorage
 window.onload = function() {
     const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
     components.forEach(component => {
         updateImage(component);
     });
 }
+
+// Add event listener to each "Add to Builder" button for all products on the components page
+document.querySelectorAll('.product').forEach((productDiv) => {
+    const addButton = productDiv.querySelector('.add-to-builder');
+    addButton.addEventListener('click', () => {
+        // Get the product name, wattage, price, and category from the DOM
+        const productNameTag = productDiv.querySelector('h3');
+        const productName = productNameTag.textContent;
+        const wattage = productDiv.dataset.wattage;  // Using dataset to store wattage
+        const category = productDiv.dataset.category;  // Using dataset to store category
+        const priceTag = productDiv.querySelector('h4');
+        const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
+
+        // Assuming that image URL is stored in a data attribute or in an <img> tag in the product div
+        const imgTag = productDiv.querySelector('img');
+        const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`;  // Default URL if not present in DOM
+
+        // Call selectComponent to update localStorage and proceed with the redirect to builder.php
+        selectComponent(category.toLowerCase(), productName, imgUrl, wattage, price);
+    });
+});
