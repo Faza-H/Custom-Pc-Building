@@ -1,0 +1,13 @@
+- Processors Not Supported by X299X AORUS MASTER:
+        Intel Mainstream Desktop Processors:
+
+        Intel Core i3, i5, i7, and i9 (non-X-series) processors from the 10th, 11th, 12th, and 13th generations (LGA 1200 and LGA 1700 sockets)
+        are not supported.
+        Intel Core i3, i5, i7 processors on the LGA 1151 socket from the 9th or 8th generations (e.g., i7-9700K) are also not supported.
+    Supported Processors:
+            This motherboard is specifically designed to support Intel’s Core X-Series processors (Skylake-X and Cascade Lake-X) on the LGA 2066 socket.
+            For example:
+                        Intel Core i9-10980XE
+                        Intel Core i9-9980XE
+                        Intel Core i9-9940X
+                        Intel Core i7-9800X
