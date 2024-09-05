@@ -815,6 +815,8 @@ document.addEventListener("DOMContentLoaded", function() {
 include('includes/footer.php');
 ?>
 <script>
+
+
 document.querySelectorAll('.product').forEach((productDiv) => {
     const addButton = productDiv.querySelector('.add-to-builder');
     addButton.addEventListener('click', () => {
@@ -831,8 +833,8 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         const imgTag = productDiv.querySelector('img');
         const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`;  // Default URL if not present
 
-        // Store data in localStorage
-        localStorage.setItem('selectedComponent', JSON.stringify({
+        // Store data in sessionStorage
+        sessionStorage.setItem('selectedComponent', JSON.stringify({
             category: category.toLowerCase(),
             name: productName,
             image: imgUrl,
@@ -840,13 +842,14 @@ document.querySelectorAll('.product').forEach((productDiv) => {
             price: price
         }));
 
-        // Redirect to builder.php with the component data as query parameters
+        // Redirect to builder.php
         window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}`;
 
-        // Close the current tab
-        window.close();
+        // Optionally, close the current tab
+        //window.close();
     });
 });
+
 
 
 </script>

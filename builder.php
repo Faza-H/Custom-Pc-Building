@@ -15,9 +15,8 @@ include('includes/navbar.php');
     <script>
 function chooseComponent(componentType) {
     // Open the components.php page in a new tab with the component type as a query parameter
-    window.open('components.php?component=' + componentType, '_blank');
+    window.location.replace('components.php?component=' + componentType, '_blank');
 }
-
         </script>
 </head>
 <body>
