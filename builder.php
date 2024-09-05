@@ -105,9 +105,10 @@ function chooseComponent(componentType) {
                 <span id="total-wattage" class="component-info">0W</span>
                 <label for="total-price">Total Price: </label>
                 <span id="total-price" class="component-info">PKR 0</span>
-    </div>
-    </div>
+            </div>
+            </div>
             <div id="alert-message" style="display: none; color: red;"></div>
+            <button type="button" id="reset-button" class="btn-danger">Reset</button>
             <button type="submit">Build PC</button>
         </form>
     </div>

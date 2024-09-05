@@ -110,3 +110,15 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         selectComponent(category.toLowerCase(), productName, imgUrl, wattage, price);
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const resetButton = document.getElementById('reset-button');
+
+    if (resetButton) {
+        resetButton.addEventListener('click', function() {
+            // Clear localStorage
+            localStorage.clear();
+             // Reload the page once
+            location.reload();
+        });
+    }
+});
