@@ -3,12 +3,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 /* Header styling */
 header {
 background-color: #333;
-color: white;
+color:white;
 height: 100px;
 padding: 10px 0;
 text-align: left;
@@ -93,4 +92,8 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.container .price,.wattage{
+  display: inline-block;
+  float: inline-end;
 }

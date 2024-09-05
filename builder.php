@@ -37,7 +37,7 @@ include('includes/navbar.php');
             <div class="component">
                 <label for="gpu">GPU</label>
                 <div class="selector">
-                    <img id="gpu-img" class="component-img" src="images/placeholder.png" alt="GPU Image">
+                    <img id="gpu-img" class="component-img" src="Pics\gpu\nvidia\GeForce® GTX 1660 Ti GAMING OC 6G.webp" alt="GPU Image">
                     <input type="text" id="gpu" name="gpu" placeholder="Select a GPU" readonly>
                     <span id="gpu-wattage" class="component-info">0W</span>
                     <span id="gpu-price" class="component-info">0Rs</span>
@@ -48,7 +48,7 @@ include('includes/navbar.php');
             <div class="component">
                 <label for="ram">RAM</label>
                 <div class="selector">
-                    <img id="ram-img" class="component-img" src="images/placeholder.png" alt="RAM Image">
+                    <img id="ram-img" class="component-img" src="Pics\ram\GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp" alt="RAM Image">
                     <input type="text" id="ram" name="ram" placeholder="Select RAM" readonly>
                     <span id="ram-wattage" class="component-info">0W</span>
                     <span id="ram-price" class="component-info">0Rs</span>
@@ -59,7 +59,7 @@ include('includes/navbar.php');
             <div class="component">
                 <label for="ssd">Storage</label>
                 <div class="selector">
-                    <img id="ssd-img" class="component-img" src="images/placeholder.png" alt="SSD Image">
+                    <img id="ssd-img" class="component-img" src="Pics\ssd\GIGABYTE NVMe SSD 1TB.webp" alt="SSD Image">
                     <input type="text" id="ssd" name="ssd" placeholder="Select SSD" readonly>
                     <span id="ssd-wattage" class="component-info">0W</span>
                     <span id="ssd-price" class="component-info">0Rs</span>
@@ -70,7 +70,7 @@ include('includes/navbar.php');
             <div class="component">
                 <label for="case">Case</label>
                 <div class="selector">
-                    <img id="case-img" class="component-img" src="images/placeholder.png" alt="Case Image">
+                    <img id="case-img" class="component-img" src="Pics\Casing\AORUS C500 GLASS.webp" alt="Case Image">
                     <input type="text" id="case" name="case" placeholder="Select a Case" readonly>
                     <span id="case-wattage" class="component-info">0W</span>
                     <span id="case-price" class="component-info">0Rs</span>
@@ -81,7 +81,7 @@ include('includes/navbar.php');
             <div class="component">
                 <label for="motherboard">Motherboard</label>
                 <div class="selector">
-                    <img id="motherboard-img" class="component-img" src="images/placeholder.png" alt="Motherboard Image">
+                    <img id="motherboard-img" class="component-img" src="Pics\Motherboard\intel X299X AORUS MASTER (rev. 1.x).webp" alt="Motherboard Image">
                     <input type="text" id="motherboard" name="motherboard" placeholder="Select a Motherboard" readonly>
                     <span id="motherboard-wattage" class="component-info">0W</span>
                     <span id="motherboard-price" class="component-info">0Rs</span>
@@ -90,15 +90,26 @@ include('includes/navbar.php');
             </div>
             
             <div class="component">
-                <label for="power supply">Power Supply</label>
+                <label for="power">Power Supply</label>
                 <div class="selector">
-                    <img id="power-supply-img" class="component-img" src="images/placeholder.png" alt="power supply Image">
+                    <img id="power-img" class="component-img" src="Pics\psu\SilverStone SST-AT650R-BF-WBW ATTIS White 650R 80.webp" alt="power supply Image">
                     <input type="text" id="power" name="power" placeholder="Select a Power Supply" readonly>
                     <span id="power-wattage" class="component-info">0W</span>
                     <span id="power-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('Power_supply')">+</a>
                 </div>
             </div>
+            <div class="component">
+                <label for="total-wattage">Total Wattage: </label>
+                <span id="total-wattage" class="component-info">0W</span>
+            </div>
+
+            <div class="component">
+                
+                <label for="total-price">Total Price: </label>
+                <span id="total-price" class="component-info">PKR 0</span>
+            </div>
+            <div id="alert-message" style="display: none; color: red;"></div>
             <button type="submit">Build PC</button>
         </form>
     </div>
