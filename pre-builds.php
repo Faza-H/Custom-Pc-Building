@@ -13,19 +13,29 @@ include('includes/navbar.php');
     <title>PC Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="pre-buildsss.css">
+    <link rel="stylesheet" href="pre-builds.css">
 </head>
 <header>
 <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
-      <i class="bi bi-cart-fill"></i> Cart
-      <span class="badge bg-danger">0</span>
-  </a>
+    <i class="bi bi-cart-fill"></i> Cart
+    <span class="badge bg-danger">0</span>
+</a>
+
 <!-- Sidebar -->
 <div id="cartSidebar" class="cart-sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
     <h2>Your Cart</h2>
+    
+    <!-- Table for product names and prices -->
+    <div class="cart-header">
+        <div class="cart-header-item">Product</div>
+        <div class="cart-header-item">Price</div>
+    </div>
+
     <div id="cartItems"></div>
-    <h4>Total:<span id="cartTotal">0</span></h4>
+
+    <h4>Total: <span id="cartTotal">0</span></h4>
+
     <div class="buy-now-container">
         <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
     </div>
