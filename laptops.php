@@ -131,19 +131,20 @@ include('includes/navbar.php');
     <section class="product-list">
         <div class="product" id="inteli3g6">
             <img src="Pics/laptop Images/HP Newest 14.jpg" alt="Laptop 1">
-                <h3>Hp Swift Go Intel Evo 1</h3>
-                <h4>₨ 50000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 6th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Inspiron 15</h3>
+<h4>₨ 60000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Inspiron 15<br>
+    Generation: I3 6th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 1 TB<br>
+    CPU Model: Intel Core i3-6100U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Anti-glare display, Bluetooth<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -151,19 +152,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 65000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 7th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Pavilion 14</h3>
+<h4>₨ 70000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Pavilion 14<br>
+    Generation: I3 7th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 1 TB<br>
+    CPU Model: Intel Core i3-7100U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Touchscreen, Backlit Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -171,19 +173,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g8">
             <img src="Pics/laptop Images/Lenovo IdeaPad 1 Laptop.jpg" alt="Laptop 1">
-                <h3>Lenovo IdealPad 1</h3>
-                <h4>₨ 80000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 8th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo ThinkPad E490</h3>
+<h4>₨ 75000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo ThinkPad E490<br>
+    Generation: I3 8th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 1 TB<br>
+    CPU Model: Intel Core i3-8130U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Pro<br>
+    Special Feature: Fingerprint Reader, Spill-resistant Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -191,19 +194,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 90000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 9th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP 15s</h3>
+<h4>₨ 80000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP 15s<br>
+    Generation: I3 9th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-9100<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Full HD Display, Fast Charging<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -211,19 +215,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 110000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 10th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo IdeaPad S340</h3>
+<h4>₨ 85000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo IdeaPad S340<br>
+    Generation: I3 10th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Platinum Grey<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-1005G1<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Slim Design, Backlit Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -231,19 +236,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 130000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 11th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Inspiron 14</h3>
+<h4>₨ 90000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Inspiron 14<br>
+    Generation: I3 11th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-1115G4<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Narrow Border, Fast Charging<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -251,19 +257,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 146184</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 12th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Pavilion 15</h3>
+<h4>₨ 95000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Pavilion 15<br>
+    Generation: I3 12th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-1215U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: Micro-edge Display, Backlit Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -271,19 +278,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 170000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 13th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo IdeaPad 3</h3>
+<h4>₨ 100000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo IdeaPad 3<br>
+    Generation: I3 13th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Arctic Grey<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-1315U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: HD Webcam, Rapid Charge<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -291,19 +299,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli3g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 190000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I3 14th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Vostro 14</h3>
+<h4>₨ 110000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Vostro 14<br>
+    Generation: I3 14th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i3-1415U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: Anti-glare Display, Enhanced Security<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -311,19 +320,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 80000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 6th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Pavilion 15</h3>
+<h4>₨ 85000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Pavilion 15<br>
+    Generation: I5 6th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 1 TB<br>
+    CPU Model: Intel Core i5-6200U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: HD Display, Fast Charging<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -331,19 +341,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 100000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 7th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo ThinkPad L470</h3>
+<h4>₨ 90000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo ThinkPad L470<br>
+    Generation: I5 7th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-7200U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Pro<br>
+    Special Feature: Spill-resistant Keyboard, Fingerprint Reader<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -351,19 +362,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 125000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 8th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Inspiron 15</h3>
+<h4>₨ 95000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Inspiron 15<br>
+    Generation: I5 8th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Platinum Silver<br>
+    Hard Disk Size: 1 TB HDD<br>
+    CPU Model: Intel Core i5-8250U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Full HD Display, Anti-glare<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -371,19 +383,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 135000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 9th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell XPS 13</h3>
+<h4>₨ 110000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell XPS 13<br>
+    Generation: I5 9th Gen<br>
+    Screen Size: 13.3 Inches<br>
+    Color: Frost<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-9300H<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Pro<br>
+    Special Feature: InfinityEdge Display, Backlit Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -391,19 +404,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 145000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 10th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo IdeaPad Flex 5</h3>
+<h4>₨ 105000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo IdeaPad Flex 5<br>
+    Generation: I5 10th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Graphite Grey<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-10210U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Convertible Design, Touchscreen<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -411,19 +425,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 165000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 11th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Spectre x360</h3>
+<h4>₨ 120000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Spectre x360<br>
+    Generation: I5 11th Gen<br>
+    Screen Size: 13.3 Inches<br>
+    Color: Nightfall Black<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-1135G7<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: 360-degree Convertible, High-Resolution Display<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -431,19 +446,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 190000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 12th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Inspiron 14</h3>
+<h4>₨ 115000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Inspiron 14<br>
+    Generation: I5 12th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-1235U<br>
+    Ram Memory Installed Size: 8 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: Narrow Border Display, Fast Charging<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -451,19 +467,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 210000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 13th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo ThinkPad T14</h3>
+<h4>₨ 125000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo ThinkPad T14<br>
+    Generation: I5 13th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-1335U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: Robust Security, Spill-resistant Keyboard<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -471,19 +488,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli5g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 230000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I5 14th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Pavilion 14</h3>
+<h4>₨ 130000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Pavilion 14<br>
+    Generation: I5 14th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Natural Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i5-1415U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: Ultra-thin Design, Full HD Display<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -491,19 +509,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g6">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 130000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 6th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell XPS 15</h3>
+<h4>₨ 120000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell XPS 15<br>
+    Generation: I7 6th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i7-6700HQ<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Pro<br>
+    Special Feature: InfinityEdge Display, High Resolution<br>
+    Graphics Card Description: NVIDIA GeForce GTX 960M</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -511,19 +530,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g7">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 150000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 7th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Envy 17</h3>
+<h4>₨ 130000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Envy 17<br>
+    Generation: I7 7th Gen<br>
+    Screen Size: 17.3 Inches<br>
+    Color: Natural Silver<br>
+    Hard Disk Size: 1 TB HDD<br>
+    CPU Model: Intel Core i7-7500U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: Full HD Display, Bang & Olufsen Speakers<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -531,19 +551,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 170000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 8th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Spectre x360 15</h3>
+<h4>₨ 140000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Spectre x360 15<br>
+    Generation: I7 8th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Dark Ash Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i7-8550U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: 360-degree Convertible, High Definition Display<br>
+    Graphics Card Description: NVIDIA GeForce MX150</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -551,19 +572,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 190000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 9th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo Legion 5</h3>
+<h4>₨ 150000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo Legion 5<br>
+    Generation: I7 9th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Phantom Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i7-9750H<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: High Refresh Rate Display, Gaming Keyboard<br>
+    Graphics Card Description: NVIDIA GeForce GTX 1660 Ti</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -571,19 +593,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 200000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 10th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Inspiron 15 7000</h3>
+<h4>₨ 155000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Inspiron 15 7000<br>
+    Generation: I7 10th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Silver<br>
+    Hard Disk Size: 512 GB SSD<br>
+    CPU Model: Intel Core i7-10750H<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Pro<br>
+    Special Feature: Full HD Display, High Performance<br>
+    Graphics Card Description: NVIDIA GeForce GTX 1650</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -591,19 +614,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 220000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 11th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell XPS 15</h3>
+<h4>₨ 170000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell XPS 15<br>
+    Generation: I7 11th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Platinum Silver<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i7-11800H<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: InfinityEdge Display, High Resolution<br>
+    Graphics Card Description: NVIDIA GeForce RTX 3050</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -611,39 +635,41 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 240000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 12th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo Yoga 9i</h3>
+<h4>₨ 180000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo Yoga 9i<br>
+    Generation: I7 12th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Storm Grey<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i7-1265U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: 360-degree Convertible, High-Definition Touchscreen<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
             </div>
         </div>
-        <div class="product" id="inteli9g13">
+        <div class="product" id="inteli7g13">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 260000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 13th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Spectre x360 14</h3>
+<h4>₨ 190000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Spectre x360 14<br>
+    Generation: I7 13th Gen<br>
+    Screen Size: 13.5 Inches<br>
+    Color: Poseidon Blue<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i7-13700U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: 360-degree Convertible, Ultra HD Display<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -651,19 +677,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli7g14">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 280000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I7 14th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo ThinkPad X1 Carbon</h3>
+<h4>₨ 200000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo ThinkPad X1 Carbon<br>
+    Generation: I7 14th Gen<br>
+    Screen Size: 14 Inches<br>
+    Color: Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i7-14700U<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: Lightweight, High Durability<br>
+    Graphics Card Description: Integrated</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -671,19 +698,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli9g8">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 210000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I9 8th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Omen 15</h3>
+<h4>₨ 200000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Omen 15<br>
+    Generation: I9 8th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Shadow Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-8950HK<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: High Refresh Rate Display, Gaming Keyboard<br>
+    Graphics Card Description: NVIDIA GeForce GTX 1070</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -691,19 +719,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli9g9">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 225000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I9 9th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell Alienware m15</h3>
+<h4>₨ 220000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell Alienware m15<br>
+    Generation: I9 9th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Lunar Light<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-9900K<br>
+    Ram Memory Installed Size: 16 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: AlienFX Lighting, Advanced Cooling<br>
+    Graphics Card Description: NVIDIA GeForce RTX 2070</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -711,19 +740,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli9g10">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 240000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: i9 10th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Lenovo Legion 7i</h3>
+<h4>₨ 240000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo Legion 7i<br>
+    Generation: I9 10th Gen<br>
+    Screen Size: 15.6 Inches<br>
+    Color: Raven Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-10980HK<br>
+    Ram Memory Installed Size: 32 GB<br>
+    Operating System: Windows 10 Home<br>
+    Special Feature: High Refresh Rate Display, RGB Backlit Keyboard<br>
+    Graphics Card Description: NVIDIA GeForce RTX 2080 Super</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -731,19 +761,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli9g11">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 255000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I9 11th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>Dell XPS 17</h3>
+<h4>₨ 270000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Dell XPS 17<br>
+    Generation: I9 11th Gen<br>
+    Screen Size: 17 Inches<br>
+    Color: Frost<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-11980HK<br>
+    Ram Memory Installed Size: 32 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: Ultra HD+ Display, High Performance<br>
+    Graphics Card Description: NVIDIA GeForce RTX 3070</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -751,19 +782,20 @@ include('includes/navbar.php');
         </div>
         <div class="product" id="inteli9g12">
             <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                <h3>Dell Swift Go Intel Evo 1</h3>
-                <h4>₨ 265000</h4>
-                <h4>Specifications:</h4>
-                <h5>Model Name:	Swift Go 14<br>
-                    Generation: I9 12th Gen<br>
-                    Screen Size:	14 Inches<br>
-                    Color:	Silver<br>
-                    Hard Disk Size:	512<br>
-                    CPU Model:	Intel Core i7-1355U<br>
-                    Ram Memory Installed Size:	16 GB<br>
-                    Operating System:	Windows 11 Home<br>
-                    Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                    Graphics Card Description:	Integrated</h5>
+            <h3>HP Omen 16</h3>
+<h4>₨ 280000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Omen 16<br>
+    Generation: I9 12th Gen<br>
+    Screen Size: 16.1 Inches<br>
+    Color: Shadow Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-12900H<br>
+    Ram Memory Installed Size: 32 GB<br>
+    Operating System: Windows 11 Home<br>
+    Special Feature: High Refresh Rate Display, Enhanced Cooling<br>
+    Graphics Card Description: NVIDIA GeForce RTX 3080</h5>
+
                     <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -771,19 +803,20 @@ include('includes/navbar.php');
                 </div>
                 <div class="product" id="inteli9g13">
                     <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                        <h3>Dell Swift Go Intel Evo 1</h3>
-                        <h4>₨ 270000</h4>
-                        <h4>Specifications:</h4>
-                        <h5>Model Name:	Swift Go 14<br>
-                            Generation: I9 13th Gen<br>
-                            Screen Size:	14 Inches<br>
-                            Color:	Silver<br>
-                            Hard Disk Size:	512<br>
-                            CPU Model:	Intel Core i7-1355U<br>
-                            Ram Memory Installed Size:	16 GB<br>
-                            Operating System:	Windows 11 Home<br>
-                            Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                            Graphics Card Description:	Integrated</h5>
+                    <h3>Lenovo Legion 9i</h3>
+<h4>₨ 300000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: Lenovo Legion 9i<br>
+    Generation: I9 13th Gen<br>
+    Screen Size: 16 Inches<br>
+    Color: Storm Grey<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-13900HK<br>
+    Ram Memory Installed Size: 32 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: Ultra High Refresh Rate, RGB Backlit Keyboard<br>
+    Graphics Card Description: NVIDIA GeForce RTX 4080</h5>
+
                             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
@@ -791,19 +824,20 @@ include('includes/navbar.php');
                         </div>
                 <div class="product" id="inteli9g14">
                          <img src="Pics/laptop Images/Dell Inspiron 15 3000 3520 Business Laptop.jpg" alt="Laptop 1">
-                            <h3>Dell Swift Go Intel Evo 1</h3>
-                            <h4>₨ 285000</h4>
-                            <h4>Specifications:</h4>
-                            <h5>Model Name:	Swift Go 14<br>
-                                Generation: I9 14th Gen<br>
-                                Screen Size:	14 Inches<br>
-                                Color:	Silver<br>
-                                Hard Disk Size:	512<br>
-                                CPU Model:	Intel Core i7-1355U<br>
-                                Ram Memory Installed Size:	16 GB<br>
-                                Operating System:	Windows 11 Home<br>
-                                Special Feature:	Fingerprint Reader, Backlit Keyboard<br>
-                                Graphics Card Description:	Integrated</h5>   
+                         <h3>HP Spectre x360 16</h3>
+<h4>₨ 320000</h4>
+<h4>Specifications:</h4>
+<h5>Model Name: HP Spectre x360 16<br>
+    Generation: I9 14th Gen<br>
+    Screen Size: 16 Inches<br>
+    Color: Nightfall Black<br>
+    Hard Disk Size: 1 TB SSD<br>
+    CPU Model: Intel Core i9-14900H<br>
+    Ram Memory Installed Size: 32 GB<br>
+    Operating System: Windows 11 Pro<br>
+    Special Feature: 4K OLED Touchscreen, Convertible Design<br>
+    Graphics Card Description: NVIDIA GeForce RTX 4090</h5>
+
                                 <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="buy-now">Buy Now</button>
