@@ -860,16 +860,9 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         //window.close();
     });
 });
-<<<<<<< HEAD
-</script--->
+</script>
 <?php 
 include('includes/footer.php');
 ?>
-=======
-
-
-
-</script>
->>>>>>> 6ed9e2298d091181b11ef655fa855b023ac48a9b
     </body>
 </html>
