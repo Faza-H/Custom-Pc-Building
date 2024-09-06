@@ -13,20 +13,29 @@ include('includes/navbar.php');
     <title>PC Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="pre-buildsss.css">
-    <script src="pre-builds.js"></script>
+    <link rel="stylesheet" href="pre-builds.css">
 </head>
 <header>
 <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
-      <i class="bi bi-cart-fill"></i> Cart
-      <span class="badge bg-danger">0</span>
-  </a>
+    <i class="bi bi-cart-fill"></i> Cart
+    <span class="badge bg-danger">0</span>
+</a>
+
 <!-- Sidebar -->
 <div id="cartSidebar" class="cart-sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
     <h2>Your Cart</h2>
+    
+    <!-- Table for product names and prices -->
+    <div class="cart-header">
+        <div class="cart-header-item">Product</div>
+        <div class="cart-header-item">Price</div>
+    </div>
+
     <div id="cartItems"></div>
-    <h4>Total:<span id="cartTotal">0</span></h4>
+
+    <h4>Total: <span id="cartTotal">0</span></h4>
+
     <div class="buy-now-container">
         <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
     </div>
@@ -48,31 +57,33 @@ include('includes/navbar.php');
         <div class="filters">
         <div class="filter">
             <label>Rating:</label>
-            <select>
-                
-              <option value="high">Select</option>
-              <option value="high">High to Low</option>
-              <option value="low">Low to High</option>
+            <select id="rating-filter">
+                <option value="">Select</option>
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
             </select>
-          </div>
+            </div>
+
           <div class="filter">
             <label>Price:</label>
-            <select>
-                <option value="asc">Select</option>
-              <option value="asc">0-100,000 Rs.</option>
-              <option value="desc">100,000-200,000 Rs.</option>
-              <option value="desc">200,000-300,000 Rs.</option>
-              <option value="desc">300,000-400,000 Rs.</option>
+            <select id="price-filter">
+                <option value="">Select</option>
+                <option value="0-100000">0-100,000 Rs.</option>
+                <option value="100000-200000">100,000-200,000 Rs.</option>
+                <option value="200000-300000">200,000-300,000 Rs.</option>
+                <option value="300000-400000">300,000-400,000 Rs.</option>
             </select>
-          </div>
+            </div>
         </div>
     </div>
+
+
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/AORUS C300 GLASS.webp" alt="Product Image">
                 <h3>Build 1</h3>
-                <h4>₨ 200000</h4>
-                
+                <h4>₨ 90000</h4>
+                <h5>Rating : 3.0/5</h5>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i7.jpg" >
@@ -137,12 +148,15 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+
+
+
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/AORUS C400 GLASS.webp" alt="Product Image">
                 <h3>Build 2</h3>
-                <h4>₨ 240000</h4>
-                
+                <h4>₨ 140000</h4>
+                <h5>Rating : 4.0/5</h5>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i5.webp" >
@@ -205,11 +219,15 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+
+
+
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/AORUS C500 GLASS.webp" alt="Product Image">
                 <h3>Build 3</h3>
                 <h4>₨ 250000</h4>
+                <h5>Rating : 4.5/5</h5>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/AMD Ryzen 9 9900X Twelve Core 5.60GHz.jpg" >
@@ -272,11 +290,15 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+
+
+        
         <div class="product-container">
             <div class="product-left">
                 <img id="main-image" src="Pics/Casing/XC700W.webp" alt="Product Image">
                 <h3>Build 4</h3>
-                <h4>₨ 250000</h4>
+                <h4>₨ 350000</h4>
+                <h5>Rating : 2.5/5</h5>
                 <div class="features-container">
                     <div class="feature-block">
                         <img src="Pics/cpu/core i9.jpeg" >
@@ -339,10 +361,11 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+<script src="pre_builds.js"></script>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php 
 include('includes/footer.php');
 ?>
-    </body>
-    </html>
+</body>
+</html>

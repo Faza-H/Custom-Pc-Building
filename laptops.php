@@ -14,7 +14,7 @@ include('includes/navbar.php');
     <title>Laptop Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="lap.css">
+    <link rel="stylesheet" href="laptop.css">
     <script src="laptop.js"></script>
 </head>
 <body>
@@ -25,16 +25,26 @@ include('includes/navbar.php');
      </div>
         </nav>
 
-  <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
-      <i class="bi bi-cart-fill"></i> Cart
-      <span class="badge bg-danger">0</span>
-  </a>
+        <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
+    <i class="bi bi-cart-fill"></i> Cart
+    <span class="badge bg-danger">0</span>
+</a>
+
 <!-- Sidebar -->
 <div id="cartSidebar" class="cart-sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
     <h2>Your Cart</h2>
+    
+    <!-- Table for product names and prices -->
+    <div class="cart-header">
+        <div class="cart-header-item">Product</div>
+        <div class="cart-header-item">Price</div>
+    </div>
+
     <div id="cartItems"></div>
-    <h4>Total:<span id="cartTotal">0</span></h4>
+
+    <h4>Total: <span id="cartTotal">0</span></h4>
+
     <div class="buy-now-container">
         <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
     </div>
@@ -846,6 +856,9 @@ include('includes/navbar.php');
         <!-- Add more products as needed -->
     </section>
 </div>
+<?php 
+include('includes/footer.php');
+?>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php 
