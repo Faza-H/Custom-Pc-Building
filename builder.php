@@ -12,8 +12,7 @@ include('includes/navbar.php');
     <title>Custom PC Builder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="builders.css">
-    <link rel="stylesheet" href="builderxx.css">
+    <link rel="stylesheet" href="builderss.css">
     <script>
 function chooseComponent(componentType) {
     // Open the components.php page in a new tab with the component type as a query parameter
@@ -109,7 +108,7 @@ function chooseComponent(componentType) {
                 <span id="total-price" class="component-info">PKR 0</span>
             </div>
             </div>
-            <div id="alert-message" style="display: none; color: red;"></div>
+            <div class="button" id="alert-message" style="display: none; color: red;"></div>
             <button type="button" id="reset-button" class="btn-danger">Reset</button>
             <button type="submit">Build PC</button>
         </form>
