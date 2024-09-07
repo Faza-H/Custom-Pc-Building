@@ -159,10 +159,10 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="buy-now">Buy Now</button>
             </div>
             </div>
-            <div class="product" onclick="selectComponent('cpu', 'Ryzen 5', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '35000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
+            <div class="product" onclick="selectComponent('cpu', 'Ryzen 5 3600', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '25000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
-            <h3>Ryzen 5</h3>
-            <h4>₨ 35000</h4>
+            <h3>AMD Ryzen 5 3600</h3>
+            <h4>₨ 25000</h4>
             <h5>Power Usage: 105W</h5>
             <h6>Description:</h6>
             <h6>Base clock: 4.7 GHz<br>Max boost clock: 5.3 GHz<br>6 Cores / 12 Threads<br>PCIe 5.0 support<br>Thermal Design Power (TDP): 105W</h6>
@@ -200,11 +200,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
 
-          <div class="product" onclick="selectComponent('cpu', 'Intel Core i3 10th Gen', 'Pics/cpu/core i3.jpg', '80','22000')" data-id="intel_1" data-category="cpu" data-company="Intel" data-wattage="80">
+          <div class="product" onclick="selectComponent('cpu', 'Intel Core i3 6th Gen', 'Pics/cpu/core i3.jpg', '50','22000')" data-id="intel_1" data-category="cpu" data-company="Intel" data-wattage="80">
             <img src="Pics/cpu/core i3.jpg" alt="Product 5">
-            <h3>Intel Core i3 10th Gen</h3>
+            <h3>Intel Core i3 6th Gen</h3>
             <h4>₨ 22000</h5>
-            <h5>Power Usage: 80W</h5>
+            <h5>Power Usage: 50W</h5>
             <h6>Description:</h6>
             <h6>Base clock: 3.6 GHz<br>Max turbo frequency: 4.2 GHz<br>4 Cores / 8 Threads<br>Integrated Intel UHD Graphics 630<br>Thermal Design Power (TDP): 65W</h6>
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
@@ -214,11 +214,11 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
 
-          <div class="product" onclick="selectComponent('cpu', 'Intel Core i5 10th Gen', 'Pics/cpu/core i5.webp', '90','35000')" data-id="intel_2" data-category="cpu" data-company="Intel" data-wattage="90">
+          <div class="product" onclick="selectComponent('cpu', 'Intel Core i5 5th Gen', 'Pics/cpu/core i5.webp', '50','35000')" data-id="intel_2" data-category="cpu" data-company="Intel" data-wattage="90">
               <img src="Pics/cpu/core i5.webp" alt="Product 6">
-              <h3>Intel Core i5 10th Gen</h3>
+              <h3>Intel Core i5 5th Gen</h3>
               <h4>₨ 35000</h5>
-              <h5>Power Usage: 90W</h5>
+              <h5>Power Usage: 50W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 2.9 GHz<br>Max turbo frequency: 4.3 GHz<br>6 Cores / 12 Threads<br>Integrated Intel UHD Graphics 630<br>Thermal Design Power (TDP): 65W</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
@@ -284,10 +284,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX 7900 24G', 'Pics/gpu/AMD/AORUS Radeon™ RX 7900 XTX ELITE 24G.webp', '350', '250000')" data-id="amd_gpu_2" data-category="gpu" data-company="AMD" data-wattage="350">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 7900 24G', 'Pics/gpu/AMD/AORUS Radeon™ RX 7900 XTX ELITE 24G.webp', '350', '340000')" data-id="amd_gpu_2" data-category="gpu" data-company="AMD" data-wattage="350">
               <img src="Pics/gpu/AMD/AORUS Radeon™ RX 7900 XTX ELITE 24G.webp" alt="Product 2">
               <h3>AMD RX 7900 24G</h3>
-              <h4>₨ 250000</h4>
+              <h4>₨ 340000</h4>
               <h5>Power Usage: 350W</h5>
               <h6>Description:</h6>
               <h6>Memory: 24GB GDDR6<br>Base clock: 1,900 MHz<br>Boost clock: 2,500 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced triple-fan cooling system</h6>
@@ -298,11 +298,11 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD PRO W7800 32G', 'Pics/gpu/AMD/Radeon™ PRO W7800 AI TOP 32G.webp', '300', '400000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
-              <img src="Pics/gpu/AMD/Radeon™ PRO W7800 AI TOP 32G.webp" alt="Product 2">
-              <h3>AMD PRO W7800 32G</h3>
-              <h4>₨ 400000</h4>
-              <h5>Power Usage: 300W</h5>
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX VEGA 64', 'Pics\gpu\AMD\radeon RX vega 64.webp', '250', '140000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
+              <img src="Pics\gpu\AMD\radeon RX vega 64.webp" alt="Product 2">
+              <h3>AMD RX VEGA 64</h3>
+              <h4>₨ 140000</h4>
+              <h5>Power Usage: 250W</h5>
               <h6>Description:</h6>
               <h6>Memory: 32GB GDDR6<br>Base clock: 1,700 MHz<br>Boost clock: 2,100 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Optimized for professional workloads and AI</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
@@ -312,11 +312,11 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD VII HBM2 16G', 'Pics/gpu/AMD/Radeon™ VII HBM2 16G.webp', '290', '700000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
-              <img src="Pics/gpu/AMD/Radeon™ VII HBM2 16G.webp" alt="Product 2">
-              <h3>AMD VII HBM2 16G</h3>
-              <h4>₨ 700000</h4>
-              <h5>Power Usage: 290W</h5>
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics\gpu\AMD\rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
+              <img src="Pics\gpu\AMD\rx 580.webp" alt="Product 2">
+              <h3>AMD RX 580</h3>
+              <h4>₨ 65000</h4>
+              <h5>Power Usage: 250W</h5>
               <h6>Description:</h6>
               <h6>Memory: 16GB HBM2<br>Base clock: 1,400 MHz<br>Boost clock: 1,750 MHz<br>Interface: PCIe 3.0 x16<br>Max resolution: 7680x4320<br>Cooling: Liquid-cooling ready</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
@@ -340,10 +340,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 3090 Ti 24G', 'Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp', '350', '450000')" data-id="nvidia_gpu_1" data-category="gpu" data-company="Nvidia" data-wattage="350">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 3090 Ti 24G', 'Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp', '350', '360000')" data-id="nvidia_gpu_1" data-category="gpu" data-company="Nvidia" data-wattage="350">
               <img src="Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp" alt="Product 2">
               <h3>Nvidia RTX™ 3090 Ti 24G</h3>
-              <h4>₨ 450000</h4>
+              <h4>₨ 360000</h4>
               <h5>Power Usage: 350W</h5>
               <h6>Description:</h6>
               <h6>Memory: 24GB GDDR6X<br>Base clock: 1,560 MHz<br>Boost clock: 1,860 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: All-in-one cooling system</h6>
@@ -354,10 +354,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia GTX 1080 Ti 11G', 'Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp', '180', '150000')" data-id="nvidia_gpu_2" data-category="gpu" data-company="Nvidia" data-wattage="180">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia GTX 1080 Ti 11G', 'Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp', '180', '120000')" data-id="nvidia_gpu_2" data-category="gpu" data-company="Nvidia" data-wattage="180">
               <img src="Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp" alt="Product 2">
               <h3>Nvidia GTX 1080 Ti 11G</h3>
-              <h4>₨ 150000</h4>
+              <h4>₨ 120000</h4>
               <h5>Power Usage: 180W</h5>
               <h6>Description:</h6>
               <h6>Memory: 11GB GDDR5X<br>Base clock: 1,607 MHz<br>Boost clock: 1,721 MHz<br>Interface: PCIe 3.0 x16<br>Max resolution: 7680x4320<br>Cooling: Waterforce water block cooling system</h6>
@@ -368,11 +368,11 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 4060 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4060 Ti AERO OC 16G.webp', '450', '115000')" data-id="nvidia_gpu_3" data-category="gpu" data-company="Nvidia" data-wattage="450">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 2080 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4060 Ti AERO OC 16G.webp', '200', '195000')" data-id="nvidia_gpu_3" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti AERO OC 16G.webp" alt="Product 2">
-              <h3>Nvidia RTX™ 4060 Ti 16G</h3>
-              <h4>₨ 115000</h4>
-              <h5>Power Usage: 450W</h5>
+              <h3>Nvidia RTX™ 2080 Ti 16G</h3>
+              <h4>₨ 195000</h4>
+              <h5>Power Usage: 200W</h5>
               <h6>Description:</h6>
               <h6>Memory: 16GB GDDR6<br>Base clock: 2,310 MHz<br>Boost clock: 2,580 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced Windforce cooling system</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
@@ -382,10 +382,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 4060 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4060 Ti GAMING OC 16G.webp', '450', '120000')" data-id="nvidia_gpu_4" data-category="gpu" data-company="Nvidia" data-wattage="450">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 4060 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4060 Ti GAMING OC 16G.webp', '450', '90000')" data-id="nvidia_gpu_4" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4060 Ti GAMING OC 16G.webp" alt="Product 2">
               <h3>Nvidia RTX™ 4060 Ti 16G</h3>
-              <h4>₨ 120000</h4>
+              <h4>₨ 90000</h4>
               <h5>Power Usage: 450W</h5>
               <h6>Description:</h6>
               <h6>Memory: 16GB GDDR6<br>Base clock: 2,310 MHz<br>Boost clock: 2,580 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Triple-fan Windforce cooling system</h6>
@@ -396,10 +396,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 4070 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4070 Ti SUPER AI TOP 16G.webp', '450', '200000')" data-id="nvidia_gpu_5" data-category="gpu" data-company="Nvidia" data-wattage="450">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 4070 Ti 16G', 'Pics/gpu/nvidia/GeForce RTX™ 4070 Ti SUPER AI TOP 16G.webp', '450', '170000')" data-id="nvidia_gpu_5" data-category="gpu" data-company="Nvidia" data-wattage="450">
               <img src="Pics/gpu/nvidia/GeForce RTX™ 4070 Ti SUPER AI TOP 16G.webp" alt="Product 2">
               <h3>Nvidia RTX™ 4070 Ti 16G</h3>
-              <h4>₨ 200000</h4>
+              <h4>₨ 170000</h4>
               <h5>Power Usage: 450W</h5>
               <h6>Description:</h6>
               <h6>Memory: 16GB GDDR6X<br>Base clock: 2,310 MHz<br>Boost clock: 2,610 MHz<br>Interface: PCIe 4.0 x16<br>Max resolution: 7680x4320<br>Cooling: Advanced triple-fan cooling system</h6>
