@@ -1,75 +1,70 @@
 <?php 
-
-
-if(isset($_POST['add_to_cart']))
-{
-    if(isset($_SESSION['cart']))
-    {
-
-    }
-    else
-    {
-        $session_array = array(
-            'id' => $_GET['id'],
-            'name' => $_POST['name'],
-            'price' => $_POST['price'],
-            'quantity' => $_POST['quantity']
-        );
-
-        $_SESSION['cart'][] = $session_array;
-    }
-}
-
 include('includes/header.php');
 include('includes/navbar.php');
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Price (PKR)</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be inserted here -->
+            </tbody>
+        </table>
+        <h3>Total: PKR <span id="cart-total">0</span></h3>
 
-
-
-
-<div class="container-fluid">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="text-center">Cart</h2>
-                <div class="col-md-12">
-                    <div class="row">
-
-                    
-                <?php
-
-                $query = "SELECT * FROM posts";
-                $query_run = mysqli_query($con,$query);
-                
-                while($row = mysqli_fetch_array($query_run)){?>
-                <div class="col-md-4">
-                    <form method="post" action="cart.php?id=<?= $row['id'] ?>">
-                        <img src="uploads/posts/<?=$row['image'] ?>" style='height: 150px; '>
-                        <h5><?= $row['name']; ?></h5>
-                        <h5>$<?= number_format($row['price'],2); ?></h5>
-                        <input type="hidden" name="name" value="<?= $row['name'] ?>">
-                        <input type="hidden" name="price" value="<?= $row['price'] ?>">
-                        <input type="number" name="quantity" value="1" class="form-control">
-                        <input type="submit" name="add_to_cart" class="btn btn-warning" 
-                        value="Add To Cart">
-
-
-                    </form>
-                </div>    
-                <?php }
-
-                ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-center">Item Selected</h2>
-
-                <?php 
-                 var_dump($_SESSION['cart'])
-                
-                ?>
-            </div>
-        </div>
+        <!-- Form to pass cart items and total to shipping page -->
+        <form id="checkoutForm" method="POST" action="shipbuilder.php">
+            <input type="hidden" id="cartItemsInput" name="cartItems">
+            <input type="hidden" id="cartTotalInput" name="cartTotal">
+            <button type="submit" class="btn btn-primary">Proceed to Checkout</button>
+        </form>
     </div>
-</div>
+
+    <script>
+        // Function to load cart items from localStorage and display them
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItems = document.getElementById('cart-items');
+            let total = 0;
+
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                `;
+                cartItems.appendChild(row);
+                total += item.price;
+            });
+
+            document.getElementById('cart-total').innerText = total;
+
+            // Store cart data in hidden input fields to send to the shipping page
+            document.getElementById('cartItemsInput').value = JSON.stringify(cart);
+            document.getElementById('cartTotalInput').value = total;
+        }
+
+        window.onload = function() {
+            loadCart();
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<?php 
+include('includes/footer.php');
+?>

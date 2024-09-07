@@ -9,36 +9,22 @@ function updateImage(component) {
     const wattage = localStorage.getItem(`${component}-wattage`);
     const price = localStorage.getItem(`${component}-price`);
 
-    console.log(`Updating image for ${component}`);
-    console.log(`Selected option: ${selectedOption}`);
-    console.log(`Image URL: ${imgUrl}`);
-    console.log(`Wattage: ${wattage}`);
-    console.log(`Price: ${price}`);
-
     if (selectedOption && imgUrl && wattage && price) {
         img.src = imgUrl;
         input.value = selectedOption;
-        wattageSpan.innerText = `${wattage}W`; // Display wattage only
-        priceSpan.innerText = `PKR ${price}`; // Force PKR instead of $
-    } else {
-        console.log(`Not updating image for ${component} because one or more values are missing`);
+        wattageSpan.innerText = `${wattage}W`;
+        priceSpan.innerText = `PKR ${price}`;
     }
     updateTotals(); // Update totals after updating the image
 }
 
 // Function to handle selecting a component and storing its details in localStorage
 function selectComponent(component, name, imgUrl, wattage, price) {
-    const numericPrice = price.replace(/[^0-9.-]+/g, ""); // Remove any non-numeric characters including "$"
     localStorage.setItem(component, name);
     localStorage.setItem(`${component}-img`, imgUrl);
     localStorage.setItem(`${component}-wattage`, wattage);
-    localStorage.setItem(`${component}-price`, numericPrice); // Store only the numeric price
-    console.log(`Selected component: ${component}`);
-    console.log(`Name: ${name}`);
-    console.log(`Image URL: ${imgUrl}`);
-    console.log(`Wattage: ${wattage}`);
-    console.log(`Price: ${numericPrice}`);
-    updateImage(component); // Call updateImage after setting local storage items
+    localStorage.setItem(`${component}-price`, price);
+    updateImage(component);
     window.location.href = 'builder.php'; // Redirect to builder page
 }
 
@@ -48,7 +34,6 @@ function updateTotals() {
     let totalPrice = 0;
     let powerWattage = 0;
 
-    // List of all components
     const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
 
     components.forEach(component => {
@@ -68,18 +53,37 @@ function updateTotals() {
         }
     });
 
-    // Update total wattage and total price fields
     document.getElementById('total-wattage').innerText = `${totalWattage}W`;
     document.getElementById('total-price').innerText = `PKR ${totalPrice}`;
 
-    // Show message if total wattage exceeds power supply wattage
     const alertMessage = document.getElementById('alert-message');
     if (totalWattage > powerWattage) {
         alertMessage.style.display = 'block';
         alertMessage.innerText = 'You need a power supply with more capacity.';
     } else {
-        alertMessage.style.display = 'none'; // Hide message if not needed
+        alertMessage.style.display = 'none';
     }
+}
+
+// Function to add selected components to the cart
+function addToCart() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
+
+    components.forEach(component => {
+        const name = localStorage.getItem(component);
+        const price = localStorage.getItem(`${component}-price`);
+
+        if (name && price) {
+            cart.push({
+                name: name,
+                price: parseFloat(price)
+            });
+        }
+    });
+
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 // On page load, update all component images and values from localStorage
@@ -88,36 +92,21 @@ window.onload = function() {
     components.forEach(component => {
         updateImage(component);
     });
-}
 
-// Add event listener to each "Add to Builder" button for all products on the components page
-document.querySelectorAll('.product').forEach((productDiv) => {
-    const addButton = productDiv.querySelector('.add-to-builder');
-    addButton.addEventListener('click', () => {
-        // Get the product name, wattage, price, and category from the DOM
-        const productNameTag = productDiv.querySelector('h3');
-        const productName = productNameTag.textContent;
-        const wattage = productDiv.dataset.wattage;  // Using dataset to store wattage
-        const category = productDiv.dataset.category;  // Using dataset to store category
-        const priceTag = productDiv.querySelector('h4');
-        const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
-
-        // Assuming that image URL is stored in a data attribute or in an <img> tag in the product div
-        const imgTag = productDiv.querySelector('img');
-        const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`;  // Default URL if not present in DOM
-
-        // Call selectComponent to update localStorage and proceed with the redirect to builder.php
-        selectComponent(category.toLowerCase(), productName, imgUrl, wattage, price);
+    document.getElementById('build-pc-btn').addEventListener('click', function (e) {
+        e.preventDefault();
+        addToCart(); // Add selected components to cart
+        window.location.href = 'cart.php'; // Redirect to cart page
     });
-});
+};
+
+// Reset button to clear local storage and reload the page
 document.addEventListener('DOMContentLoaded', function() {
     const resetButton = document.getElementById('reset-button');
 
     if (resetButton) {
         resetButton.addEventListener('click', function() {
-            // Clear localStorage
             localStorage.clear();
-             // Reload the page once
             location.reload();
         });
     }

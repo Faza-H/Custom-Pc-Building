@@ -1,8 +1,6 @@
 <?php 
-
 include('includes/header.php');
 include('includes/navbar.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +16,10 @@ function chooseComponent(componentType) {
     // Open the components.php page in a new tab with the component type as a query parameter
     window.location.replace('components.php?component=' + componentType, '_blank');
 }
-        </script>
+    </script>
 </head>
 <body>
-    <div class="containe">
+    <div class="container">
         <h1>Build Your Custom PC</h1>
         <form id="pc-builder-form">
             <div class="component">
@@ -32,9 +30,9 @@ function chooseComponent(componentType) {
                     <span id="cpu-wattage" class="component-info">0W</span>
                     <span id="cpu-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('cpu'); return false;">+</a>
-                    
                 </div>
             </div>
+            <!-- Repeat the component sections for GPU, RAM, SSD, Case, Motherboard, and Power Supply -->
             <div class="component">
                 <label for="gpu">GPU</label>
                 <div class="selector">
@@ -45,7 +43,7 @@ function chooseComponent(componentType) {
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('gpu'); return false;">+</a>
                 </div>
             </div>
-            
+            <!-- Add other components as needed -->
             <div class="component">
                 <label for="ram">RAM</label>
                 <div class="selector">
@@ -56,7 +54,6 @@ function chooseComponent(componentType) {
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('RAM'); return false;">+</a>
                 </div>
             </div>
-            
             <div class="component">
                 <label for="ssd">Storage</label>
                 <div class="selector">
@@ -100,27 +97,22 @@ function chooseComponent(componentType) {
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('Power_supply'); return false;">+</a>
                 </div>
             </div>
+
             <div class="component">
-                <div class="total">
                 <label for="total-wattage">Total Wattage: </label>
                 <span id="total-wattage" class="component-info">0W</span>
                 <label for="total-price">Total Price: </label>
                 <span id="total-price" class="component-info">PKR 0</span>
             </div>
-            </div>
             <div class="button" id="alert-message" style="display: none; color: red;"></div>
-            <button type="button" id="reset-button" class="btn-danger">Reset</button>
-            <button type="submit">Build PC</button>
+            <button type="button" id="reset-button" class="btn btn-danger">Reset</button>
+            <button type="submit" id="build-pc-btn" class="btn btn-primary">Build PC</button>
         </form>
     </div>
 <?php 
     include('includes/footer.php');
 ?>
     <script src="builder.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php 
-    include('includes/footer.php');
-?>
 </body>
 </html>
