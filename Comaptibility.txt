@@ -1,13 +1,112 @@
 - Processors Not Supported by X299X AORUS MASTER:
-        Intel Mainstream Desktop Processors:
+        Intel Core X-Series (Skylake-X and Cascade Lake-X):
+        Intel Core i9-10980XE (18 cores, 36 threads)
+        Intel Core i9-10940X (14 cores, 28 threads)
+        Intel Core i9-10920X (12 cores, 24 threads)
+        Intel Core i9-10900X (10 cores, 20 threads)
+        Intel Core i9-9980XE (18 cores, 36 threads)
+        Intel Core i9-9960X (16 cores, 32 threads)
+        Intel Core i9-9940X (14 cores, 28 threads)
+        Intel Core i9-9920X (12 cores, 24 threads)
+        Intel Core i9-9900X (10 cores, 20 threads)
+        Intel Core i7-9800X (8 cores, 16 threads)
+        Intel Core i7-7820X (8 cores, 16 threads)
+        Intel Core i7-7800X (6 cores, 12 threads)
+        These are the only Intel processors compatible with this motherboard since it uses the LGA 2066 socket.
 
-        Intel Core i3, i5, i7, and i9 (non-X-series) processors from the 10th, 11th, 12th, and 13th generations (LGA 1200 and LGA 1700 sockets)
-        are not supported.
-        Intel Core i3, i5, i7 processors on the LGA 1151 socket from the 9th or 8th generations (e.g., i7-9700K) are also not supported.
-    Supported Processors:
-            This motherboard is specifically designed to support Intel’s Core X-Series processors (Skylake-X and Cascade Lake-X) on the LGA 2066 socket.
-            For example:
-                        Intel Core i9-10980XE
-                        Intel Core i9-9980XE
-                        Intel Core i9-9940X
-                        Intel Core i7-9800X
+        Not Compatible CPUs:
+        Intel Core i3, i5, i7, i9 processors on other sockets (LGA 1151, LGA 1200, or LGA 1700).
+        AMD Ryzen CPUs or any AMD processors are not compatible with this motherboard because it is based on Intel's chipset and uses an Intel-specific socket (LGA 2066).
+        Compatible NVIDIA and AMD GPUs:
+        The X299X AORUS MASTER motherboard supports a wide range of NVIDIA and AMD GPUs via its PCIe x16 slots.
+
+        NVIDIA GPU Compatibility:
+        NVIDIA GeForce RTX 40 Series (e.g., RTX 4090, RTX 4080, etc.)
+        NVIDIA GeForce RTX 30 Series (e.g., RTX 3090, RTX 3080, RTX 3070, etc.)
+        NVIDIA GeForce RTX 20 Series (e.g., RTX 2080 Ti, RTX 2070, etc.)
+        NVIDIA GeForce GTX 16 Series (e.g., GTX 1660, GTX 1650)
+        NVIDIA GeForce GTX 10 Series (e.g., GTX 1080 Ti, GTX 1070, etc.)
+        NVIDIA TITAN Series (TITAN RTX, TITAN V)
+        AMD GPU Compatibility:
+        AMD Radeon RX 7000 Series (e.g., RX 7900 XTX, RX 7800 XT)
+        AMD Radeon RX 6000 Series (e.g., RX 6900 XT, RX 6800 XT)
+        AMD Radeon RX 5000 Series (e.g., RX 5700 XT, RX 5600 XT)
+        AMD Radeon Vega Series (e.g., Radeon RX Vega 64)
+        AMD Radeon RX 500 Series (e.g., RX 580, RX 570)
+        Conclusion:
+        Compatible Intel CPUs: Only Intel Core X-Series processors (LGA 2066).
+        Not Compatible with AMD Ryzen or mainstream Intel CPUs.
+        Compatible GPUs: Supports modern NVIDIA and AMD GPUs through PCIe x16 slots.
+
+
+The X870E AORUS MASTER
+        is a high-performance motherboard designed primarily for AMD Ryzen processors, supporting the AMD Ryzen Threadripper CPUs,
+        which are known for their exceptional multi-core performance in high-demand tasks like video rendering and simulation.
+
+        For GPU compatibility, it works with both AMD and NVIDIA graphics cards, featuring support for PCIe 4.0, which provides faster communication 
+        between the CPU and GPU. This makes it compatible with AMD Radeon GPUs (such as the Radeon RX series) and NVIDIA GPUs
+        (like the RTX 3000 series). The motherboard includes multiple PCIe slots, allowing for multi-GPU setups, making it ideal for gaming or 
+        professional workstation tasks.You can check further details on Gigabyte's website for additional features like networking, storage, and 
+        cooling​(GIGABYTE Global)​(GIGABYTE).
+
+
+The MSI X870E AORUS PRO 
+        motherboard is built on the AMD X870E chipset, which supports AMD Ryzen 9000 series and 7000X3D processors. It uses the AM5 socket, making 
+        it compatible exclusively with the latest Ryzen CPUs.
+        For GPUs, the motherboard supports NVIDIA and AMD graphics cards via PCIe 5.0 slots, ensuring compatibility with the latest high-performance 
+        GPUs from both brands, including NVIDIA RTX and AMD Radeon RX series cards​(MSI Global)​(Gigabyte Data).
+
+
+
+The ASUS B650M S2H motherboard 
+        is built on the AMD B650 chipset and is designed for AMD Ryzen processors using the AM5 socket. Here are the key specifications and 
+        compatibility details:
+
+        Key Features:
+                Socket: AM5, supporting AMD Ryzen 7000 series processors.
+                Chipset: AMD B650, offering PCIe 4.0 support and a cost-effective solution for Ryzen 7000-series CPUs.
+                Form Factor: Micro-ATX, making it ideal for compact PC builds.
+                Memory Support: Up to 128GB DDR5, providing high-speed memory options for better performance.
+                Storage: M.2 slots with PCIe 4.0 support for fast NVMe SSDs.
+                Expansion Slots: PCIe 4.0 x16 for modern GPUs.
+        Compatible CPUs:
+                AMD Ryzen 7000 Series (AM5):
+                Ryzen 9 7950X, Ryzen 9 7900X
+                Ryzen 7 7700X, Ryzen 7 7600X
+        Not Compatible with:
+                Older AMD Ryzen CPUs: Ryzen 5000, 3000, 2000 series, or any AM4 socket processors.
+                Intel processors are also not supported.
+        GPU Compatibility:
+                NVIDIA: GeForce RTX 40 and 30 series, GTX 16 series, etc.
+                AMD: Radeon RX 7000 and 6000 series, etc., via PCIe 4.0 slots.
+
+
+
+
+The Intel B760M D3HP motherboard 
+        is designed for use with Intel's 12th and 13th Gen Core processors and utilizes the LGA 1700 socket. It is based on the Intel B760 chipset, 
+        which is aimed at providing a balance of performance and features for mainstream users.
+
+        Key Features:
+                Socket: LGA 1700, supporting Intel 12th Gen (Alder Lake) and 13th Gen (Raptor Lake) processors.
+                Chipset: Intel B760, providing support for PCIe 4.0 and fast connectivity options.
+                Memory Support: Up to 128GB DDR4 or DDR5 (depending on the model variant), with dual-channel architecture.
+                Expansion Slots: PCIe 4.0 x16 slots for high-end graphics cards, and additional PCIe 3.0 slots for other expansions.
+                Storage: M.2 slots supporting PCIe 4.0 NVMe SSDs for faster storage solutions.
+        Compatible Intel CPUs:
+                12th Gen Intel Core Processors (Alder Lake), such as:
+                Intel Core i9-12900K
+                Intel Core i7-12700K
+                Intel Core i5-12600K
+                13th Gen Intel Core Processors (Raptor Lake), such as:
+                Intel Core i9-13900K
+                Intel Core i7-13700K
+                Intel Core i5-13600K
+        Not Compatible with:
+                Older Intel processors (e.g., 10th and 11th Gen using the LGA 1200 socket).
+                AMD Ryzen processors are also not compatible.
+        GPU Compatibility:
+                The Intel B760M D3HP supports NVIDIA and AMD GPUs through its PCIe 4.0 x16 slot:
+
+        NVIDIA: GeForce RTX 40 and 30 series, GTX 16 series.
+                AMD: Radeon RX 7000 and 6000 series.
