@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .guides-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .guide-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both the blog and the media (image or video) have equal height */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guide-step > * {
+    flex-basis: 50%;
+  }
+  
+  .step-content {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .step-image, .step-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .step-image img, 
+  .step-video iframe {
+    width: 100%; /* Makes sure both image and video take the full width of the container */
+    max-height: 100%; /* Ensures the height matches that of the div */
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
