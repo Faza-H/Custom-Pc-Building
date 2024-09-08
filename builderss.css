@@ -78,7 +78,7 @@ input[type="text"] {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color:  #007bff;
     display: flex;
     width: 1280px;
     text-align: center;
@@ -100,10 +100,11 @@ input[type="text"] {
     width: 100px;
     height: 40px;
     color: white;
+    border: none;
     border-radius: 5px;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color:#007bff;
 }
 
 .product-list {
