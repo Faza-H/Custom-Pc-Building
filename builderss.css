@@ -96,10 +96,11 @@ input[type="text"] {
     text-align: center;
 }
 .btn-danger{
-    background-color: red;
+    background-color: #007bff;
     width: 100px;
     height: 40px;
     color: white;
+    border: none;
     border-radius: 5px;
 }
 button:hover {
