@@ -3,7 +3,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "pc_builder"; // Replace with your database name
+$dbname = "pc_builder";
+include('includes/navbar.php');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -184,5 +185,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         window.onload = loadCart;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<?php 
+include('includes/footer.php');
+?>
 </body>
 </html>
