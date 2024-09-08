@@ -105,6 +105,7 @@ function chooseComponent(componentType) {
                 <span id="total-price" class="component-info">PKR 0</span>
             </div>
             <div class="button" id="alert-message" style="display: none; color: red;"></div>
+            <div id="compatibility-message" style="display: none; color: red;"></div>
             <button type="button" id="reset-button" class="btn btn-danger">Reset</button>
             <button type="submit" id="build-pc-btn" class="btn btn-primary">Build PC</button>
         </form>

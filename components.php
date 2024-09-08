@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
             </div>
             <div class="product" onclick="selectComponent('cpu', 'Ryzen 5 3600', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '25000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
             </div>
             <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 7 7800X', 'Pics/cpu/AMD-Ryzen-7-7800X.jpg', '120', '75000')" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
           </div>
 
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
           </div>
 
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
             </div>
           </div>
 
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -238,21 +238,21 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('cpu', 'Intel Core i7 12th Gen', 'Pics/cpu/core i7.jpg', '120', '65000')" data-id="intel_4" data-category="cpu" data-company="Intel" data-wattage="120">
+            <div class="product" onclick="selectComponent('cpu', 'Intel Core i7 12820X 12th Gen', 'Pics/cpu/core i7.jpg', '120', '75000')" data-id="intel_4" data-category="cpu" data-company="Intel" data-wattage="120">
               <img src="Pics/cpu/core i7.jpg" alt="Product 8">
-              <h3>Intel Core i7 12th Gen</h3>
-              <h4>₨ 65000</h5>
+              <h3>Intel Core i7 12820X 12th Gen</h3>
+              <h4>₨ 75000</h5>
               <h5>Power Usage: 120W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 3.6 GHz<br>Max turbo frequency: 4.9 GHz<br>8 Cores / 16 Threads<br>Support for PCIe 5.0 and DDR5<br>Thermal Design Power (TDP): 125W</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
               </div>
             </div>
 
@@ -294,11 +294,11 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX VEGA 64', 'Pics\gpu\AMD\radeon RX vega 64.webp', '250', '140000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX VEGA 64', 'Pics/gpu/AMD/radeon RX vega 64.webp', '250', '140000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
               <img src="Pics\gpu\AMD\radeon RX vega 64.webp" alt="Product 2">
               <h3>AMD RX VEGA 64</h3>
               <h4>₨ 140000</h4>
@@ -308,11 +308,11 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics\gpu\AMD\rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics/gpu/AMD/rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
               <img src="Pics\gpu\AMD\rx 580.webp" alt="Product 2">
               <h3>AMD RX 580</h3>
               <h4>₨ 65000</h4>
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -392,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -420,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
           
@@ -462,7 +462,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -476,21 +476,21 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'Intel X299X AORUS MASTER Motherboard', 'Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp', '80', '90000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
-              <img src="Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp" alt="Product 2">
-              <h3>Intel X299X AORUS MASTER Motherboard</h3>
-              <h4>₨ 90000</h4>
+          <div class="product" onclick="selectComponent('motherboard', 'MSI B550M Motherboard', 'Pics/Motherboard/MSI B550M.webp', '80', '46000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
+              <img src="Pics\Motherboard\MSI B550M.webp" alt="Product 2">
+              <h3>MSI B550M Motherboard</h3>
+              <h4>₨ 46000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
               <h6>Socket: LGA 2066<br>Chipset: X299X<br>Form Factor: ATX<br>Memory: DDR4 support, up to 256GB<br>PCIe 3.0 support<br>Networking: 10GbE LAN, Wi-Fi 6</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -504,21 +504,21 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'MSI X870E AORUS PRO Motherboard', 'Pics/Motherboard/X870E AORUS MASTER.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
-              <img src="Pics/Motherboard/X870E AORUS MASTER.webp" alt="Product 2">
-              <h3>MSI X870E AORUS PRO Motherboard</h3>
-              <h4>₨ 55000</h4>
+          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics/Motherboard/B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
+              <img src="Pics\Motherboard\B450M.webp" alt="Product 2">
+              <h3>Gigabyte B450M Motherboard</h3>
+              <h4>₨ 25000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
               <h6>Socket: AM5<br>Chipset: X870E<br>Form Factor: ATX<br>Memory: DDR5 support, up to 128GB<br>PCIe 5.0 support<br>Networking: 2.5GbE LAN, Wi-Fi 6E</h6>
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
           
@@ -532,7 +532,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -546,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -575,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -589,7 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -617,7 +617,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -631,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -645,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -673,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -687,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -701,7 +701,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -715,7 +715,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -729,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -743,7 +743,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -757,7 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -771,7 +771,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -785,7 +785,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -800,7 +800,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
               </div>
             </div>
           
@@ -814,7 +814,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
         </div>
@@ -839,6 +839,7 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         const category = productDiv.dataset.category;  // Using dataset to store category
         const priceTag = productDiv.querySelector('h4');
         const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
+        const dataId = productDiv.dataset.id; // Get data-id from the dataset
 
         // Assuming image URL is stored in a data attribute or img tag in product div
         const imgTag = productDiv.querySelector('img');
@@ -850,16 +851,18 @@ document.querySelectorAll('.product').forEach((productDiv) => {
             name: productName,
             image: imgUrl,
             wattage: wattage,
-            price: price
+            price: price,
+            id: dataId // Include data-id in sessionStorage
         }));
 
-        // Redirect to builder.php
-        window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}`;
+        // Redirect to builder.php with data-id as query parameter
+        window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}&id=${encodeURIComponent(dataId)}`;
 
         // Optionally, close the current tab
         //window.close();
     });
 });
+
 </script>
 <?php 
 include('includes/footer.php');

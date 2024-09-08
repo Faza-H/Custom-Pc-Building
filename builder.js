@@ -1,9 +1,10 @@
-// Function to update image and component details on the builder page
+// Update this function to store data-id as well
 function updateImage(component) {
     const img = document.getElementById(`${component}-img`);
     const input = document.getElementById(component);
     const wattageSpan = document.getElementById(`${component}-wattage`);
     const priceSpan = document.getElementById(`${component}-price`);
+    const dataId = localStorage.getItem(`${component}-id`); // Retrieve the data-id from localStorage
     const selectedOption = localStorage.getItem(component);
     const imgUrl = localStorage.getItem(`${component}-img`);
     const wattage = localStorage.getItem(`${component}-wattage`);
@@ -17,15 +18,16 @@ function updateImage(component) {
     }
     updateTotals(); // Update totals after updating the image
 }
-
 // Function to handle selecting a component and storing its details in localStorage
-function selectComponent(component, name, imgUrl, wattage, price) {
+function selectComponent(component, name, imgUrl, wattage, price, dataId) {
+    // Store component details in localStorage
     localStorage.setItem(component, name);
     localStorage.setItem(`${component}-img`, imgUrl);
     localStorage.setItem(`${component}-wattage`, wattage);
     localStorage.setItem(`${component}-price`, price);
+    localStorage.setItem(`${component}-id`, dataId); // Store the data-id
+    // Update the component image and details on the builder page
     updateImage(component);
-    window.location.href = 'builder.php'; // Redirect to builder page
 }
 
 // Function to update total wattage and price
@@ -65,26 +67,28 @@ function updateTotals() {
     }
 }
 
-// Function to add selected components to the cart
-function addToCart() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    // Function to add selected components to the cart
+    function addToCart() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
+        const components = ['cpu', 'gpu', 'ram', 'ssd', 'case', 'motherboard', 'power'];
 
-    components.forEach(component => {
-        const name = localStorage.getItem(component);
-        const price = localStorage.getItem(`${component}-price`);
+        components.forEach(component => {
+            const name = localStorage.getItem(component);
+            const price = localStorage.getItem(`${component}-price`);
+            const dataId = localStorage.getItem(`${component}-id`); // Retrieve data-id
 
-        if (name && price) {
-            cart.push({
-                name: name,
-                price: parseFloat(price)
-            });
-        }
-    });
+            if (name && price && dataId) {
+                cart.push({
+                    name: name,
+                    price: parseFloat(price),
+                    id: dataId  // Include data-id in cart item
+                });
+            }
+        });
 
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
 
 // On page load, update all component images and values from localStorage
 window.onload = function() {
@@ -99,7 +103,6 @@ window.onload = function() {
         window.location.href = 'cart.php'; // Redirect to cart page
     });
 };
-
 // Reset button to clear local storage and reload the page
 document.addEventListener('DOMContentLoaded', function() {
     const resetButton = document.getElementById('reset-button');
