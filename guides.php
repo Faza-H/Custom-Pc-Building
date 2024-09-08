@@ -21,7 +21,7 @@ include('includes/navbar.php');
                 <p>After landing on the homepage. tap on the "pc builder" button from the navbar.</p>
             </div>
             <div class="step-image">
-                <img src="Pics/guides/navbar.png" alt="Choose Components">
+                <img src="Pics/guides/navbars.png" alt="Choose Components">
             </div>
         </div>
 
@@ -32,7 +32,7 @@ include('includes/navbar.php');
                 <p>To add components click on the "plus button".</p>
             </div>
             <div class="step-image">
-                <img src="Pics/guides/plus.png" alt="Prepare Workspace">
+                <img src="Pics/guides/pluss.png" alt="Prepare Workspace">
             </div>
         </div>
         <div class="guide-step">
@@ -41,7 +41,7 @@ include('includes/navbar.php');
                 <p>Plus button will redirect you to the selected components store page, select the product you want for each component.</p>
             </div>
             <div class="step-image">
-                <img src="Pics/guides/add to builder.png" alt="Prepare Workspace">
+                <img src="Pics/guides/add to builders.png" alt="Prepare Workspace">
             </div>
         </div>
         <div class="guide-step">
@@ -50,7 +50,7 @@ include('includes/navbar.php');
                 <p>Once you have added all the desired components, check if there is any compatibility or power supply error, and resolve it accordngly.</p>
             </div>
             <div class="step-image">
-                <img src="Pics/guides/Screenshot (19).png" alt="Prepare Workspace">
+                <img src="Pics/guides/all.png" alt="Prepare Workspace">
             </div>
         </div>
 
