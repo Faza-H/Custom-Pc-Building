@@ -242,10 +242,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('cpu', 'Intel Core i7 12th Gen', 'Pics/cpu/core i7.jpg', '120', '65000')" data-id="intel_4" data-category="cpu" data-company="Intel" data-wattage="120">
+            <div class="product" onclick="selectComponent('cpu', 'Intel Core i7 12820X 12th Gen', 'Pics/cpu/core i7.jpg', '120', '75000')" data-id="intel_4" data-category="cpu" data-company="Intel" data-wattage="120">
               <img src="Pics/cpu/core i7.jpg" alt="Product 8">
-              <h3>Intel Core i7 12th Gen</h3>
-              <h4>₨ 65000</h5>
+              <h3>Intel Core i7 12820X 12th Gen</h3>
+              <h4>₨ 75000</h5>
               <h5>Power Usage: 120W</h5>
               <h6>Description:</h6>
               <h6>Base clock: 3.6 GHz<br>Max turbo frequency: 4.9 GHz<br>8 Cores / 16 Threads<br>Support for PCIe 5.0 and DDR5<br>Thermal Design Power (TDP): 125W</h6>
@@ -480,10 +480,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'Intel X299X AORUS MASTER Motherboard', 'Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp', '80', '90000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
-              <img src="Pics/Motherboard/intel X299X AORUS MASTER (rev. 1.x).webp" alt="Product 2">
-              <h3>Intel X299X AORUS MASTER Motherboard</h3>
-              <h4>₨ 90000</h4>
+          <div class="product" onclick="selectComponent('motherboard', 'MSI B550M Motherboard', 'Pics\Motherboard\msi b550M.webp', '80', '46000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
+              <img src="Pics\Motherboard\msi b550M.webp" alt="Product 2">
+              <h3>MSI B550M Motherboard</h3>
+              <h4>₨ 46000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
               <h6>Socket: LGA 2066<br>Chipset: X299X<br>Form Factor: ATX<br>Memory: DDR4 support, up to 256GB<br>PCIe 3.0 support<br>Networking: 10GbE LAN, Wi-Fi 6</h6>
@@ -508,10 +508,10 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'MSI X870E AORUS PRO Motherboard', 'Pics/Motherboard/X870E AORUS MASTER.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
-              <img src="Pics/Motherboard/X870E AORUS MASTER.webp" alt="Product 2">
-              <h3>MSI X870E AORUS PRO Motherboard</h3>
-              <h4>₨ 55000</h4>
+          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics\Motherboard\B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
+              <img src="Pics\Motherboard\B450M.webp" alt="Product 2">
+              <h3>Gigabyte B450M Motherboard</h3>
+              <h4>₨ 25000</h4>
               <h5>Power Usage: 80W</h5>
               <h6>Description:</h6>
               <h6>Socket: AM5<br>Chipset: X870E<br>Form Factor: ATX<br>Memory: DDR5 support, up to 128GB<br>PCIe 5.0 support<br>Networking: 2.5GbE LAN, Wi-Fi 6E</h6>
