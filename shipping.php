@@ -149,8 +149,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <!-- PayPal Details -->
             <div id="paypalFields" class="mb-3" style="display: none;">
-                <label for="paypalEmail" class="form-label">PayPal Email</label>
-                <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="Enter your PayPal email">
+                <label for="paypalEmail" class="form-label">JazzCash Number</label>
+                <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="Enter your JazzCash Number">
             </div>
 
             <input type="hidden" id="cartItemsInput" name="cartItems">
