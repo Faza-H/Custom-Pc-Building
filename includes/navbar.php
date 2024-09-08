@@ -1,6 +1,6 @@
 <header class="d-flex justify-content-center text-light bg-black py-1">
         <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-2">Ultimate Builds</span>
+        <span class="fs-2">Custom PC Building</span>
       </a>
     </header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

@@ -27,8 +27,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="cpu-img" class="component-img" src="Pics\cpu\3d-illustration-ai-processor-chip-technology-abstract-isolated-white-background_971166-139831 (1).jpg" alt="CPU Image">
                     <input type="text" id="cpu" name="cpu" placeholder="Select a CPU" readonly>
-                    <span id="cpu-wattage" class="component-info">0W</span>
-                    <span id="cpu-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="cpu-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="cpu-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('cpu'); return false;">+</a>
                 </div>
             </div>
@@ -38,8 +38,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="gpu-img" class="component-img" src="Pics\gpu\product04_w1FBEOuE.webp" alt="GPU Image">
                     <input type="text" id="gpu" name="gpu" placeholder="Select a GPU" readonly>
-                    <span id="gpu-wattage" class="component-info">0W</span>
-                    <span id="gpu-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="gpu-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="gpu-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('gpu'); return false;">+</a>
                 </div>
             </div>
@@ -49,8 +49,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="ram-img" class="component-img" src="Pics\ram\parallax06_w1FBEOuE.webp" alt="RAM Image">
                     <input type="text" id="ram" name="ram" placeholder="Select RAM" readonly>
-                    <span id="ram-wattage" class="component-info">0W</span>
-                    <span id="ram-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="ram-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="ram-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('RAM'); return false;">+</a>
                 </div>
             </div>
@@ -59,8 +59,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="ssd-img" class="component-img" src="Pics\ssd\hard-drive-isolated-transparent-background_191095-23920.jpg" alt="SSD Image">
                     <input type="text" id="ssd" name="ssd" placeholder="Select SSD" readonly>
-                    <span id="ssd-wattage" class="component-info">0W</span>
-                    <span id="ssd-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="ssd-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="ssd-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('SSD'); return false;">+</a>
                 </div>
             </div>
@@ -70,8 +70,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="case-img" class="component-img" src="Pics\Casing\vertical04_w1FBEOuE.webp" alt="Case Image">
                     <input type="text" id="case" name="case" placeholder="Select a Case" readonly>
-                    <span id="case-wattage" class="component-info">0W</span>
-                    <span id="case-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="case-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="case-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('Casing'); return false;">+</a>
                 </div>
             </div>
@@ -81,8 +81,8 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="motherboard-img" class="component-img" src="Pics\Motherboard\240_F_240749256_zEsif97PKS50lzJNZQ0QXEezvO6Fb5ZR.jpg" alt="Motherboard Image">
                     <input type="text" id="motherboard" name="motherboard" placeholder="Select a Motherboard" readonly>
-                    <span id="motherboard-wattage" class="component-info">0W</span>
-                    <span id="motherboard-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="motherboard-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="motherboard-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('Motherboard'); return false;">+</a>
                 </div>
             </div>
