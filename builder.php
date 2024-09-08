@@ -18,7 +18,7 @@ function chooseComponent(componentType) {
 }
     </script>
 </head>
-<body>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
     <div class="container">
         <h1>Build Your Custom PC</h1>
         <form id="pc-builder-form">
@@ -92,14 +92,14 @@ function chooseComponent(componentType) {
                 <div class="selector">
                     <img id="power-img" class="component-img" src="Pics\psu\CORSAIR-CX-Series-CX650-80-PLUS.webp" alt="power supply Image">
                     <input type="text" id="power" name="power" placeholder="Select a Power Supply" readonly>
-                    <span id="power-wattage" class="component-info">0W</span>
-                    <span id="power-price" class="component-info">0Rs</span>
+                    <span style="font-family:none" id="power-wattage" class="component-info">0W</span>
+                    <span style="font-family:none" id="power-price" class="component-info">0Rs</span>
                     <a href="components.php" target="_blank" class="plus-link" onclick="chooseComponent('Power_supply'); return false;">+</a>
                 </div>
             </div>
 
             <div class="component">
-                <div class="total">
+                <div class="total" style="font-family:none">
                 <label for="total-wattage">Total Wattage: </label>
                 <span id="total-wattage" class="component-info">0W</span>
                 <label for="total-price">Total Price: </label>

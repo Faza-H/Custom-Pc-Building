@@ -26,7 +26,7 @@ include('includes/navbar.php');
     <script src="components.js"></script>
     <script src="builder.js"></script>
 </head>
-<body >
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Check if componentType is set by PHP
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
             </div>
           </div>
-          <div class="products">
+          <div class="products" style=" font-family: none";>
           <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 3 3200G','Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg', '65', '28000')" data-id="amd_1" data-category="cpu" data-company="Ryzen" data-wattage="65">
               <img src="Pics/cpu/AMD Ryzen 3 3200G 4-Core.jpg" alt="Product 1">
               <h3>AMD Ryzen 3 3200G 4-Core</h3>
