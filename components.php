@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
             </div>
             <div class="product" onclick="selectComponent('cpu', 'Ryzen 5 3600', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '25000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
             </div>
             <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 7 7800X', 'Pics/cpu/AMD-Ryzen-7-7800X.jpg', '120', '75000')" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
           </div>
 
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
             <button class="add-to-builder">Add to Builder</button>
-            <button class="buy-now">Buy Now</button>
+            
             </div>
           </div>
 
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
             <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
             </div>
           </div>
 
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
               </div>
             </div>
 
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -392,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -420,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
           
@@ -462,7 +462,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -476,7 +476,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -490,7 +490,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -504,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -518,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
           
@@ -532,7 +532,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -546,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -575,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -589,7 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -617,7 +617,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -631,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -645,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                   <button class="add-to-builder">Add to Builder</button>
-                  <button class="buy-now">Buy Now</button>
+                  
               </div>
           </div>
 
@@ -673,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -687,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -701,7 +701,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -715,7 +715,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -729,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -743,7 +743,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
           
@@ -757,7 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -771,7 +771,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -785,7 +785,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
 
@@ -800,7 +800,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
               <button class="add-to-builder">Add to Builder</button>
-              <button class="buy-now">Buy Now</button>
+              
               </div>
             </div>
           
@@ -814,7 +814,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                <button class="buy-now">Buy Now</button>
+                
               </div>
             </div>
         </div>
@@ -839,6 +839,7 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         const category = productDiv.dataset.category;  // Using dataset to store category
         const priceTag = productDiv.querySelector('h4');
         const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
+        const dataId = productDiv.dataset.id; // Get data-id from the dataset
 
         // Assuming image URL is stored in a data attribute or img tag in product div
         const imgTag = productDiv.querySelector('img');
@@ -850,16 +851,18 @@ document.querySelectorAll('.product').forEach((productDiv) => {
             name: productName,
             image: imgUrl,
             wattage: wattage,
-            price: price
+            price: price,
+            id: dataId // Include data-id in sessionStorage
         }));
 
-        // Redirect to builder.php
-        window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}`;
+        // Redirect to builder.php with data-id as query parameter
+        window.location.href = `builder.php?component=${category.toLowerCase()}&name=${encodeURIComponent(productName)}&image=${encodeURIComponent(imgUrl)}&wattage=${encodeURIComponent(wattage)}&price=${encodeURIComponent(price)}&id=${encodeURIComponent(dataId)}`;
 
         // Optionally, close the current tab
         //window.close();
     });
 });
+
 </script>
 <?php 
 include('includes/footer.php');
