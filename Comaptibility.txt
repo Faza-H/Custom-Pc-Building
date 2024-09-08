@@ -110,3 +110,134 @@ The Intel B760M D3HP motherboard
 
         NVIDIA: GeForce RTX 40 and 30 series, GTX 16 series.
                 AMD: Radeon RX 7000 and 6000 series.
+
+
+
+
+
+
+                ASUS B650M S2H Motherboard
+cpu : AMD Ryzen 7 7800X, AMD Ryzen 9 9900X
+gpu: AMD RX 5700 XT 8G, AMD RX 7900 24G, Radeon RX 6800             Nvidia RTX™ 3090 Ti 24G, Nvidia RTX™ 2080 Ti 16GNvidia RTX™ 4060 Ti 16G, Nvidia RTX™ 4070 Ti 16G, Nvidia GTX 1660 Ti 6G, Nvidia RTX™ 3080
+
+
+Intel B760M D3HP Motherboard
+cpu:Intel Core i7 12820X 12th Gen, tel Core i9 14th Gen
+gpu:AMD RX 5700 XT 8G, AMD RX 7900 24G, Radeon RX 6800                    Nvidia RTX™ 3090 Ti 24G, Nvidia RTX™ 2080 Ti 16GNvidia RTX™ 4060 Ti 16G, Nvidia RTX™ 4070 Ti 16G, Nvidia GTX 1660 Ti 6G, Nvidia RTX™ 3080
+
+
+Intel X299 AORUS MASTER Motherboard:
+cpu:Intel Core i7 12820X 12th Gen,
+gpu: AMD RX 5700 XT 8G, AMD RX 7900 24G, AMD RX VEGA 64, AMD RX 580, Radeon RX 6800                Nvidia RTX™ 3090 Ti 24G, Nvidia GTX 1080 Ti 11G, Nvidia RTX™ 2080 Ti 16G, Nvidia RTX™ 4060 Ti 16G, Nvidia RTX™ 4070 Ti 16G, Nvidia GTX 1660 Ti 6G, Nvidia RTX™ 3080
+
+
+
+MSI B550M Motherboard:
+cpu:AMD Ryzen 3 3200G 4-Core, AMD Ryzen 5 3600       Intel Core i3 6th Gen, Intel Core i5 5th Gen, Intel Core i7 10th Gen
+gpu:AMD RX VEGA 64, AMD RX 580,         Nvidia GTX 1080 Ti 11G,nvidia RTX™ 2080 Ti 16G, Nvidia GTX 1660 Ti 6G,
+
+
+
+
+AMD X870E AORUS MASTER
+cpu:AMD Ryzen 7 7800X, AMD Ryzen 9 9900X
+gpu: AMD RX 5700 XT 8G, AMD RX 7900 24G,  Radeon RX 6800,                 
+ Nvidia RTX™ 3090 Ti 24G, Nvidia RTX™ 2080 Ti 16G, Nvidia RTX™ 4060 Ti 16G, Nvidia RTX™ 4070 Ti 16G, Nvidia GTX 1660 Ti 6G, Nvidia RTX™ 3080
+
+
+
+
+Gigabyte B450M Motherboard:
+cpu:AMD Ryzen 3 3200G 4-Core, AMD Ryzen 5 3600   Intel Core i3 6th Gen, Intel Core i5 5th Gen, Intel Core i7 10th Gen
+gpu::AMD RX VEGA 64, AMD RX 580,         Nvidia GTX 1080 Ti 11G,nvidia RTX™ 2080 Ti 16G, Nvidia GTX 1660 Ti 6G,
+
+
+
+
+
+ASUS B650M S2H Motherboard
+data-id="Motherboard_1"
+Compatible with :
+                cpu  amd_3, 4    gpu amd_gpu_1, 2, 5 nvidia_gpu_1, 3,4,5,6,7
+
+
+Incompatible with :
+               cpu   amd_1 , 2, gpu   amd_gpu_3, 4,  nvidia_gpu_2
+                intel_1 , 5
+
+is compatible only with AMD Ryzen 9000, 8000, and 7000 series processors
+40 Series30 Series20 Series16 Series7000 Series6000 Series5000 Series
+
+
+Intel B760M D3HP Motherboard
+
+data-id="Motherboard_2"
+
+
+compatible with :
+		  intel_4, 5          gpu amd_gpu_1, 2, 5 nvidia_gpu_1, 3,4,5,6,7
+incompatible with :
+		   amd_1 - 5
+                   intel_1 ,2,3  gpu amd_gpu_3, 4,  nvidia_gpu_2
+
+is compatible with intel 12 th gen , 13 and 14 processors doesn't support ryzen
+40 Series30 Series20 Series16 Series7000 Series6000 Series5000 Series
+
+
+
+Intel X299 AORUS MASTER Motherboard:
+				     data-id="Motherboard_3"
+  
+Compatible with :
+		cpu  data-id="intel_4" gpu amd_gpu_1 - 5 nvidia_gpu_1 - 7
+Incompatible with:
+		gpu  data-id="amd_1" - amd_4
+              gpu    intel_1 , 2, 3, 5
+
+its compatible with the X series motherboards, doesn't support ryzen processors
+also compatible with 40, 30, 20, 16, 10 series cards
+
+and in AMD 7k, 6k , 5k, Vega and 500 series
+
+
+
+MSI B550M Motherboard:
+data-id="Motherboard_4"
+Compatible with :	      
+                 cpu amd_1,2  intel_1, 2,3  gpu amd_gpu_3, 4, and nvidia_gpu_2,3,6
+Incompatible with :
+                   amd_3,4  intel_4, 5    gpu amd_gpu_1,2,5 and nvidia_gpu_1,4,5,7
+          
+Compatible with both mid range intel and ryzen processors including 5 to 9th gen processors and for gpu RX series Vega series 10 series and 16 series
+
+
+
+
+AMD X870E AORUS MASTER
+data-id="Motherboard_5"
+
+
+Compatible with :
+                cpu  amd_3, 4    gpu amd_gpu_1, 2, 5 nvidia_gpu_1, 3,4,5,6,7
+
+
+Incompatible with:
+               cpu   amd_1 , 2, gpu   amd_gpu_3, 4,  nvidia_gpu_2
+                intel_1 , 5
+
+is compatible only with AMD Ryzen 9000, 8000, and 7000 series processors
+40 Series30 Series20 Series16 Series7000 Series6000 Series5000 Series
+
+
+
+
+
+
+Gigabyte B450M Motherboard:
+data-id="Motherboard_6"
+Compatible with :	      
+                 cpu amd_1,2  intel_1, 2,3  gpu amd_gpu_3, 4, and nvidia_gpu_2,3,6
+Incompatible with :
+                   amd_3,4  intel_4, 5    gpu amd_gpu_1,2,5 and nvidia_gpu_1,4,5,7
+          
+Compatible with both mid range intel and ryzen processors including 5 to 9th gen processors and for gpu RX series Vega series 10 series and 16 series
