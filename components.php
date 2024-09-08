@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX VEGA 64', 'Pics\gpu\AMD\radeon RX vega 64.webp', '250', '140000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX VEGA 64', 'Pics/gpu/AMD/radeon RX vega 64.webp', '250', '140000')" data-id="amd_gpu_3" data-category="gpu" data-company="AMD" data-wattage="300">
               <img src="Pics\gpu\AMD\radeon RX vega 64.webp" alt="Product 2">
               <h3>AMD RX VEGA 64</h3>
               <h4>₨ 140000</h4>
@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics\gpu\AMD\rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics/gpu/AMD/rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
               <img src="Pics\gpu\AMD\rx 580.webp" alt="Product 2">
               <h3>AMD RX 580</h3>
               <h4>₨ 65000</h4>
@@ -480,8 +480,8 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'MSI B550M Motherboard', 'Pics\Motherboard\msi b550M.webp', '80', '46000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
-              <img src="Pics\Motherboard\msi b550M.webp" alt="Product 2">
+          <div class="product" onclick="selectComponent('motherboard', 'MSI B550M Motherboard', 'Pics/Motherboard/MSI B550M.webp', '80', '46000')" data-id="Motherboard_4" data-category="Motherboard" data-wattage="80">
+              <img src="Pics\Motherboard\MSI B550M.webp" alt="Product 2">
               <h3>MSI B550M Motherboard</h3>
               <h4>₨ 46000</h4>
               <h5>Power Usage: 80W</h5>
@@ -508,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics\Motherboard\B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
+          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics/Motherboard/B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
               <img src="Pics\Motherboard\B450M.webp" alt="Product 2">
               <h3>Gigabyte B450M Motherboard</h3>
               <h4>₨ 25000</h4>
