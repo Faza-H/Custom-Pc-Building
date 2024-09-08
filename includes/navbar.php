@@ -31,7 +31,7 @@
           <a class="nav-link active" aria-current="page" href="guides.php">Guides</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="about.php">About</a>
+          <a class="nav-link active" aria-current="page" href="FAQs.php">FAQs</a>
         </li>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">

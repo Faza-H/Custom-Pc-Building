@@ -124,9 +124,7 @@ include('includes/navbar.php');
                 <div class="footer-section">
                     <h3><i class="fas fa-headset"></i> SUPPORT</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Warranty</a></li>
+                        <li><a href="FAQs.php">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -134,7 +132,6 @@ include('includes/navbar.php');
                     <ul>
                         <li><a href="#">Cart</a></li>
                         <li><a href="#">Checkout</a></li>
-                        <li><a href="#">My Account</a></li>
                         <li><a href="#">Track Your Order</a></li>
                     </ul>
                 </div>

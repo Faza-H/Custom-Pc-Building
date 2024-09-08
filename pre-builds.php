@@ -13,7 +13,7 @@ include('includes/navbar.php');
     <title>PC Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="pre-builds.css">
+    <link rel="stylesheet" href="pre-buildxxx.css">
 </head>
 <header>
 <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
@@ -125,27 +125,6 @@ include('includes/navbar.php');
                     </p>
                     <p>Quite happy with the results.</p>
                 </div>
-                <div class="comments-container">
-                    <div class="toggle-rating-container">
-                    <button class="toggle-button" onclick="toggleComments()"><b>Comments:</b> &#x25BC;</button>
-                    <div class="star-rating">
-                        <label><b>Ratings</b></label>
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    </div>
-                    <div class="comments-section">
-                        <div class="comment">
-                            <strong>seboperr:</strong> holy crap
-                        </div>
-                        <!-- Additional comments can be added here -->
-                    </div>
-                    <input type="text" id="write" placeholder="write comment...">
-
-                </div>
             </div>
         </div>
 
@@ -197,25 +176,6 @@ include('includes/navbar.php');
                         I didn’t want storage to ever become an issue.
                     </p>
                     <p>Quite happy with the results.</p>
-                </div>
-                <div class="comments-container">
-                    <div class="toggle-rating-container">
-                    <button class="toggle-button" onclick="toggleComments()"><b>Comments:</b> &#x25BC;</button>
-                    <div class="star-rating">
-                        <label><b>Ratings</b></label>
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    </div>
-                    <div class="comments-section">
-                        <div class="comment">
-                            <strong>seboperr:</strong> holy crap
-                        </div>
-                        <!-- Additional comments can be added here -->
-                    </div>
                 </div>
             </div>
         </div>
@@ -269,25 +229,6 @@ include('includes/navbar.php');
                     </p>
                     <p>Quite happy with the results.</p>
                 </div>
-                <div class="comments-container">
-                    <div class="toggle-rating-container">
-                    <button class="toggle-button" onclick="toggleComments()"><b>Comments:</b> &#x25BC;</button>
-                    <div class="star-rating">
-                        <label><b>Ratings</b></label>
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    </div>
-                    <div class="comments-section">
-                        <div class="comment">
-                            <strong>seboperr:</strong> holy crap
-                        </div>
-                        <!-- Additional comments can be added here -->
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -339,25 +280,6 @@ include('includes/navbar.php');
                         I didn’t want storage to ever become an issue.
                     </p>
                     <p>Quite happy with the results.</p>
-                </div>
-                <div class="comments-container">
-                    <div class="toggle-rating-container">
-                    <button class="toggle-button" onclick="toggleComments()"><b>Comments:</b> &#x25BC;</button>
-                    <div class="star-rating">
-                        <label><b>Ratings</b></label>
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    </div>
-                    <div class="comments-section">
-                        <div class="comment">
-                            <strong>seboperr:</strong> holy crap
-                        </div>
-                        <!-- Additional comments can be added here -->
-                    </div>
                 </div>
             </div>
         </div>
