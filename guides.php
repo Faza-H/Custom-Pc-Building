@@ -1,5 +1,4 @@
 <?php 
-
 include('includes/header.php');
 include('includes/navbar.php');
 ?>
@@ -12,8 +11,8 @@ include('includes/navbar.php');
     <title>PC Building Guide</title>
     <link rel="stylesheet" href="guide.css">
 </head>
-<body>
-    <div class="guides-container">
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
+    <div class="guides-container" style="font-family: Georgia, 'Times New Roman', Times, serif";>
         <!-- Step 1 -->
         <div class="guide-step">
             <div class="step-content">

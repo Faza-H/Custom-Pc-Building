@@ -99,18 +99,19 @@ function chooseComponent(componentType) {
             </div>
 
             <div class="component">
+                <div class="total">
                 <label for="total-wattage">Total Wattage: </label>
                 <span id="total-wattage" class="component-info">0W</span>
                 <label for="total-price">Total Price: </label>
                 <span id="total-price" class="component-info">PKR 0</span>
             </div>
+            <div>
             <div class="button" id="alert-message" style="display: none; color: red;"></div>
             <div id="compatibility-alert" style="display:none; color: red;">
                         Compatibility issue detected.
                 </div>
-
-            <button type="button" id="reset-button" class="btn btn-danger">Reset</button>
-            <button type="submit" id="build-pc-btn" class="btn btn-primary">Build PC</button>
+            <button type="button" id="reset-button" class="btn-danger">Reset</button>
+            <button type="submit" id="build-pc-btn" class="btn-primary">Build PC</button>
         </form>
     </div>
 <?php 

@@ -26,7 +26,7 @@ include('includes/navbar.php');
     <script src="components.js"></script>
     <script src="builder.js"></script>
 </head>
-<body>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Check if componentType is set by PHP

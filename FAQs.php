@@ -11,10 +11,9 @@ include('includes/navbar.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Building</title>
     <link rel="stylesheet" href="FAQs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body >
-  <div class="faq-container">
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
+  <div class="faq-container" style="font-family: Georgia, 'Times New Roman', Times, serif";>
     <h1>Frequently Asked Questions</h1>
   
   <div class="faq-item">
@@ -34,7 +33,7 @@ include('includes/navbar.php');
   <div class="faq-item">
     <button class="faq-question">Q: What is the expected delivery time?</button>
     <div class="faq-answer">
-      <p>Ans: your product will be delivered to you in 5-7 working days after the order has been placed.</p>
+      <p>Ans: Your product will be delivered to you in 5-7 working days after the order has been placed.</p>
     </div>
   </div>
 

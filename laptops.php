@@ -4,8 +4,6 @@ include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +15,7 @@ include('includes/navbar.php');
     <link rel="stylesheet" href="laptop.css">
     <script src="laptop.js"></script>
 </head>
-<body>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif";>
     <header>
             
     <div class="search">

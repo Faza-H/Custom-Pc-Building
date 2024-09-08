@@ -42,7 +42,7 @@ include('includes/navbar.php');
 </div>
 
 </header>
-<body style=>
+<body style= "font-family: Georgia, 'Times New Roman', Times, serif";>
     <link rel="stylesheet" href="pre-buildss.css">
     <script src="pre-builds.js"></script>
 </head>
