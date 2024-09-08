@@ -1,6 +1,6 @@
 <header class="d-flex justify-content-center text-light bg-black py-1">
         <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-2">Ultimate Builds</span>
+        <span class="fs-2">Custom PC Building</span>
       </a>
     </header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,7 +10,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
@@ -26,6 +25,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="components.php">PC Componenets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="guides.php">Guides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="FAQs.php">FAQs</a>
         </li>
         <?php if(isset($_SESSION['auth_user'])) : ?>
         <li class="nav-item dropdown">

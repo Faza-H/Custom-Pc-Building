@@ -12,12 +12,21 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Building</title>
-    <link rel="stylesheet" href="indexs.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body >
     
     <main>
+        
+    <div class="hero">
+            <h1>Build Your Custom PC</h1>
+                <img src="Pics/background/custom (1).png" alt="">
+            <p>
+             Custom PC Building section of our website caters to enthusiasts who prefer to construct their own computers, providing tools and resources to select, assemble, and customize their systems specifically for their needs—be it gaming, content creation, or high-performance computing. Users can easily choose from a wide range of components, including CPUs, GPUs, and motherboards, to optimize functionality and aesthetics. Our platform also offers expert advice and step-by-step guides, making the assembly process accessible to both beginners and seasoned builders.</p>
+       
+                <button onclick="location.href='builder.php'"> Build PC</button>
+        </div>
       
         <div class="pre-builds">
           <div class="titel">Pre-build PCs
@@ -33,8 +42,9 @@ include('includes/navbar.php');
         <div class="pre-built">
         
             <img src="Pics/Casing/AORUS C300 GLASS.webp" alt="">
-             <p><h3>Build 1</h3>
+             <h3>Build 1</h3>
             <h5>Description</h5>
+            <p>
              &star;processor: intel core i7 10th Gen<br>
               &star;gpu:RX 5700XT<br>
               &star;motherbaord:intel X299<br>
@@ -44,8 +54,9 @@ include('includes/navbar.php');
         </div>
         <div class="pre-built">
             <img src="Pics/Casing/AORUS C400 GLASS.webp" alt="">
-            <p><h3>Build 2</h3>
+            <h3>Build 2</h3>
                 <h5>Description</h5>
+            <p>
                 &star;processor: intel i5 10th GEN<br>
                 &star;gpu:AMD VII 16G<br>
                 &star;motherbaord:intel Motherboard<br>
@@ -55,8 +66,9 @@ include('includes/navbar.php');
         </div>
         <div class="pre-built">
             <img src="Pics/Casing/AORUS C500 GLASS.webp" alt="">
-            <p><h3>Build 3</h3>
+            <h3>Build 3</h3>
                 <h5>Description</h5>
+            <p>
                 &star;processor:Ryzen 9 9900X<br>
                 &star;gpu:RTX 3090 TI<br>
                 &star;motherbaord:B650M Motherboard<br>
@@ -66,8 +78,9 @@ include('includes/navbar.php');
         </div>
         <div class="pre-built">
             <img src="Pics/Casing/XC700W.webp" alt="">
-            <p><h3>Build 4</h3>
+            <h3>Build 4</h3>
                 <h5>Description</h5>
+            <p>
                 &star;processor:intel core i9 14th GEN<br>
                 &star;gpu:NVIDIA RTX 4060 TI<br>
                 &star;motherbaord:MSI Motherboard<br>
@@ -96,17 +109,7 @@ include('includes/navbar.php');
                 <img src="Pics/brands/thermaltake.png" alt="Thermaltake">
                 <img src="Pics/brands/g skill.png" alt="G.SKILL">
                 <img src="Pics/brands/crucial.png" alt="Crucial">
-
-
             </div>
-        </div>
-        
-        <div class="hero">
-            <h1>Build Your Custom PC</h1>
-                <img src="Pics/background/build-cover2.jpg" alt="">
-            <p>Choose your components and assemble your dream PC with ease.</p>
-       
-                <button onclick="location.href='builder.php'"> Build PC</button>
         </div>
           </main>
           <footer>
@@ -114,16 +117,14 @@ include('includes/navbar.php');
                 <div class="footer-section">
                     <h3><i class="fas fa-shopping-cart"></i> SHOP</h3>
                     <ul>
-                        <li><a href="#">Prebuilt Gaming PCs</a></li>
-                        <li><a href="#">Custom PC Builder</a></li>
+                        <li><a href="pre-builds.php">Prebuilt PCs</a></li>
+                        <li><a href="builder.php">Custom PC Builder</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3><i class="fas fa-headset"></i> SUPPORT</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Warranty</a></li>
+                        <li><a href="FAQs.php">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -131,7 +132,6 @@ include('includes/navbar.php');
                     <ul>
                         <li><a href="#">Cart</a></li>
                         <li><a href="#">Checkout</a></li>
-                        <li><a href="#">My Account</a></li>
                         <li><a href="#">Track Your Order</a></li>
                     </ul>
                 </div>
