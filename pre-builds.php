@@ -1,6 +1,5 @@
 <?php 
 
-include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
@@ -13,7 +12,7 @@ include('includes/navbar.php');
     <title>PC Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="pre-buildxxx.css">
+    <link rel="stylesheet" href="pre-builds.css">
 </head>
 <header>
 <a href="#" class="btn btn-outline-primary cart-btn" onclick="openCart()">
@@ -42,12 +41,7 @@ include('includes/navbar.php');
 </div>
 
 </header>
-<body style= "font-family: Georgia, 'Times New Roman', Times, serif";>
-    <link rel="stylesheet" href="pre-buildss.css">
-    <script src="pre-builds.js"></script>
-</head>
 <body style="background-color: brown,;">
-      <body>
         <div class="pre-builds">
             <P>Pre-Builds</p>
                 <div class="search">
@@ -283,6 +277,9 @@ include('includes/navbar.php');
                 </div>
             </div>
         </div>
+<?php 
+include('includes/footer.php');
+?>
 <script src="pre_builds.js"></script>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

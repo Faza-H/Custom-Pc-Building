@@ -11,6 +11,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                                 Registered Users 
                             </a>
+                            <a class="nav-link" href="../index.php">
+                                <div class="sb-nav-link-icon"><i class="fas fa-homepage"></i></div>
+                                Homepage
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">

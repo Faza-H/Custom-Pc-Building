@@ -120,10 +120,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="credit_card">Credit Card</option>
                     <option value="jazzcash">JazzCash</option>
                     <option value="easypaisa">Easypaisa</option>
+                    <option value="Cod">Cash on Delivery</option>
                 </select>
             </div>
 
-            <!-- Credit Card Details -->
+            <!-- Credit Card Details -->    
             <div id="creditCardFields" class="mb-3" style="display: none;">
                 <label for="cardNumber" class="form-label">Credit Card Number</label>
                 <input type="text" class="form-control" id="cardNumber" name="cardNumber">

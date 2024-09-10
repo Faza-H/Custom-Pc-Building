@@ -5,16 +5,7 @@ body {
   padding: 0;
 }
 /* Header styling */
-<<<<<<< HEAD
-=======
-header {
-background-color: #333;
-color:white;
-height: 100px;
-padding: 10px 0;
-text-align: left;
-}
->>>>>>> 6ed9e2298d091181b11ef655fa855b023ac48a9b
+
 
 .builder {
 display: flex;

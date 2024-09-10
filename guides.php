@@ -1,5 +1,4 @@
 <?php 
-include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
@@ -75,5 +74,8 @@ include('includes/navbar.php');
             </div>
         </div>
     </div>
+<?php 
+include('includes/footer.php');
+?>
 </body>
 </html>
