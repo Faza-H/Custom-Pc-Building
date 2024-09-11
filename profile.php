@@ -27,7 +27,15 @@ if(mysqli_num_rows($query_run) > 0) {
                 <div class="card-header">
                     <h4>User Profile</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
+
+                    <!-- Display Profile Picture at the Top with Circle Border -->
+                    <?php if($user['picture']): ?>
+                        <img src="uploads/<?= $user['picture']; ?>" class="rounded-circle mb-3" width="150" height="150" alt="Profile Picture">
+                    <?php else: ?>
+                        <img src="uploads/default-profile.png" class="rounded-circle mb-3" width="150" height="150" alt="Default Profile Picture">
+                    <?php endif; ?>
+
                     <form action="update_profile.php" method="POST" enctype="multipart/form-data">
                         <div class="form-group mb-3">
                             <label for="fname">Name</label>
@@ -57,14 +65,12 @@ if(mysqli_num_rows($query_run) > 0) {
                         <div class="form-group mb-3">
                             <label for="picture">Profile Picture</label>
                             <input type="file" name="picture" class="form-control">
-                            <?php if($user['picture']): ?>
-                                <img src="uploads/<?= $user['picture']; ?>" width="100" alt="Profile Picture">
-                            <?php endif; ?>
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" name="update_profile_btn" class="btn btn-primary">Update Profile</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
