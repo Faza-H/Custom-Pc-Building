@@ -29,11 +29,18 @@ if(mysqli_num_rows($query_run) > 0) {
                 </div>
                 <div class="card-body text-center">
 
-                    <!-- Display Profile Picture at the Top with Circle Border -->
+                    <!-- Display Profile Picture with Blue Outline -->
+                    <style>
+                        .profile-pic {
+                            border: 5px solid #007bff; /* Blue outline */
+                            border-radius: 50%; /* Circle shape */
+                        }
+                    </style>
+
                     <?php if($user['picture']): ?>
-                        <img src="uploads/<?= $user['picture']; ?>" class="rounded-circle mb-3" width="150" height="150" alt="Profile Picture">
+                        <img src="uploads/<?= $user['picture']; ?>" class="profile-pic mb-3" width="150" height="150" alt="Profile Picture">
                     <?php else: ?>
-                        <img src="uploads/default-profile.png" class="rounded-circle mb-3" width="150" height="150" alt="Default Profile Picture">
+                        <img src="uploads/default-profile.png" class="profile-pic mb-3" width="150" height="150" alt="Default Profile Picture">
                     <?php endif; ?>
 
                     <form action="update_profile.php" method="POST" enctype="multipart/form-data">

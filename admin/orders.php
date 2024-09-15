@@ -30,7 +30,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="container">
-        <h1>Orders</h1>
+        <h1>Laptop And Component Orders</h1>
 
         <!-- Display order list -->
         <table class="table table-bordered">
@@ -77,6 +77,7 @@ $result = $conn->query($sql);
                                 <tr>
                                     <th>Order ID</th>
                                     <th>Product Name</th>
+                                    <th>Product Price</th> <!-- Added Product Price Column -->
                                 </tr>
                             </thead>
                             <tbody id="orderItemsTable">
@@ -93,38 +94,45 @@ $result = $conn->query($sql);
     </div>
 
     <script>
-        function showOrderDetails(orderID) {
-            // Fetch order details from the order_items table based on the orderID
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", "fetch_order_items.php", true);
-            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    const orderItems = JSON.parse(xhr.responseText);
-                    const orderItemsTable = document.getElementById("orderItemsTable");
-                    orderItemsTable.innerHTML = ""; // Clear existing rows
+    function showOrderDetails(orderID) {
+        // Fetch order details from the order_items table based on the orderID
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "fetch_order_items.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                const orderItems = response.items;
+                const totalPrice = response.totalPrice; // Get the total price
+                const orderItemsTable = document.getElementById("orderItemsTable");
+                orderItemsTable.innerHTML = ""; // Clear existing rows
 
-                    document.getElementById("orderID").textContent = orderID;
-                    orderItems.forEach(item => {
-                        const row = document.createElement("tr");
-                        row.innerHTML = `<td>${item.order_id}</td><td>${item.product_name}</td>`;
-                        orderItemsTable.appendChild(row);
-                    });
+                document.getElementById("orderID").textContent = orderID;
+                orderItems.forEach(item => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `<td>${item.order_id}</td><td>${item.product_name}</td><td>${item.product_price}</td>`;
+                    orderItemsTable.appendChild(row);
+                });
 
-                    // Show the modal
-                    const orderDetailsModal = new bootstrap.Modal(document.getElementById("orderDetailsModal"));
-                    orderDetailsModal.show();
-                }
-            };
-            xhr.send("order_id=" + orderID);
-        }
-    </script>
+                // Display the total price
+                const totalPriceRow = document.createElement("tr");
+                totalPriceRow.innerHTML = `<td colspan="2"><strong>Total Price:</strong></td><td>${totalPrice}</td>`;
+                orderItemsTable.appendChild(totalPriceRow);
+
+                // Show the modal
+                const orderDetailsModal = new bootstrap.Modal(document.getElementById("orderDetailsModal"));
+                orderDetailsModal.show();
+            }
+        };
+        xhr.send("order_id=" + orderID);
+    }
+</script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php
 include('includes/footer.php');
 include('includes/scripts.php');
-
 ?>
 
 </body>

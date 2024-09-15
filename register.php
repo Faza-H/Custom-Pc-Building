@@ -1,5 +1,5 @@
 <?php 
-include('includes/header.php');
+
 
 if(isset($_SESSION['auth']))
 {
@@ -7,7 +7,6 @@ if(isset($_SESSION['auth']))
     header("Location: index.php");
     exit(0);
 }
-
 
 include('includes/navbar.php');
 ?>
@@ -33,7 +32,7 @@ include('includes/navbar.php');
                         </div>
                         <div class="form-group mb-3">
                             <label>Last name</label>
-                            <input required  type="text" name="lname" placeholder="Enter Last Name" class="form-control">
+                            <input required type="text" name="lname" placeholder="Enter Last Name" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label>Email Id</label>
@@ -61,4 +60,6 @@ include('includes/navbar.php');
 
 <?php 
 include('includes/footer.php');
-?>
+?>    
+
+
