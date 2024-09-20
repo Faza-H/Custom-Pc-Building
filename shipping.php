@@ -111,10 +111,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         <?php endif; ?>
 
-        <!-- Cart Summary -->
+        <!-- Cart Summary with Table Format -->
         <div id="cartSummary" class="cart-summary">
             <h2>Your Cart</h2>
-            <div id="cartItems"></div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price (Rs)</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
             <h4>Total: Rs <span id="cartTotal">0</span></h4>
         </div>
 
@@ -148,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
             </div>
 
-            <!-- PayPal Details -->
+            <!-- JazzCash Details -->
             <div id="paypalFields" class="mb-3" style="display: none;">
                 <label for="paypalEmail" class="form-label">JazzCash Number</label>
                 <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="Enter your JazzCash Number">
@@ -166,12 +176,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             const cartItems = JSON.parse(localStorage.getItem("cartItems"));
             const cartTotal = localStorage.getItem("cartTotal");
 
-            const cartItemsContainer = document.getElementById("cartItems");
+            const cartItemsTable = document.getElementById("cartItems");
             cartItems.forEach(item => {
-                const itemElement = document.createElement("div");
-                itemElement.className = "product-item";
-                itemElement.innerHTML = `${item.name} - RS ${item.price.toFixed(0)}`;
-                cartItemsContainer.appendChild(itemElement);
+                const row = document.createElement("tr");
+                row.innerHTML = `<td>${item.name}</td><td>Rs ${item.price.toFixed(0)}</td>`;
+                cartItemsTable.appendChild(row);
             });
 
             document.getElementById("cartTotal").innerText = cartTotal;
