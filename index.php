@@ -11,7 +11,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Building</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body >
@@ -22,7 +22,7 @@ include('includes/navbar.php');
             <h1>Build Your Custom PC</h1>
                 <img src="Pics/background/custom (1).png" alt="">
             <p>
-             Custom PC Building section of our website caters to enthusiasts who prefer to construct their own computers, providing tools and resources to select, assemble, and customize their systems specifically for their needs—be it gaming, content creation, or high-performance computing. Users can easily choose from a wide range of components, including CPUs, GPUs, and motherboards, to optimize functionality and aesthetics. Our platform also offers expert advice and step-by-step guides, making the assembly process accessible to both beginners and seasoned builders.</p>
+            <br> Custom PC Building section of our website caters to enthusiasts who prefer to construct their own computers, providing tools and resources to select, assemble, and customize their systems specifically for their needs—be it gaming, content creation, or high-performance computing. Users can easily choose from a wide range of components, including CPUs, GPUs, and motherboards, to optimize functionality and aesthetics. Our platform also offers expert advice and step-by-step guides, making the assembly process accessible to both beginners and seasoned builders.</p>
        
                 <button onclick="location.href='builder.php'"> Build PC</button>
         </div>
