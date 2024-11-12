@@ -1,6 +1,4 @@
 <?php 
-
-
 if(isset($_SESSION['auth']))
 {
     $_SESSION['message'] = "You are already logged in";
@@ -11,16 +9,16 @@ if(isset($_SESSION['auth']))
 include('includes/navbar.php');
 ?>
 
-<div class="py-5">
+<div class="py-5 bg-dark min-vh-100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
 
                 <?php include('message.php'); ?>
 
-                <div class="card">
+                <div class="card bg-secondary text-white">
 
-                    <div class="card-header">
+                    <div class="card-header bg-dark text-danger">
                         <h4>Register</h4>
                     </div>
                     <div class="card-body">
@@ -28,26 +26,26 @@ include('includes/navbar.php');
                     <form action="registercode.php" method="POST">
                         <div class="form-group mb-3">
                             <label>First Name</label>
-                            <input required type="text" name="fname" placeholder="Enter First Name" class="form-control">
+                            <input required type="text" name="fname" placeholder="Enter First Name" class="form-control bg-dark text-light border-secondary">
                         </div>
                         <div class="form-group mb-3">
-                            <label>Last name</label>
-                            <input required type="text" name="lname" placeholder="Enter Last Name" class="form-control">
+                            <label>Last Name</label>
+                            <input required type="text" name="lname" placeholder="Enter Last Name" class="form-control bg-dark text-light border-secondary">
                         </div>
                         <div class="form-group mb-3">
                             <label>Email Id</label>
-                            <input required type="email" name="email" placeholder="Enter Email Address" class="form-control">
+                            <input required type="email" name="email" placeholder="Enter Email Address" class="form-control bg-dark text-light border-secondary">
                         </div>
                         <div class="form-group mb-3">
                             <label>Password</label>
-                            <input required type="password" name="password" placeholder="Enter Password" class="form-control">
+                            <input required type="password" name="password" placeholder="Enter Password" class="form-control bg-dark text-light border-secondary">
                         </div>
                         <div class="form-group mb-3">
                             <label>Confirm Password</label>
-                            <input required type="password" name="cpassword" placeholder="Confirm Password" class="form-control">
+                            <input required type="password" name="cpassword" placeholder="Confirm Password" class="form-control bg-dark text-light border-secondary">
                         </div>
                         <div class="form-group mb-3">
-                            <button type="submit" name="register_btn" class="btn btn-primary">Register Now</button>
+                            <button type="submit" name="register_btn" class="btn btn-danger">Register Now</button>
                         </div> 
                     </form>
                         
@@ -60,6 +58,4 @@ include('includes/navbar.php');
 
 <?php 
 include('includes/footer.php');
-?>    
-
-
+?>

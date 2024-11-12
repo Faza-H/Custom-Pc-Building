@@ -21,8 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $total = $_POST['cartTotal'];
 
     // Prepare statement to avoid SQL injection
-    $stmt = $conn->prepare("INSERT INTO orders (name, address, payment_method, card_number, expiry_date, cvv, paypal_email, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssssd", $name, $address, $payment_method, $card_number, $expiry_date, $cvv, $paypal_email, $total);
+    $stmt = $conn->prepare("INSERT INTO orders (name, address, payment_method, card_number, expiry_date, cvv, JazzCashno, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssssd", $name, $address, $payment_method, $card_number, $expiry_date, $cvv, $JazzCashno, $total);
 
     // Handle payment details based on payment method
     if ($payment_method == "credit_card") {
