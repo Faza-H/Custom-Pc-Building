@@ -111,6 +111,14 @@ function chooseComponent(componentType) {
                 </div>
             <button type="button" id="reset-button" class="btn-danger">Reset</button>
             <button type="submit" id="build-pc-btn" class="btn-primary">Build PC</button>
+<!-- Custom Confirmation Modal -->
+<div id="confirmation-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <p>Are you sure you want to buy these parts even though there are compatibility issues?</p>
+        <button id="confirm-yes" class="modal-button yes-button" type="button">Yes</button>
+        <button id="confirm-no" class="modal-button no-button" type="button">No</button>
+    </div>
+</div>
         </form>
     </div>
 <?php 
