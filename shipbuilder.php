@@ -15,21 +15,18 @@ if ($conn->connect_error) {
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if all required fields are present
     if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['payment']) && isset($_POST['cartTotal'])) {
         $name = $_POST['name'];
         $address = $_POST['address'];
         $payment_method = $_POST['payment'];
         $total = $_POST['cartTotal'];
 
-        // Payment details initialization
         $card_number = NULL;
         $expiry_date = NULL;
         $cvv = NULL;
         $jazzcash_number = NULL;
         $easypaisa_number = NULL;
 
-        // Set payment details based on the selected method
         if ($payment_method == "credit_card") {
             $card_number = $_POST['cardNumber'] ?? NULL;
             $expiry_date = $_POST['expiryDate'] ?? NULL;
@@ -40,14 +37,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $easypaisa_number = $_POST['easypaisaNumber'] ?? NULL;
         }
 
-        // Insert order into orders table
         $stmt = $conn->prepare("INSERT INTO orders (name, address, payment_method, card_number, expiry_date, cvv, jazzcash_number, easypaisa_number, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssssssd", $name, $address, $payment_method, $card_number, $expiry_date, $cvv, $jazzcash_number, $easypaisa_number, $total);
 
         if ($stmt->execute()) {
             $order_id = $stmt->insert_id;
 
-            // Insert each cart item into order_items table
             $cartItems = json_decode($_POST['cartItems'], true);
             if (!empty($cartItems)) {
                 foreach ($cartItems as $item) {
@@ -57,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             }
 
-            // Display success message
             $message = "Your order has been placed successfully! Order ID: " . $order_id;
         } else {
             $message = "Error: " . $stmt->error;
@@ -86,7 +80,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         <?php endif; ?>
 
-        <!-- Display Cart Items -->
         <div class="mb-3">
             <h3>Your Cart</h3>
             <table class="table table-bordered">
@@ -97,13 +90,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </tr>
                 </thead>
                 <tbody id="cartSummary">
-                    <!-- Cart items will be displayed here via JavaScript -->
                 </tbody>
             </table>
             <h4>Total: PKR <span id="cartTotal">0</span></h4>
         </div>
 
-        <!-- Shipping Form -->
         <form id="shippingForm" method="POST" action="shipbuilder.php">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
@@ -124,7 +115,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </select>
             </div>
 
-            <!-- Credit Card Details -->    
             <div id="creditCardFields" class="mb-3" style="display: none;">
                 <label for="cardNumber" class="form-label">Credit Card Number</label>
                 <input type="text" class="form-control" id="cardNumber" name="cardNumber">
@@ -134,16 +124,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" class="form-control" id="cvv" name="cvv">
             </div>
 
-            <!-- JazzCash Details -->
             <div id="jazzcashFields" class="mb-3" style="display: none;">
                 <label for="jazzcashNumber" class="form-label">JazzCash Number</label>
-                <input type="text" class="form-control" id="jazzcashNumber" name="jazzcashNumber">
+                <div class="input-group">
+                    <span class="input-group-text">+92</span>
+                    <input type="text" class="form-control" id="jazzcashNumber" name="jazzcashNumber" maxlength="10" placeholder="3XXXXXXXXX">
+                </div>
             </div>
 
-            <!-- Easypaisa Details -->
             <div id="easypaisaFields" class="mb-3" style="display: none;">
                 <label for="easypaisaNumber" class="form-label">Easypaisa Number</label>
-                <input type="text" class="form-control" id="easypaisaNumber" name="easypaisaNumber">
+                <div class="input-group">
+                    <span class="input-group-text">+92</span>
+                    <input type="text" class="form-control" id="easypaisaNumber" name="easypaisaNumber" maxlength="10" placeholder="3XXXXXXXXX">
+                </div>
             </div>
 
             <input type="hidden" id="cartItemsInput" name="cartItems">
@@ -154,7 +148,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <script>
-        // Function to load cart items from localStorage and display them
         function loadCart() {
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
             const cartSummary = document.getElementById('cartSummary');
@@ -175,7 +168,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             document.getElementById('cartTotalInput').value = total;
         }
 
-        // Show payment fields based on selected method
         function showPaymentFields() {
             const paymentMethod = document.getElementById('payment').value;
             document.getElementById('creditCardFields').style.display = (paymentMethod === 'credit_card') ? 'block' : 'none';
@@ -185,9 +177,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         window.onload = loadCart;
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php 
-include('includes/footer.php');
-?>
 </body>
 </html>
