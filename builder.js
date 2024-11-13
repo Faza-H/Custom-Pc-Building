@@ -181,10 +181,41 @@ window.onload = function() {
     });
 
     document.getElementById('build-pc-btn').addEventListener('click', function (e) {
-        e.preventDefault();
-        addToCart(); // Add selected components to cart
-        window.location.href = 'cart.php'; // Redirect to cart page
+        e.preventDefault(); // Prevent default action of the button
+    
+        // Check if any alert messages are currently visible
+        const compatibilityAlert = document.getElementById('compatibility-alert');
+        const powerAlert = document.getElementById('alert-message');
+        const hasCompatibilityIssue = compatibilityAlert && compatibilityAlert.style.display === 'block';
+        const hasPowerIssue = powerAlert && powerAlert.style.display === 'block';
+    
+        // If there is any alert message, show the custom modal
+        if (hasCompatibilityIssue || hasPowerIssue) {
+            const confirmationModal = document.getElementById('confirmation-modal');
+            confirmationModal.style.display = 'flex'; // Show modal
+            
+            // Yes button - proceed with adding to cart and redirecting
+            document.getElementById('confirm-yes').onclick = function(e) {
+                e.preventDefault(); // Prevent default action
+                confirmationModal.style.display = 'none';
+    
+                // Assuming addToCart is a synchronous function
+                addToCart(); // Add selected components to cart
+                window.location.href = 'cart.php'; // Redirect to cart page
+            };
+            
+            // No button - close modal without redirecting
+            document.getElementById('confirm-no').onclick = function(e) {
+                e.preventDefault(); // Prevent default action
+                confirmationModal.style.display = 'none';
+            };
+        } else {
+            // If no issues, proceed normally
+            addToCart(); // Add selected components to cart
+            window.location.href = 'cart.php'; // Redirect to cart page
+        }
     });
+
 };
 
 // Reset button to clear local storage and reload the page
