@@ -5,6 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "blog";
 include('includes/navbar.php');
+include('config.php');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -118,6 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <!-- Shipping Form -->
         <form id="shippingForm" method="POST" action="shipping.php">
+          
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" value="<?= $user['fname'] . ' ' . $user['lname']; ?>" required>
@@ -138,12 +140,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <!-- Credit Card Details -->
             <div id="creditCardFields" class="mb-3" style="display: none;">
-                <label for="cardNumber" class="form-label">Credit Card Number</label>
-                <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="Enter your credit card number">
-                <label for="expiryDate" class="form-label mt-2">Expiry Date</label>
-                <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY">
-                <label for="cvv" class="form-label mt-2">CVV</label>
-                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
+            <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<?php echo $Publishablekey?>"
+                data-amount="500";
+                data-name="Custom Pc Building"
+                data-description="CPB"
+                data-image="";
+                data-currency="pkr"  >
+            </script>
             </div>
 
             <!-- JazzCash/Easypaisa Details -->

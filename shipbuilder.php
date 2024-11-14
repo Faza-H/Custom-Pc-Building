@@ -126,12 +126,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div id="creditCardFields" class="mb-3" style="display: none;">
-                <label for="cardNumber" class="form-label">Credit Card Number</label>
-                <input type="text" class="form-control" id="cardNumber" name="cardNumber">
-                <label for="expiryDate" class="form-label mt-2">Expiry Date</label>
-                <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY">
-                <label for="cvv" class="form-label mt-2">CVV</label>
-                <input type="text" class="form-control" id="cvv" name="cvv">
+            <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<?php echo $Publishablekey ?>"
+                data-amount="500";
+                data-name="Custom Pc Building"
+                data-description="CPB"
+                data-image="";
+                data-currency="pkr"  >
+            </script>
             </div>
 
             <div id="jazzcashFields" class="mb-3" style="display: none;">
