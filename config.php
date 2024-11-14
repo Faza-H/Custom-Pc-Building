@@ -1,10 +1,15 @@
-<?php 
-require('stripe-php-master/init.php');
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "blog"; // Replace with your database name
 
-$Publishablekey=
-"pk_test_51QKzHjRuE3GrEaQRd3FwvHeln8l2ycsK140KoGv1KtXbUY6ycyojpyrkydzJNzTzTSTKQ9XqAYXmcrccEX1StQZj00NjttwqCz";
+// Create a database connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-$Secretkey=
-"sk_test_51QKzHjRuE3GrEaQRCLVemTvvrATj6JFrx6CDKiVhTrFAvpEVfYnQNR0d04ScMkf2RH4m7bjMHC1uM17TWXb2ucm1000uHon7jg";
-\Stripe\Stripe::setApiKey($Secretkey);
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
