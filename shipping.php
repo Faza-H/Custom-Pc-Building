@@ -12,8 +12,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Initialize variables
 $message = "";
+$user_name = "";
+$user_address = "";
 
+$user_id = $_SESSION['auth_user']['user_id'];
+$query = "SELECT * FROM users WHERE id='$user_id' LIMIT 1";
+$query_run = mysqli_query($con, $query);
+
+if(mysqli_num_rows($query_run) > 0) {
+    $user = mysqli_fetch_array($query_run);
+} else {
+    $_SESSION['message'] = "User not found!";
+    header("Location: index.php");
+    exit(0);
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $address = $_POST['address'];
@@ -66,39 +80,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .cart-summary {
-            margin-bottom: 20px;
-        }
-        .success-message {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #28a745;
-            border-radius: 5px;
-            background-color: #d4edda;
-            color: #155724;
-        }
-        .form-label {
-            font-weight: 600;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
-        #cartSummary {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-        }
+        body { background-color: #f8f9fa; }
+        .cart-summary { margin-bottom: 20px; }
+        .success-message { margin-top: 20px; padding: 15px; border: 1px solid #28a745; border-radius: 5px; background-color: #d4edda; color: #155724; }
+        .form-label { font-weight: 600; }
+        .btn-primary { background-color: #007bff; border-color: #007bff; padding: 10px 20px; font-size: 16px; border-radius: 5px; }
+        .btn-primary:hover { background-color: #0056b3; border-color: #0056b3; }
+        #cartSummary { background-color: #f8f9fa; padding: 15px; border-radius: 5px; }
     </style>
 </head>
 <body>
@@ -106,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Shipping Details</h1>
 
         <?php if ($message): ?>
-            <div class="success-message">
+            <div class="alert alert-info">
                 <?php echo $message; ?>
             </div>
         <?php endif; ?>
@@ -132,11 +120,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form id="shippingForm" method="POST" action="shipping.php">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" name="name" value="<?= $user['fname'] . ' ' . $user['lname']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="address" class="form-label">Shipping Address</label>
-                <input type="text" class="form-control" id="address" name="address" required>
+                <input type="text" class="form-control" id="address" name="address" value="<?= $user['address']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="payment" class="form-label">Payment Method</label>
@@ -193,21 +181,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         function showPaymentFields() {
             const paymentMethod = document.getElementById("payment").value;
-            const creditCardFields = document.getElementById("creditCardFields");
-            const jazzcashFields = document.getElementById("jazzcashFields");
-
-            // Hide all payment fields initially
-            creditCardFields.style.display = "none";
-            jazzcashFields.style.display = "none";
-
-            // Show relevant fields based on selected payment method
-            if (paymentMethod === "credit_card") {
-                creditCardFields.style.display = "block";
-            } else if (paymentMethod === "jazzcash") {
-                jazzcashFields.style.display = "block";
-            }
+            document.getElementById("creditCardFields").style.display = paymentMethod === "credit_card" ? "block" : "none";
+            document.getElementById("jazzcashFields").style.display = paymentMethod === "jazzcash" ? "block" : "none";
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+<?php include('includes/footer.php'); ?>
+

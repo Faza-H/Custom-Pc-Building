@@ -12,7 +12,17 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$message = "";
+$user_id = $_SESSION['auth_user']['user_id'];
+$query = "SELECT * FROM users WHERE id='$user_id' LIMIT 1";
+$query_run = mysqli_query($con, $query);
+
+if(mysqli_num_rows($query_run) > 0) {
+    $user = mysqli_fetch_array($query_run);
+} else {
+    $_SESSION['message'] = "User not found!";
+    header("Location: index.php");
+    exit(0);
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['name']) && isset($_POST['address']) && isset($_POST['payment']) && isset($_POST['cartTotal'])) {
@@ -57,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "Error: " . $stmt->error;
         }
     } else {
-        $message = "Error: All fields are required.";
+        $message = "";
     }
 }
 ?>
@@ -98,11 +108,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form id="shippingForm" method="POST" action="shipbuilder.php">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" name="name" value="<?= $user['fname'] . ' ' . $user['lname']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="address" class="form-label">Shipping Address</label>
-                <input type="text" class="form-control" id="address" name="address" required>
+                <input type="text" class="form-control" id="address" name="address" value="<?= $user['address']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="payment" class="form-label">Payment Method</label>
@@ -177,5 +187,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         window.onload = loadCart;
     </script>
+    <?php include('includes/footer.php'); ?>
 </body>
 </html>
