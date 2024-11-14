@@ -8,7 +8,7 @@ include('includes/navbar.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Build Guide</title>
-    <link rel="stylesheet" href="suits.css">
+    <link rel="stylesheet" href="suit.css">
 </head>
 <body>
 
