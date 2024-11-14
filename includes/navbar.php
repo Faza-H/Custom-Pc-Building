@@ -20,6 +20,9 @@ include('includes/header.php');
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="suit.php">Guide</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
                 </li>
                 <li class="nav-item">
@@ -32,7 +35,7 @@ include('includes/header.php');
                     <a class="nav-link active" aria-current="page" href="components.php">PC Components</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="guides.php">Guides</a>
+                    <a class="nav-link active" aria-current="page" href="guides.php">User Manual</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="FAQs.php">FAQs</a>
