@@ -2,12 +2,7 @@
 // Start session if it hasn't been started already
 include('includes/header.php');
 ?>
-
-<header class="d-flex justify-content-center text-light bg-black py-1">
-    <svg class="me-1" width="10" height="20"><use xlink:href="#bootstrap"></use></svg>
-    <span class="fs-2">Custom PC Building</span>
-</header>
-
+<h1>Custom PC Building</h1>
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
         <a class="navbar-brand d-block d-sm-none d-md-none" href="#"></a>
