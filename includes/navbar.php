@@ -23,9 +23,6 @@ include('includes/header.php');
                     <a class="nav-link active" aria-current="page" href="suit.php">Guide</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="builder.php">PC Builder</a>
                 </li>
                 <li class="nav-item">
