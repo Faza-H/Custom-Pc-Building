@@ -117,6 +117,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 <input type="checkbox" id="category-ram" data-category="RAM">
                 <label for="category-ram">RAM</label>
             </li>
+            <li>
+                <input type="checkbox" id="category-cpu-cooler" data-category="cpu_cooler">
+                <label for="category-cpu-cooler">CPU-Cooler</label>
+            </li>
+            <li>
+                <input type="checkbox" id="category-monitor" data-category="monitor">
+                <label for="category-monitor">Monitor</label>
+            </li>
+            <li>
+                <input type="checkbox" id="category-mouse" data-category="mouse">
+                <label for="category-mouse">Mouse</label>
+            </li>
+            <li>
+                <input type="checkbox" id="category-keyboard" data-category="keyboard">
+                <label for="category-keyboard">Keyboard</label>
+            </li>
         </ul>
     </div>
         <div class="main-content">
@@ -813,10 +829,186 @@ document.addEventListener("DOMContentLoaded", function() {
               <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
               <div class="button-container">
                 <button class="add-to-builder">Add to Builder</button>
-                
               </div>
             </div>
+            <div class="product" data-id="cpu_cooler_1" data-category="cpu_cooler" data-wattage="	2.28W">
+              <img src="Pics\cpu_cooler\Cooler Master Hyper T20 Compact CPU Air Cooler.jpg" alt="Product 2">
+              <h3>Cooler Master Hyper T20 Compact CPU Air Cooler</h3>
+              <h4>₨ 3099</h4>
+              <h5>Power Usage: 2.28W</h5>
+              <h6>Description:</h6>
+              <h6>2x Heat Pipes Design<br>Easy Fan Mounting Clips<br>Direct Heat Pipe Contact<br>Warranty: 7 - Days Checking*<br>Optimized Performance</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+
+              </div>
         </div>
+        <div class="product" data-id="cpu_cooler_2" data-category="cpu_cooler" data-wattage="0.96W">
+              <img src="Pics\cpu_cooler\EASE EAF280 CPU Cooler.jpg" alt="Product 2">
+              <h3>EASE EAF280 CPU Cooler</h3>
+              <h4>₨ 1725</h4>
+              <h5>Power Usage: 0.96W</h5>
+              <h6>Description:</h6>
+              <h6>-Aluminum fin + 2 PCs heat conduction pipe<br>-80x80x25mm<br>-3Pins<br>-1600RPM± 10%<br>Hydraulic bearing<br>-113x66x129mm</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="cpu_cooler_3" data-category="cpu_cooler" data-wattage="	5.5W">
+              <img src="Pics\cpu_cooler\EASE EAF1218 Air Cooler.webp" alt="Product 2">
+              <h3>EASE EAF1218 Air Cooler</h3>
+              <h4>₨ 6325</h4>
+              <h5>Power Usage: 5.5W</h5>
+              <h6>Description:</h6>
+              <h6>6 heatpipe Cpu cooler with 12cm ARGB fan and top plat<br>120x 120x 25mm<br>SATA+4pin<br>12V(FAN)+5V(LED)<br>Hydraulic bearing</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="cpu_cooler_4" data-category="cpu_cooler" data-wattage="10W">
+              <img src="Pics\cpu_cooler\Redragon CC-2000.webp" alt="Product 2">
+              <h3>Redragon CC-2000 Effect Air CPU Cooler</h3>
+              <h4>₨ 7882</h4>
+              <h5>Power Usage: 10W</h5>
+              <h6>Description:</h6>
+              <h6>4xø6mm Copper heat-pipes<br>120mm PWM RGB LED Fan<br>Compatible with AMD socket AM4/Intel LGA 115X<br>Four 6mm copper tubes</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="monitor_1" data-category="monitor" data-wattage="47W">
+              <img src="Pics\monitor\AOC Q32V3SWS QHD 2560 x 1440.webp" alt="Product 2">
+              <h3>AOC Q32V3S/WS QHD 2560 x 1440 IPS Low Blue mode</h3>
+              <h4>₨ 88000</h4>
+              <h5>Power Usage: 47W</h5>
+              <h6>Description:</h6>
+              <h6>IPS<br>AdaptiveSync<br>Low Blue Mode<br>Flicker Free<br>HDMI</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="monitor_2" data-category="monitor" data-wattage="60W">
+              <img src="Pics\monitor\Boost Adonis Gaming Monitor.jpg" alt="Product 2">
+              <h3>Boost Adonis Gaming Monitor 24′ 1080P 165Hz 1ms HDR</h3>
+              <h4>₨ 44500</h4>
+              <h5>Power Usage: 60W</h5>
+              <h6>Description:</h6>
+              <h6>Size: 24 Inches<br>Resolution: 1920*1080<br>Refresh Rate: 165Hz<br>HDR Supported</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="monitor_3" data-category="monitor" data-wattage="48W">
+              <img src="Pics\monitor\EASE G27I16 27″.webp" alt="Product 2">
+              <h3>EASE G27I16 27″ 2K IPS Gaming Monitor</h3>
+              <h4>₨ 54990</h4>
+              <h5>Power Usage: 48W</h5>
+              <h6>Description:</h6>
+              <h6>Screen Size: 27 inches<br>Resolution: 2560 x 1440<br>Response Time (Min): 1ms (OD)<br>Color Support: 16.78M</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="monitor_4" data-category="monitor" data-wattage="40W">
+              <img src="Pics\monitor\Samsung LS24A336NHUXEN 24″.jpg" alt="Product 2">
+              <h3>Samsung LS24A336NHUXEN 24″ Full HD Flat LED Monitor</h3>
+              <h4>₨ 40500</h4>
+              <h5>Power Usage: 40W</h5>
+              <h6>Description:</h6>
+              <h6>VA Panel<br>VA Panel Hz<br>1920 x 1080 (FHD)<br>5ms MPRT | FreeSync<br>HDMI × 1 , D-Sub x 1</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="mouse_1" data-category="mouse" data-wattage="0.5W">
+              <img src="Pics\mouse\czone1200x-buy-qck-s-03.png-1850x800-q100-crop-scale-optimi-19643-707857-291021011627976.jpg" alt="Product 2">
+              <h3>SteelSeries QcK Series Cloth Gaming Mouse Pad</h3>
+              <h4>₨ 4300</h4>
+              <h5>Power Usage: 0.5W</h5>
+              <h6>Description:</h6>
+              <h6>5000 Dpi<br>Wired Mouse<br>Programmable Mouse<br>RGB Mouse<br>Thumb keys Support</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="mouse_2" data-category="mouse" data-wattage="0.3W">
+              <img src="Pics\mouse\FANTECH WGC2 VENOM.jpg" alt="Product 2">
+              <h3>FANTECH WGC2 VENOM II 2.4G Wireless Gaming Mouse</h3>
+              <h4>₨ 3500</h4>
+              <h5>Power Usage: 0.3W</h5>
+              <h6>Description:</h6>
+              <h6>3200 Dpi<br>Wireless Mouse<br>Comfortable Hand Grip<br>Responsive Feel<br>Thumb Keys Support</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="mouse_3" data-category="mouse" data-wattage="0.3W">
+              <img src="Pics\mouse\FANTECH X9 Thor Macro.jpg" alt="Product 2">
+              <h3>FANTECH X9 Thor Macro RGB Gaming Mouse With Adjustable</h3>
+              <h4>₨ 3250</h4>
+              <h5>Power Usage: 0.3W</h5>
+              <h6>Description:</h6>
+              <h6>7D Mouse<br>Programmble Keys<br>Gaming Look<br>Wired Mouse<br>Thumb Keys Support</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="mouse_4" data-category="mouse" data-wattage="0.1W">
+              <img src="Pics\mouse\Micropack Computer Mouse M100 Comfy.png" alt="Product 2">
+              <h3>Micropack Computer Mouse M100 Comfy Gift</h3>
+              <h4>₨ 850</h4>
+              <h5>Power Usage: 0.1W</h5>
+              <h6>Description:</h6>
+              <h6>Non Programmble Mouse<br>Wired Mouse<br>No Thumb Keys<br>Office Mouse<br>2D Mouse</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="keyboard_1" data-category="keyboard" data-wattage="5W">
+              <img src="Pics\keyboard\FANTECH K511 HUNTER.png" alt="Product 2">
+              <h3>FANTECH K511 HUNTER PRO RGB Back Light Gaming</h3>
+              <h4>₨ 5000</h4>
+              <h5>Power Usage: 5W</h5>
+              <h6>Description:</h6>
+              <h6>Backlight keyboard<br>Custom Keys<br>RGB Keyboard<br>Wired Keyboard</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="keyboard_2" data-category="keyboard" data-wattage="3W">
+              <img src="Pics\keyboard\Logitech K120.png" alt="Product 2">
+              <h3>Logitech K120 Wired Keyboard</h3>
+              <h4>₨ 2500</h4>
+              <h5>Power Usage: 3W</h5>
+              <h6>Description:</h6>
+              <h6>Office Keyboard<br>Wired Keyboard<br>Non RGB<br>black Themed</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="keyboard_3" data-category="keyboard" data-wattage="2.5W">
+              <img src="Pics\keyboard\Micropack K-206 US.jpg" alt="Product 2">
+              <h3>Micropack K-206 USB Keyboard Black With Multimedia</h3>
+              <h4>₨ 1560</h4>
+              <h5>Power Usage: 2.5W</h5>
+              <h6>Description:</h6>
+              <h6>Office Keyboard<br>Wired Keyboard<br>Non RGB<br>Sleek Look</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+        <div class="product" data-id="keyboard_4" data-category="keyboard" data-wattage="4W">
+              <img src="Pics\keyboard\XO KB.jpg" alt="Product 2">
+              <h3>XO KB-01 RGB Backlit Metal Gaming Keyboard</h3>
+              <h4>₨ 3800</h4>
+              <h5>Power Usage: 4W</h5>
+              <h6>Description:</h6>
+              <h6>RGB Keyboard<br>Backlight<br>RGB<br>Responsive Keys</h6>
+              <button class="btn btn-primary" onclick="addToCart(this)">Add to Cart</button>
+              <div class="button-container">
+              </div>
+        </div>
+      </div>
       </div>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -849,7 +1041,7 @@ document.querySelectorAll('.product').forEach((productDiv) => {
             category: category.toLowerCase(),
             name: productName,
             image: imgUrl,
-            wattage: wattage,
+            attage,
             price: price,
             id: dataId // Include data-id in sessionStorage
         }));
