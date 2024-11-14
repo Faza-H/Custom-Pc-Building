@@ -195,6 +195,22 @@ include('includes/navbar.php');
 </div>
 
         <!-- Additional scenarios can be added similarly here -->
+        <div class="scenario">
+    <h2>For Office Workers</h2>
+    <p>
+    A laptop offers greater flexibility for office workers who need to work both at home and in the office, as it is portable and easy to carry between locations. It combines performance with mobility, allowing employees to stay productive without being tied to a specific workspace.</p>
+    
+    <!-- Motherboard -->
+    <div class="component">
+        <div class="component-text">
+            <h4>Lenovo ThinkPad X1 Carbon</h4>
+            <p>The Lenovo ThinkPad X1 Carbon packs serious power with its 14th Gen Intel i7 processor, 16GB RAM, and a 1TB SSD, all in a sleek, ultra-durable black design. With a 14-inch display and Windows 11 Pro, it’s built to handle anything you throw at it. Lightweight, fast, and ready for business—this laptop is performance redefined.</p>
+        </div>
+        <div class="component-img">
+            <img src="Pics\laptop Images\Lenovo ThinkPad X1 Carbon.jfif" alt="MSI Z590 Gaming Carbon WiFi">
+        </div>
+    </div>
+    
 
     </div>
     <?php 
