@@ -20,10 +20,10 @@ include('includes/header.php');
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
+                    <a class="nav-link active" aria-current="page" href="builder.php">PC Builder</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="builder.php">PC Builder</a>
+                    <a class="nav-link active" aria-current="page" href="pre-builds.php">Pre Builds</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="laptops.php">Laptops</a>

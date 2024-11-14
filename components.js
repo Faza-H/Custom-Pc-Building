@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .map(checkbox => checkbox.dataset.category);
   
     const selectedCompany = companySelect.value;
-  
     products.forEach(product => {
       const category = product.dataset.category;
       const company = product.dataset.company;
@@ -63,5 +62,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial sort and filter
   filterProducts();
 });
-
-
