@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $card_number = $_POST['cardNumber'];
         $expiry_date = $_POST['expiryDate'];
         $cvv = $_POST['cvv'];
-        $paypal_email = NULL;
-    } elseif ($payment_method == "paypal") {
+        $JazzCashno = NULL;
+    } elseif ($payment_method == "jazzcash") {
         $card_number = NULL;
         $expiry_date = NULL;
         $cvv = NULL;
-        $paypal_email = $_POST['paypalEmail'];
+        $JazzCashno = $_POST['jazzcashNumber'];
     }
 
     // Execute statement and get the order ID
@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <select class="form-select" id="payment" name="payment" onchange="showPaymentFields()" required>
                     <option value="">Select a Payment Method</option>
                     <option value="credit_card">Credit Card</option>
-                    <option value="paypal">JazzCash</option>
+                    <option value="jazzcash">JazzCash/Easypaisa</option>
                     <option value="Cod">Cash on Delivery</option>
                 </select>
             </div>
@@ -158,10 +158,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
             </div>
 
-            <!-- JazzCash Details -->
-            <div id="paypalFields" class="mb-3" style="display: none;">
-                <label for="paypalEmail" class="form-label">JazzCash Number</label>
-                <input type="email" class="form-control" id="paypalEmail" name="paypalEmail" placeholder="Enter your JazzCash Number">
+            <!-- JazzCash/Easypaisa Details -->
+            <div id="jazzcashFields" class="mb-3" style="display: none;">
+                <label for="jazzcashNumber" class="form-label">JazzCash/Easypaisa Number</label>
+                <div class="input-group">
+                    <span class="input-group-text">+92</span>
+                    <input type="text" class="form-control" id="jazzcashNumber" name="jazzcashNumber" placeholder="Enter your JazzCash/Easypaisa Number">
+                </div>
             </div>
 
             <input type="hidden" id="cartItemsInput" name="cartItems">
@@ -191,17 +194,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         function showPaymentFields() {
             const paymentMethod = document.getElementById("payment").value;
             const creditCardFields = document.getElementById("creditCardFields");
-            const paypalFields = document.getElementById("paypalFields");
+            const jazzcashFields = document.getElementById("jazzcashFields");
 
             // Hide all payment fields initially
             creditCardFields.style.display = "none";
-            paypalFields.style.display = "none";
+            jazzcashFields.style.display = "none";
 
             // Show relevant fields based on selected payment method
             if (paymentMethod === "credit_card") {
                 creditCardFields.style.display = "block";
-            } else if (paymentMethod === "paypal") {
-                paypalFields.style.display = "block";
+            } else if (paymentMethod === "jazzcash") {
+                jazzcashFields.style.display = "block";
             }
         }
     </script>
