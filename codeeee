@@ -1,0 +1,160 @@
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "pc_builder";
+include('includes/navbar.php');
+require 'stripe-php-master/init.php';
+
+// Your Stripe API keys
+$Publishablekey = "pk_test_51QKzHjRuE3GrEaQRd3FwvHeln8l2ycsK140KoGv1KtXbUY6ycyojpyrkydzJNzTzTSTKQ9XqAYXmcrccEX1StQZj00NjttwqCz";
+$Secretkey = "sk_test_51QKzHjRuE3GrEaQRCLVemTvvrATj6JFrx6CDKiVhTrFAvpEVfYnQNR0d04ScMkf2RH4m7bjMHC1uM17TWXb2ucm1000uHon7jg";
+
+\Stripe\Stripe::setApiKey($Secretkey);
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$user_id = $_SESSION['auth_user']['user_id'];
+$query = "SELECT * FROM users WHERE id='$user_id' LIMIT 1";
+$query_run = mysqli_query($con, $query);
+
+if(mysqli_num_rows($query_run) > 0) {
+    $user = mysqli_fetch_array($query_run);
+} else {
+    $_SESSION['message'] = "User not found!";
+    header("Location: index.php");
+    exit(0);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['stripeToken'])) {
+    $token = $_POST['stripeToken'];
+    $name = $_POST['name'];
+    $address = $_POST['address'];
+    $total = $_POST['cartTotal'];
+    $cartItems = json_decode($_POST['cartItems'], true);
+
+    try {
+        // Create a Stripe Charge
+        $charge = \Stripe\Charge::create([
+            'amount' => $total * 100, // Convert to cents
+            'currency' => 'pkr',
+            'description' => 'Custom PC Order',
+            'source' => $token,
+            'metadata' => ['user_id' => $user_id]
+        ]);
+
+        // Insert the order into the database
+        $stmt = $conn->prepare("INSERT INTO orders (name, address, payment_method, total) VALUES (?, ?, ?, ?)");
+        $payment_method = "Stripe";
+        $stmt->bind_param("sssd", $name, $address, $payment_method, $total);
+        if ($stmt->execute()) {
+            $order_id = $stmt->insert_id;
+
+            // Insert order items
+            if (!empty($cartItems)) {
+                foreach ($cartItems as $item) {
+                    $itemStmt = $conn->prepare("INSERT INTO order_items (order_id, product_name, product_price) VALUES (?, ?, ?)");
+                    $itemStmt->bind_param("isd", $order_id, $item['name'], $item['price']);
+                    $itemStmt->execute();
+                }
+            }
+
+            $message = "Your order has been placed successfully! Order ID: " . $order_id;
+        } else {
+            $message = "Error: " . $stmt->error;
+        }
+    } catch (\Stripe\Exception\ApiErrorException $e) {
+        $message = "Stripe Payment Error: " . $e->getMessage();
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Shipping Details</h1>
+
+        <?php if (isset($message)): ?>
+            <div class="alert alert-success">
+                <?php echo $message; ?>
+            </div>
+        <?php endif; ?>
+
+        <div class="mb-3">
+            <h3>Your Cart</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Price (PKR)</th>
+                    </tr>
+                </thead>
+                <tbody id="cartSummary">
+                </tbody>
+            </table>
+            <h4>Total: PKR <span id="cartTotal">0</span></h4>
+        </div>
+
+        <!-- Payment Form -->
+        <form id="shippingForm" method="POST" action="shipbuilder.php">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" value="<?= $user['fname'] . ' ' . $user['lname']; ?>" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Shipping Address</label>
+                <input type="text" class="form-control" id="address" name="address" value="<?= $user['address']; ?>" required>
+            </div>
+
+            <input type="hidden" id="cartItemsInput" name="cartItems">
+            <input type="hidden" id="cartTotalInput" name="cartTotal">
+
+            <!-- Stripe Payment Button -->
+            <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<?php echo $Publishablekey ?>"
+                data-amount="500"
+                data-name="Custom PC Building"
+                data-description="PC Order"
+                data-currency="pkr">
+            </script>
+        </form>
+    </div>
+
+    <script>
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartSummary = document.getElementById('cartSummary');
+            let total = 0;
+
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                `;
+                cartSummary.appendChild(row);
+                total += item.price;
+            });
+
+            document.getElementById('cartTotal').innerText = total;
+            document.getElementById('cartItemsInput').value = JSON.stringify(cart);
+            document.getElementById('cartTotalInput').value = total;
+        }
+
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

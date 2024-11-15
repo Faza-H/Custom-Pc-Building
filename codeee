@@ -125,6 +125,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <select class="form-select" id="payment" name="payment" onchange="showPaymentFields()" required>
                     <option value="">Select a Payment Method</option>
                     <option value="credit_card">Credit Card</option>
+                    <option value="jazzcash">JazzCash</option>
+                    <option value="easypaisa">Easypaisa</option>
                     <option value="Cod">Cash on Delivery</option>
                 </select>
             </div>
