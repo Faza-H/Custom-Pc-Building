@@ -89,6 +89,10 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="sidebar">
         <h2>Categories</h2>
         <ul>
+        <li>
+                <input type="checkbox" id="category-top-seller" data-category="top_seller">
+                <label for="category-top-seller">Top Seller</label>
+            </li>
             <li>
                 <input type="checkbox" id="category-cpu" data-category="cpu">
                 <label for="category-cpu">CPU</label>
@@ -174,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             </div>
             </div>
-            <div class="product" onclick="selectComponent('cpu', 'Ryzen 5 3600', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '25000')" data-id="amd_2" data-category="cpu" data-company="Ryzen" data-wattage="105">
+            <div class="product" onclick="selectComponent('cpu', 'Ryzen 5 3600', 'Pics/cpu/AMD Ryzen 5 7600X.jpg', '105', '25000')" data-id="amd_2" data-category="cpu,top_seller" data-company="Ryzen" data-wattage="105">
             <img src="Pics/cpu/AMD Ryzen 5 7600X.jpg" alt="Product 2">
             <h3>AMD Ryzen 5 3600</h3>
             <h4>₨ 25000</h4>
@@ -187,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             </div>
             </div>
-            <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 7 7800X', 'Pics/cpu/AMD-Ryzen-7-7800X.jpg', '120', '75000')" data-id="amd_3" data-category="cpu" data-company="Ryzen" data-wattage="120">
+            <div class="product" onclick="selectComponent('cpu', 'AMD Ryzen 7 7800X', 'Pics/cpu/AMD-Ryzen-7-7800X.jpg', '120', '75000')" data-id="amd_3" data-category="cpu,top_seller" data-company="Ryzen" data-wattage="120">
               <img src="Pics/cpu/AMD-Ryzen-7-7800X.jpg" alt="Product 3">
               <h3>AMD Ryzen 7 7800X</h3>
               <h4>₨ 75000</h4>
@@ -229,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
 
-          <div class="product" onclick="selectComponent('cpu', 'Intel Core i5 5th Gen', 'Pics/cpu/core i5.webp', '50','35000')" data-id="intel_2" data-category="cpu" data-company="Intel" data-wattage="90">
+          <div class="product" onclick="selectComponent('cpu', 'Intel Core i5 5th Gen', 'Pics/cpu/core i5.webp', '50','35000')" data-id="intel_2" data-category="cpu,top_seller" data-company="Intel" data-wattage="90">
               <img src="Pics/cpu/core i5.webp" alt="Product 6">
               <h3>Intel Core i5 5th Gen</h3>
               <h4>₨ 35000</h5>
@@ -285,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX 5700 XT 8G', 'Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp', '300', '75000')" data-id="amd_gpu_1" data-category="gpu" data-company="AMD" data-wattage="300">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 5700 XT 8G', 'Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp', '300', '75000')" data-id="amd_gpu_1" data-category="gpu,top_seller" data-company="AMD" data-wattage="300">
               <img src="Pics/gpu/AMD/AORUS Radeon™ RX 5700 XT 8G (rev. 2.0).webp" alt="Product 2">
               <h3>AMD RX 5700 XT 8G</h3>
               <h4>₨ 75000</h5>
@@ -327,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics/gpu/AMD/rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu" data-company="AMD" data-wattage="290">
+            <div class="product" onclick="selectComponent('gpu', 'AMD RX 580', 'Pics/gpu/AMD/rx 580.webp', '250', '65000')" data-id="amd_gpu_4" data-category="gpu,top_seller" data-company="AMD" data-wattage="290">
               <img src="Pics\gpu\AMD\rx 580.webp" alt="Product 2">
               <h3>AMD RX 580</h3>
               <h4>₨ 65000</h4>
@@ -355,7 +359,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 3090 Ti 24G', 'Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp', '350', '360000')" data-id="nvidia_gpu_1" data-category="gpu" data-company="Nvidia" data-wattage="350">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia RTX™ 3090 Ti 24G', 'Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp', '350', '360000')" data-id="nvidia_gpu_1" data-category="gpu,top_seller" data-company="Nvidia" data-wattage="350">
               <img src="Pics/gpu/nvidia/AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G.webp" alt="Product 2">
               <h3>Nvidia RTX™ 3090 Ti 24G</h3>
               <h4>₨ 360000</h4>
@@ -369,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('gpu', 'Nvidia GTX 1080 Ti 11G', 'Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp', '180', '120000')" data-id="nvidia_gpu_2" data-category="gpu" data-company="Nvidia" data-wattage="180">
+            <div class="product" onclick="selectComponent('gpu', 'Nvidia GTX 1080 Ti 11G', 'Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp', '180', '120000')" data-id="nvidia_gpu_2" data-category="gpu,top_seller" data-company="Nvidia" data-wattage="180">
               <img src="Pics/gpu/nvidia/AORUS GeForce® GTX 1080 Ti Waterforce WB Xtreme Edition 11G.webp" alt="Product 2">
               <h3>Nvidia GTX 1080 Ti 11G</h3>
               <h4>₨ 120000</h4>
@@ -453,7 +457,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('motherboard', 'ASUS B650M S2H Motherboard', 'Pics/Motherboard/asus motherboard.jpg', '80', '35000')" data-id="Motherboard_1" data-category="Motherboard" data-wattage="80">
+            <div class="product" onclick="selectComponent('motherboard', 'ASUS B650M S2H Motherboard', 'Pics/Motherboard/asus motherboard.jpg', '80', '35000')" data-id="Motherboard_1" data-category="Motherboard,top_seller" data-wattage="80">
               <img src="Pics/Motherboard/asus motherboard.jpg" alt="Product 2">
               <h3>ASUS B650M S2H Motherboard</h3>
               <h4>₨ 35000</h4>
@@ -523,7 +527,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics/Motherboard/B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard" data-wattage="80">
+          <div class="product" onclick="selectComponent('motherboard', 'Gigabyte B450M Motherboard', 'Pics/Motherboard/B450M.webp', '80', '55000')" data-id="Motherboard_6" data-category="Motherboard,top_seller" data-wattage="80">
               <img src="Pics\Motherboard\B450M.webp" alt="Product 2">
               <h3>Gigabyte B450M Motherboard</h3>
               <h4>₨ 25000</h4>
@@ -551,7 +555,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('ram', 'GIGABYTE Memory 16GB (2x8GB) 2666MHz RAM', 'Pics/ram/GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp', '5', '18000')" data-id="RAM_2" data-category="RAM" data-wattage="5">
+          <div class="product" onclick="selectComponent('ram', 'GIGABYTE Memory 16GB (2x8GB) 2666MHz RAM', 'Pics/ram/GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp', '5', '18000')" data-id="RAM_2" data-category="RAM,top_seller" data-wattage="5">
               <img src="Pics/ram/GIGABYTE Memory 16GB (2x8GB) 2666MHz.webp" alt="Product 2">
               <h3>GIGABYTE Memory 16GB (2x8GB) 2666MHz RAM</h3>
               <h4>₨ 18000</h4>
@@ -580,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
 
           
-          <div class="product" onclick="selectComponent('ssd', 'Gen5 14000 SSD 1TB', 'Pics/ssd/AORUS Gen5 14000 SSD 1TB.webp', '5', '65000')" data-id="SSD_1" data-category="SSD" data-wattage="5">
+          <div class="product" onclick="selectComponent('ssd', 'Gen5 14000 SSD 1TB', 'Pics/ssd/AORUS Gen5 14000 SSD 1TB.webp', '5', '65000')" data-id="SSD_1" data-category="SSD,top_seller" data-wattage="5">
               <img src="Pics/ssd/AORUS Gen5 14000 SSD 1TB.webp" alt="Product 2">
               <h3>Gen5 14000 SSD 1TB</h3>
               <h4>₨ 65000</h4>
@@ -622,7 +626,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('ssd', 'M.2 SSD 500GB', 'Pics/ssd/GIGABYTE M.2 SSD 500GB.webp', '5', '20000')" data-id="SSD_4" data-category="SSD" data-wattage="5">
+          <div class="product" onclick="selectComponent('ssd', 'M.2 SSD 500GB', 'Pics/ssd/GIGABYTE M.2 SSD 500GB.webp', '5', '20000')" data-id="SSD_4" data-category="SSD,top_seller" data-wattage="5">
               <img src="Pics/ssd/GIGABYTE M.2 SSD 500GB.webp" alt="Product 2">
               <h3>M.2 SSD 500GB</h3>
               <h4>₨ 20000</h4>
@@ -678,7 +682,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
           </div>
 
-          <div class="product" onclick="selectComponent('case', 'AC300W Casing(rev. 2.0)', 'Pics/Casing/AC300W (rev. 2.0).webp', '0', '12000')" data-id="Casing_1" data-category="Casing" data-wattage="0">
+          <div class="product" onclick="selectComponent('case', 'AC300W Casing(rev. 2.0)', 'Pics/Casing/AC300W (rev. 2.0).webp', '0', '12000')" data-id="Casing_1" data-category="Casing,top_seller" data-wattage="0">
               <img src="Pics/Casing/AC300W (rev. 2.0).webp" alt="Product 2">
               <h3>AC300W Casing(rev. 2.0)</h3>
               <h4>₨ 12000</h4>
@@ -748,7 +752,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('case', 'XC700W Casing', 'Pics/Casing/XC700W.webp', '0', '20000')" data-id="Casing_6" data-category="Casing" data-wattage="0">
+            <div class="product" onclick="selectComponent('case', 'XC700W Casing', 'Pics/Casing/XC700W.webp', '0', '20000')" data-id="Casing_6" data-category="Casing,top_seller" data-wattage="0">
               <img src="Pics/Casing/XC700W.webp" alt="Product 2">
               <h3>XC700W Casing</h3>
               <h4>₨ 20000</h4>
@@ -762,7 +766,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
           
-            <div class="product" onclick="selectComponent('power', 'ASUS ROG Thor 1600W Titanium', 'Pics/psu/ASUS ROG Thor 1600W Titanium,1600W ATX.jpg', '1600', '75000')" data-id="Power_supply_1" data-category="Power_supply" data-wattage="1600">
+            <div class="product" onclick="selectComponent('power', 'ASUS ROG Thor 1600W Titanium', 'Pics/psu/ASUS ROG Thor 1600W Titanium,1600W ATX.jpg', '1600', '75000')" data-id="Power_supply_1" data-category="Power_supply,top_seller" data-wattage="1600">
               <img src="Pics/psu/ASUS ROG Thor 1600W Titanium,1600W ATX.jpg" alt="Product 2">
               <h3>ASUS ROG Thor 1600W Titanium Power Supply</h3>
               <h4>₨ 75000</h4>
@@ -790,7 +794,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
 
-            <div class="product" onclick="selectComponent('power', 'CORSAIR CX Series CX650 80-PLUS', 'Pics/psu/CORSAIR-CX-Series-CX650-80-PLUS.webp', '650', '18000')" data-id="Power_supply_3" data-category="Power_supply" data-wattage="650">
+            <div class="product" onclick="selectComponent('power', 'CORSAIR CX Series CX650 80-PLUS', 'Pics/psu/CORSAIR-CX-Series-CX650-80-PLUS.webp', '650', '18000')" data-id="Power_supply_3" data-category="Power_supply,top_seller" data-wattage="650">
               <img src="Pics/psu/CORSAIR-CX-Series-CX650-80-PLUS.webp" alt="Product 2">
               <h3>CORSAIR CX Series CX650 80-PLUS Power Supply</h3>
               <h4>₨ 18000</h4>
@@ -854,7 +858,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="button-container">
               </div>
         </div>
-        <div class="product" data-id="cpu_cooler_3" data-category="cpu_cooler" data-wattage="	5.5W">
+        <div class="product" data-id="cpu_cooler_3" data-category="cpu_cooler,top_seller" data-wattage="	5.5W">
               <img src="Pics\cpu_cooler\EASE EAF1218 Air Cooler.webp" alt="Product 2">
               <h3>EASE EAF1218 Air Cooler</h3>
               <h4>₨ 6325</h4>
@@ -876,7 +880,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="button-container">
               </div>
         </div>
-        <div class="product" data-id="monitor_1" data-category="monitor" data-wattage="47W">
+        <div class="product" data-id="monitor_1" data-category="monitor,top_seller" data-wattage="47W">
               <img src="Pics\monitor\AOC Q32V3SWS QHD 2560 x 1440.webp" alt="Product 2">
               <h3>AOC Q32V3S/WS QHD 2560 x 1440 IPS Low Blue mode</h3>
               <h4>₨ 88000</h4>
@@ -931,7 +935,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="button-container">
               </div>
         </div>
-        <div class="product" data-id="mouse_2" data-category="mouse" data-wattage="0.3W">
+        <div class="product" data-id="mouse_2" data-category="mouse,top_seller" data-wattage="0.3W">
               <img src="Pics\mouse\FANTECH WGC2 VENOM.jpg" alt="Product 2">
               <h3>FANTECH WGC2 VENOM II 2.4G Wireless Gaming Mouse</h3>
               <h4>₨ 3500</h4>
@@ -975,7 +979,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="button-container">
               </div>
         </div>
-        <div class="product" data-id="keyboard_2" data-category="keyboard" data-wattage="3W">
+        <div class="product" data-id="keyboard_2" data-category="keyboard,top_seller" data-wattage="3W">
               <img src="Pics\keyboard\Logitech K120.png" alt="Product 2">
               <h3>Logitech K120 Wired Keyboard</h3>
               <h4>₨ 2500</h4>
@@ -1026,22 +1030,22 @@ document.querySelectorAll('.product').forEach((productDiv) => {
         // Get the product name, wattage, price, and category from the DOM
         const productNameTag = productDiv.querySelector('h3');
         const productName = productNameTag.textContent;
-        const wattage = productDiv.dataset.wattage;  // Using dataset to store wattage
-        const category = productDiv.dataset.category;  // Using dataset to store category
+        const wattage = productDiv.dataset.wattage; // Using dataset to store wattage
+        const category = productDiv.dataset.category; // Using dataset to store category
         const priceTag = productDiv.querySelector('h4');
-        const price = priceTag.textContent.replace('Price: PKR ', '');  // Extract numeric price value
+        const price = priceTag.textContent.replace('Price: PKR ', ''); // Extract numeric price value
         const dataId = productDiv.dataset.id; // Get data-id from the dataset
 
         // Assuming image URL is stored in a data attribute or img tag in product div
         const imgTag = productDiv.querySelector('img');
-        const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`;  // Default URL if not present
+        const imgUrl = imgTag ? imgTag.src : `Pics/${category.toLowerCase()}/${productName}.jpg`; // Default URL if not present
 
         // Store data in sessionStorage
         sessionStorage.setItem('selectedComponent', JSON.stringify({
             category: category.toLowerCase(),
             name: productName,
             image: imgUrl,
-            attage,
+            wattage: wattage, // Corrected typo here
             price: price,
             id: dataId // Include data-id in sessionStorage
         }));
