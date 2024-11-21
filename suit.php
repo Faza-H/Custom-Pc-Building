@@ -13,7 +13,7 @@ include('includes/navbar.php');
 <body>
 
     <div class="guide-container">
-        <h1>PC Build Guide: Choose the Right Components</h1>
+        <h1>Don't Know Where To Begin ? Getting You Started</h1>
         
         <!-- Scenario 1: Student -->
         <div class="scenario">
