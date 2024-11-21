@@ -60,7 +60,7 @@ $user = mysqli_fetch_array($query_run);
         </div>
 
         <!-- Shipping Form -->
-        <form action="success.php" id="shippingForm" method="POST" >
+        <form action="http://localhost/faizan/blog/success.php" id="shippingForm" method="POST">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" value="<?= $user['fname'] . ' ' . $user['lname']; ?>" required>
@@ -74,7 +74,6 @@ $user = mysqli_fetch_array($query_run);
                 <select class="form-select" id="payment" name="payment" onchange="showPaymentFields()" required>
                     <option value="">Select a Payment Method</option>
                     <option value="credit_card">Credit Card</option>
-                    <option value="jazzcash">JazzCash/Easypaisa</option>
                     <option value="Cod">Cash on Delivery</option>
                 </select>
             </div>

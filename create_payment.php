@@ -23,7 +23,7 @@ try {
             'quantity' => 1,
         ]],
         'mode' => 'payment',
-        'success_url' => 'http://localhost/success.php',
+        'success_url' => 'http://localhost/Faizan/blog/success.php',
         'cancel_url' => 'http://localhost/cancel.php',
     ]);
 

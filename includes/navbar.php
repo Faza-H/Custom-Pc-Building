@@ -2,7 +2,7 @@
 // Start session if it hasn't been started already
 include('includes/header.php');
 ?>
-<h1>Custom PC Building</h1>
+<h1 style="text-align:center">Custom PC Building</h1>
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
         <a class="navbar-brand d-block d-sm-none d-md-none" href="#"></a>
